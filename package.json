@@ -1,0 +1,17 @@
+{
+  "name": "hejia",
+  "version": "1.0.0",
+  "keywords": [
+    "util",
+    "functional",
+    "server",
+    "client",
+    "browser"
+  ],
+  "author": "d3qnew",
+  "contributors": [],
+  "dependencies": {
+    "cordova-plugin-email-composer": "0.8.3",
+    "ionic": "1.7.15"
+  }
+}
