@@ -1,23 +1,17 @@
-xl=[
-    {"xl":"m76"},
-    {"xl":"dr60"}
-];
 var mw="";
 var mpj={};
 $(document).ready(function(){
     $.ajax({url:"data/windows.json",dataType:"json",async:false}).success(function (data) {mw=data;});
     $.ajax({url:"data/peijian.json",dataType:"json",async:false}).success(function (data) {mpj=data;});
-    new_xl.n($("[tn=p]"),xl);
+    new_xl.n($("[tn=p]"),mw);
     new_pj.n($("[tn=p2]"),mpj);
     
-    $("#price").click(function () {   
-        new_xl.n($("[tn=p2]"),xl);
-    });
-    
-    $("#remove").click(function(){  
+    $("#save").on("click",function () {
+        save.get();
+        createFile(cfa.now(), JSON.stringify(save.j),n());
         
     });
-    
+       
 });
 var new_xl={
     html:"",
@@ -111,8 +105,8 @@ var addSelectOption={
 //        $(obj).append(document.createElement("option"));
         $.each(dat,function(name,value) {
             var cop=document.createElement("option");
-            $(cop).text(value["xl"]);
-            $(cop).val(value["xl"]);
+            $(cop).text(name);
+            $(cop).val(name);
             $(obj).append(cop);
         });
     },
@@ -142,6 +136,141 @@ var ZongJia={
 //        alert(ZongJia.v);
     }
 };
+var cfa={ //create file name
+    now:function (){
+        var now = new Date();
+        
+        var year = now.getFullYear();       //年
+        var month = now.getMonth() + 1;     //月
+        var day = now.getDate();            //日
+
+        var hh = now.getHours();            //时
+        var mm = now.getMinutes();          //分
+        var ss = now.getSeconds();          //秒
+        var clock = year + "_";
+
+        if(month < 10)clock += "0";       
+        clock += month + "_";
+
+        if(day < 10)clock += "0";
+        clock += day + "_";
+
+        if(hh < 10)clock += "0";
+        clock += hh + "_";
+
+        if (mm < 10)clock += '0'; 
+        clock += mm+ "_"; 
+
+        if (ss < 10)clock += '0'; 
+        clock += ss;
+
+        return(clock); 
+    },
+    now1:function(){ 
+        var now = new Date();
+        
+        var year = now.getFullYear();       //年
+        var month = now.getMonth() + 1;     //月
+        var day = now.getDate();            //日
+
+        var hh = now.getHours();            //时
+        var mm = now.getMinutes();          //分
+        var ss = now.getSeconds();          //秒
+        var clock = year + "-";
+
+        if(month < 10)clock += "0";       
+        clock += month + "-";
+
+        if(day < 10)clock += "0";
+        clock += day + " ";
+
+        if(hh < 10)clock += "0";
+        clock += hh + ":";
+
+        if (mm < 10)clock += '0'; 
+        clock += mm+ ":"; 
+
+        if (ss < 10)clock += '0'; 
+        clock += ss;
+
+        return(clock); 
+    }
+};
+
+var save={
+    j:{},
+    get:function(){
+        save.get_w();
+        save.get_pj();
+    },
+    get_w:function(){
+        $(save.j).attr("windows",{});
+//        alert(save.j);
+        var j0=save.j["windows"];
+//        alert(j0);
+        var obj=$("[tn=p]");
+        var j1=$(obj).find("[tn=xl]").children("option:selected").val();
+        var j2=$(obj).find("[tn=lx]").children("option:selected").val();
+        var j3=$(obj).find("[tn=mj]").text();
+        var j4=$(obj).find("[tn=jg]").text();
+        $(j0).attr(j1,{});
+        $(j0[j1]).attr("leixing",j2);
+        $(j0[j1]).attr("shuliang",j3);
+        $(j0[j1]).attr("JiaGe",j4);
+//        alert(j4);
+//        alert(JSON.stringify(save.j));
+//        console.log(j0);
+    },
+    get_pj:function(){
+//        alert(1);
+        $(save.j).attr("pj",{});
+        var j0=save.j["pj"];
+        var obj=$("[tn=ppj2]");
+        $(obj).children("div").each(function(){
+            var obj2=$(this);
+            var j1=obj2.find("[tn=lmc]").text();
+            var j2=obj2.find("[tn=llx]").children("option:selected").val();
+            var j3=obj2.find("[tn=lsl]").val();
+            var j4=obj2.find("[tn=jg]").text();
+//            alert(j4);
+            if(j4 !=0 ){
+//                alert(5);
+                $(j0).attr(j1,{});
+                $(j0[j1]).attr("leixing",j2);
+                $(j0[j1]).attr("shuliang",j3);
+                $(j0[j1]).attr("JiaGe",j4);
+            }
+        });
+    }
+};
+
+var list={
+    e:function(dat){
+        var obj=$("#list");
+        var json1 = eval('(' + dat + ')');
+        var tr1="<tr>";
+        var tr2="</tr>";
+        var td1="<td>";
+        var td2="</td>";
+        var tah="<table><tr><td>序号</td><td>项目</td><td>类别</td><td>数量</td><td>价格</td></tr>";
+        var rows=1;
+        $.each(json1,function(name,value){
+            if(name == "总价"){
+                tah=tah+"<tr></td><td colspan='4'>总价</td><td>"+value+"</td></tr>";
+            }else{
+//                alert(4);
+                $.each(json1[name],function(name,value){
+                    tah=tah+tr1+td1+rows+td2+td1+name+td2+td1+value["leixing"]+td2+td1+value["shuliang"]+td2+td1+value["JiaGe"]+td2+tr2;
+                    rows++;
+                });
+            }
+        });
+        tah=tah+"</table>";
+        $(obj).html(tah);
+        location.hash = "#showhejiadan";
+    }
+};
+
 //var select_ld={
 //    n:function(obj1,obj2,obj3,dat1,dat2){
 //        

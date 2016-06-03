@@ -43,17 +43,18 @@ function createFile(filename, date,fuc) {
     function onFileWriterSuccess(writer) {
         //  log("fileName="+writer.fileName+";fileLength="+writer.length+";position="+writer.position);  
         writer.onwrite = function (evt) {//当写入成功完成后调用的回调函数  
-            console.log("write down");
+            alert("保存成功");
             fuc;
         };
         writer.onerror = function (evt) {//写入失败后调用的回调函数  
-            console.log("write error");
+            alert("保存失败");
         };
         writer.onabort = function (evt) {//写入被中止后调用的回调函数，例如通过调用abort()  
-            console.log("write abort");
+            alert("保存终止");
         };
         // 快速将文件指针指向文件的尾部 ,可以append  
         //  writer.seek(writer.length);   
+//        alert(date);
         writer.write(date);//向文件中写入数据  
         //  writer.truncate(11);//按照指定长度截断文件  
         //  writer.abort();//中止写入文件  
@@ -130,13 +131,12 @@ readFile = function (filename,fuc) {
             if (storeNotification == null || storeNotification.length == 0) {
                 storeNotification = "on";
             }
-            console.log(storeNotification);
-            fuc();
+            fuc(storeNotification);
         };
         reader.readAsText(file);
 
     }
-}
+};
 
 ////////////////////////////////////////////////////////////////////////////////
 //删除文件
