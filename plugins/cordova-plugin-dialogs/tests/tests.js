@@ -68,18 +68,18 @@ exports.defineManualTests = function (contentEl, createActionButton) {
     };
 
     var beep = function () {
-        console.log("beep()");
+        mycon.log("beep()");
         navigator.notification.beep(3);
     };
 
     var alertDialog = function (message, title, button) {
-        console.log("alertDialog()");
+        mycon.log("alertDialog()");
         navigator.notification.alert(message,
             function () {
-                console.log("Alert dismissed.");
+                mycon.log("Alert dismissed.");
             },
             title, button);
-        console.log("After alert");
+        mycon.log("After alert");
     };
 
     var confirmDialogA = function (message, title, buttons) {
@@ -88,9 +88,9 @@ exports.defineManualTests = function (contentEl, createActionButton) {
             function (r) {
                 if (r === 0) {
                     logMessage("Dismissed dialog without making a selection.");
-                    console.log("Dismissed dialog without making a selection.");
+                    mycon.log("Dismissed dialog without making a selection.");
                 } else {
-                    console.log("You selected " + r);
+                    mycon.log("You selected " + r);
                     logMessage("You selected " + (buttons.split(","))[r - 1]);
                 }
             },
@@ -104,9 +104,9 @@ exports.defineManualTests = function (contentEl, createActionButton) {
             function (r) {
                 if (r === 0) {
                     logMessage("Dismissed dialog without making a selection.");
-                    console.log("Dismissed dialog without making a selection.");
+                    mycon.log("Dismissed dialog without making a selection.");
                 } else {
-                    console.log("You selected " + r);
+                    mycon.log("You selected " + r);
                     logMessage("You selected " + buttons[r - 1]);
                 }
             },
@@ -124,9 +124,9 @@ exports.defineManualTests = function (contentEl, createActionButton) {
                         msg += " with input: " + r.input1;
                     }
                     logMessage(msg);
-                    console.log(msg);
+                    mycon.log(msg);
                 } else {
-                    console.log("You selected " + r.buttonIndex + " and entered: " + r.input1);
+                    mycon.log("You selected " + r.buttonIndex + " and entered: " + r.input1);
                     logMessage("You selected " + buttons[r.buttonIndex - 1] + " and entered: " + r.input1);
                 }
             },

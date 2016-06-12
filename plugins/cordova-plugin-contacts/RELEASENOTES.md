@@ -120,7 +120,7 @@
 * [CB-7357](https://issues.apache.org/jira/browse/CB-7357) Adds missing 'capability' element to phone's appxmanifest.
 
 ### 0.2.13 (Sep 17, 2014)
-* [CB-7546](https://issues.apache.org/jira/browse/CB-7546) [Contacts][iOS] pickContact shows exception in the console log
+* [CB-7546](https://issues.apache.org/jira/browse/CB-7546) [Contacts][iOS] pickContact shows exception in the mycon log
 * [CB-6374](https://issues.apache.org/jira/browse/CB-6374) Fix iOS 6 deprecation warnings in Contacts
 * [CB-7544](https://issues.apache.org/jira/browse/CB-7544) [Contacts][iOS 8] Contact picker is read-only in iOS 8
 * [CB-7523](https://issues.apache.org/jira/browse/CB-7523) Fixing "ContactFieldType" error in the config.xml

@@ -45,7 +45,7 @@ var globalization = {
         var result = new PluginResult(args, env),
             response = g11n.getInstance().InvokeMethod("getPreferredLanguage", args),
             data = JSON.parse(response);
-        console.log("getPreferredLanguage: " + JSON.stringify(response));
+        mycon.log("getPreferredLanguage: " + JSON.stringify(response));
 
         if (data.error !== undefined) {
             result.error({
@@ -80,7 +80,7 @@ var globalization = {
         var result = new PluginResult(args, env),
             response = g11n.getInstance().InvokeMethod("getLocaleName", args),
             data = JSON.parse(response);
-        console.log("getLocaleName: " + JSON.stringify(response));
+        mycon.log("getLocaleName: " + JSON.stringify(response));
 
         if (data.error !== undefined) {
             result.error({
@@ -124,7 +124,7 @@ var globalization = {
         var result = new PluginResult(args, env),
             response = g11n.getInstance().InvokeMethod("dateToString", args),
             data = JSON.parse(response);
-        console.log("dateToString: " + JSON.stringify(response));
+        mycon.log("dateToString: " + JSON.stringify(response));
 
         if (data.error !== undefined) {
             result.error({
@@ -178,7 +178,7 @@ var globalization = {
         var result = new PluginResult(args, env),
             response = g11n.getInstance().InvokeMethod("stringToDate", args),
             data = JSON.parse(response);
-        console.log("stringToDate: " + JSON.stringify(response));
+        mycon.log("stringToDate: " + JSON.stringify(response));
 
         if (data.error !== undefined) {
             result.error({
@@ -235,7 +235,7 @@ var globalization = {
         var result = new PluginResult(args, env),
             response = g11n.getInstance().InvokeMethod("getDatePattern", args),
             data = JSON.parse(response);
-        console.log("getDatePattern: " + JSON.stringify(response));
+        mycon.log("getDatePattern: " + JSON.stringify(response));
 
         if (data.error !== undefined) {
             result.error({
@@ -282,7 +282,7 @@ var globalization = {
         var result = new PluginResult(args, env),
             response = g11n.getInstance().InvokeMethod("getDateNames", args),
             data = JSON.parse(response);
-        console.log("getDateNames: " + JSON.stringify(response));
+        mycon.log("getDateNames: " + JSON.stringify(response));
 
         if (data.error !== undefined) {
             result.error({
@@ -320,7 +320,7 @@ var globalization = {
         var result = new PluginResult(args, env),
             response = g11n.getInstance().InvokeMethod("isDayLightSavingsTime", args),
             data = JSON.parse(response);
-        console.log("isDayLightSavingsTime: " + JSON.stringify(response));
+        mycon.log("isDayLightSavingsTime: " + JSON.stringify(response));
 
         if (data.error !== undefined) {
             result.error({
@@ -356,7 +356,7 @@ var globalization = {
         var result = new PluginResult(args, env),
             response = g11n.getInstance().InvokeMethod("getFirstDayOfWeek", args),
             data = JSON.parse(response);
-        console.log("getFirstDayOfWeek: " + JSON.stringify(response));
+        mycon.log("getFirstDayOfWeek: " + JSON.stringify(response));
 
         if (data.error !== undefined) {
             result.error({
@@ -398,7 +398,7 @@ var globalization = {
         var result = new PluginResult(args, env),
             response = g11n.getInstance().InvokeMethod("numberToString", args),
             data = JSON.parse(response);
-        console.log("numberToString: " + JSON.stringify(response));
+        mycon.log("numberToString: " + JSON.stringify(response));
 
         if (data.error !== undefined) {
             result.error({
@@ -439,7 +439,7 @@ var globalization = {
         var result = new PluginResult(args, env),
             response = g11n.getInstance().InvokeMethod("stringToNumber", args),
             data = JSON.parse(response);
-        console.log("stringToNumber: " + JSON.stringify(response));
+        mycon.log("stringToNumber: " + JSON.stringify(response));
 
         if (data.error !== undefined) {
             result.error({
@@ -489,7 +489,7 @@ var globalization = {
         var result = new PluginResult(args, env),
             response = g11n.getInstance().InvokeMethod("getNumberPattern", args),
             data = JSON.parse(response);
-        console.log("getNumberPattern: " + JSON.stringify(response));
+        mycon.log("getNumberPattern: " + JSON.stringify(response));
 
         if (data.error !== undefined) {
             result.error({
@@ -541,7 +541,7 @@ var globalization = {
         var result = new PluginResult(args, env),
             response = g11n.getInstance().InvokeMethod("getCurrencyPattern", args),
             data = JSON.parse(response);
-        console.log("getCurrencyPattern: " + JSON.stringify(response));
+        mycon.log("getCurrencyPattern: " + JSON.stringify(response));
 
         if (data.error !== undefined) {
             result.error({

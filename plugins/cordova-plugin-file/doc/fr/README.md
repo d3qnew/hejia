@@ -38,7 +38,7 @@ Ce plugin définit global `cordova.file` objet.
 Bien que dans la portée globale, il n'est pas disponible jusqu'après la `deviceready` événement.
 
     document.addEventListener (« deviceready », onDeviceReady, false) ;
-    function onDeviceReady() {console.log(cordova.file);}
+    function onDeviceReady() {mycon.log(cordova.file);}
     
 
 ## Installation
@@ -225,7 +225,7 @@ Les chemins de données suivants sont pris en charge: * `applicationDirectory` -
   * Chrome filesystem n'est pas prête immédiatement après l'événement ready périphérique. Pour contourner le problème, vous pouvez vous abonner à l'événement `filePluginIsReady`. Exemple : 
 
 ```javascript
-window.addEventListener('filePluginIsReady', function(){ console.log('File plugin is ready');}, false);
+window.addEventListener('filePluginIsReady', function(){ mycon.log('File plugin is ready');}, false);
 ```
 
 Vous pouvez utiliser la fonction `window.isFilePluginReadyRaised` pour vérifier si les événement était déjà déclenché. -quotas de window.requestFileSystem temporaire et permanent de système de fichiers ne sont pas limités en Chrome. -Pour augmenter le stockage persistant en Chrome, vous devez appeler la méthode `window.initPersistentFileSystem`. Quota de stockage persistant est 5 Mo par défaut. -Chrome nécessite `--permettre-fichier-accès-de-fichiers` exécuter l'argument au support API via le protocole `file:///`. -`Fichier` objet changera pas si vous utilisez le drapeau `{create:true}` lors du passage d'une `entrée` existante. -événements `annulables` propriété a la valeur true dans Chrome. Il s'agit à l'encontre de la [spécification](http://dev.w3.org/2009/dap/file-system/file-writer.html). -`toURL` renvoie à Chrome `système de fichiers :`-préfixe de chemin d'accès selon l'application hôte. Par exemple, `filesystem:file:///persistent/somefile.txt`, `filesystem:http://localhost:8080/persistent/somefile.txt`. -résultat de la fonction `toURL` ne contient-elle pas de barre oblique dans le cas d'entrée d'annuaire. Chrome résout répertoires avec barre oblique-trainés URL correctement cependant. -`resolveLocalFileSystemURL` méthode nécessite l' entrant `url` préfixe de `système de fichiers`. Par exemple, le paramètre `d'url` pour `resolveLocalFileSystemURL` devrait être dans la forme `filesystem:file:///persistent/somefile.txt` par opposition à la forme `file:///persistent/somefile.txt` dans Android. -Déconseillée `toNativeURL` fonction n'est pas prise en charge et n'est pas une ébauche. -fonction de `setMetadata` n'est pas stipulée dans le devis et pas pris en charge. -INVALID_MODIFICATION_ERR (code: 9) est levée au lieu de SYNTAX_ERR(code: 8) sur la demande d'un système de fichier inexistant. -INVALID_MODIFICATION_ERR (code: 9) est levée au lieu de PATH_EXISTS_ERR(code: 12) à essayer de créer exclusivement un fichier ou un répertoire, qui existe déjà. -INVALID_MODIFICATION_ERR (code: 9) est levée au lieu de NO_MODIFICATION_ALLOWED_ERR(code: 6) à essayer d'appeler removeRecursively sur le système de fichiers racine. -INVALID_MODIFICATION_ERR (code: 9) est levée au lieu de NOT_FOUND_ERR(code: 1) en essayant de moveTo répertoire qui n'existe pas.

@@ -65,7 +65,7 @@ are not available until after the `deviceready` event.
 
     document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady() {
-        console.log("navigator.geolocation works well");
+        mycon.log("navigator.geolocation works well");
     }
 
 ```
@@ -394,14 +394,14 @@ function getWeather(latitude, longitude) {
             });
         }
     }).fail(function () {
-        console.log("error getting location");
+        mycon.log("error getting location");
     });
 }
 
 // Error callback
 
 function onWeatherError(error) {
-    console.log('code: ' + error.code + '\n' +
+    mycon.log('code: ' + error.code + '\n' +
         'message: ' + error.message + '\n');
 }
 
@@ -519,7 +519,7 @@ var onMapWatchSuccess = function (position) {
 // Error callback
 
 function onMapError(error) {
-    console.log('code: ' + error.code + '\n' +
+    mycon.log('code: ' + error.code + '\n' +
         'message: ' + error.message + '\n');
 }
 
@@ -654,7 +654,7 @@ function createMarker(place) {
 // Error callback
 
 function onPlacesError(error) {
-    console.log('code: ' + error.code + '\n' +
+    mycon.log('code: ' + error.code + '\n' +
         'message: ' + error.message + '\n');
 }
 
@@ -741,7 +741,7 @@ var onPicturesWatchSuccess = function (position) {
 
 function onPicturesError(error) {
 
-    console.log('code: ' + error.code + '\n' +
+    mycon.log('code: ' + error.code + '\n' +
         'message: ' + error.message + '\n');
 }
 

@@ -33,23 +33,23 @@ table{
     cellpadding:3; 
     cellspacing:1; 
     align:center; 
-    background-color: #666;
-    width: 100%;
+    background-color: #333;
+    
    
 }
 
 tr{
     text-align: center;
-    color: black; 
-    background-color: #ddd;
+    color: black;     
     font-weight: bold;
 }
 
 td{  
-    padding: 0 1em 0 1em;
+    padding: 0;
     margin: 0;
     size: 24px;
-    line-height: 32px;
+    background-color:#ddd;
+    line-height: 28px;
 }
 
 #deviceready{
@@ -69,3 +69,18 @@ td{
 .menubt{background-color:black; color:white; display:inline-block;width:50%;float: left;}
 
 .menu_select{position: absolute;left:0px; background-color:black;text-align:left; display:none;}
+
+
+#wimg_display { text-align:left;width:100%;clear:both;}
+
+
+
+.window_table{ margin:0;padding:0;border:none;width:100%;height:100%;}
+.window_table td{display:block; }
+
+.win_td{}
+
+
+
+.child_window_e{width:100%;height:100%;background-color:#808080;margin:0;text-align:center;padding:3em;}
+.child_window_i{background-color:#ddd;width:100%;height:100%;}

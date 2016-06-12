@@ -29,7 +29,7 @@ Obwohl im globalen Gültigkeitsbereich, steht es nicht bis nach dem `deviceready
 
     document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady() {
-        console.log(navigator.globalization);
+        mycon.log(navigator.globalization);
     }
     
 

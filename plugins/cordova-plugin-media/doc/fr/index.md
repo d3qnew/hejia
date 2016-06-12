@@ -28,7 +28,7 @@ Ce plugin définit un global `Media` constructeur.
 Bien que dans la portée globale, il n'est pas disponible jusqu'après la `deviceready` événement.
 
     document.addEventListener (« deviceready », onDeviceReady, false) ;
-    function onDeviceReady() {console.log(Media);}
+    function onDeviceReady() {mycon.log(Media);}
     
 
 ## Installation
@@ -125,8 +125,8 @@ Retourne la position courante dans un fichier audio. Met également à jour la `
 
     Lecteur audio / / var my_media = new Media (src, onSuccess, onError) ;
     
-    Mise à jour media positionner chaque deuxième mediaTimer de var = setInterval(function () {/ / get médias position my_media.getCurrentPosition (/ / fonction de rappel réussi (position) {si (position > -1) {console.log((position) + "secondes") ;
-                }}, / / fonction de rappel d'erreur (e) {console.log ("Error getting pos =" + e) ;
+    Mise à jour media positionner chaque deuxième mediaTimer de var = setInterval(function () {/ / get médias position my_media.getCurrentPosition (/ / fonction de rappel réussi (position) {si (position > -1) {mycon.log((position) + "secondes") ;
+                }}, / / fonction de rappel d'erreur (e) {mycon.log ("Error getting pos =" + e) ;
             }
         );
     }, 1000) ;
@@ -161,7 +161,7 @@ Suspendre la lecture d'un fichier audio.
 
 ### Petit exemple
 
-    Lire les données audio / / function playAudio(url) {/ / lire le fichier audio à my_media var url = nouveaux médias (url, / / fonction de rappel réussi () {console.log ("playAudio (): Audio succès");}, / / fonction de rappel d'erreur (err) {console.log ("playAudio (): erreur Audio:" + err);}) ;
+    Lire les données audio / / function playAudio(url) {/ / lire le fichier audio à my_media var url = nouveaux médias (url, / / fonction de rappel réussi () {mycon.log ("playAudio (): Audio succès");}, / / fonction de rappel d'erreur (err) {mycon.log ("playAudio (): erreur Audio:" + err);}) ;
     
         Lecture audio my_media.play() ;
     
@@ -179,8 +179,8 @@ Commence ou reprend la lecture d'un fichier audio.
 
 ### Petit exemple
 
-    Lire les données audio / / function playAudio(url) {/ / lire le fichier audio à url var my_media = new Media (url, / / fonction de rappel réussi () {console.log ("playAudio (): Audio succès") ;
-            }, / / fonction de rappel d'erreur (err) {console.log ("playAudio (): Audio Error:" + err) ;
+    Lire les données audio / / function playAudio(url) {/ / lire le fichier audio à url var my_media = new Media (url, / / fonction de rappel réussi () {mycon.log ("playAudio (): Audio succès") ;
+            }, / / fonction de rappel d'erreur (err) {mycon.log ("playAudio (): Audio Error:" + err) ;
             }
         );
         Lecture audio my_media.play() ;
@@ -263,8 +263,8 @@ Régler le volume du fichier audio.
 
 ### Petit exemple
 
-    Lire les données audio / / function playAudio(url) {/ / lire le fichier audio à my_media var url = nouveaux médias (url, / / réussite rappel function() {console.log ("playAudio (): Audio succès") ;
-            }, / / erreur rappel function(err) {console.log ("playAudio (): Audio Error:" + err) ;
+    Lire les données audio / / function playAudio(url) {/ / lire le fichier audio à my_media var url = nouveaux médias (url, / / réussite rappel function() {mycon.log ("playAudio (): Audio succès") ;
+            }, / / erreur rappel function(err) {mycon.log ("playAudio (): Audio Error:" + err) ;
         });
     
         Lecture audio my_media.play() ;
@@ -294,8 +294,8 @@ Pour démarrer l'enregistrement d'un fichier audio.
 ### Petit exemple
 
     Enregistrer de l'audio / / function recordAudio() {var src = « myrecording.mp3 » ;
-        var mediaRec = new Media (src, / / réussite rappel function() {console.log ("recordAudio (): Audio succès") ;
-            }, / / erreur rappel function(err) {console.log ("recordAudio (): Audio Error:" + err.code) ;
+        var mediaRec = new Media (src, / / réussite rappel function() {mycon.log ("recordAudio (): Audio succès") ;
+            }, / / erreur rappel function(err) {mycon.log ("recordAudio (): Audio Error:" + err.code) ;
             });
     
         MediaRec.startRecord() audio record ;
@@ -337,8 +337,8 @@ Arrête la lecture d'un fichier audio.
 
 ### Petit exemple
 
-    Lire les données audio / / function playAudio(url) {/ / lire le fichier audio à my_media var url = nouveaux médias (url, / / réussite rappel function() {console.log ("playAudio (): Audio succès") ;
-            }, / / erreur rappel function(err) {console.log ("playAudio (): Audio Error:" + err) ;
+    Lire les données audio / / function playAudio(url) {/ / lire le fichier audio à my_media var url = nouveaux médias (url, / / réussite rappel function() {mycon.log ("playAudio (): Audio succès") ;
+            }, / / erreur rappel function(err) {mycon.log ("playAudio (): Audio Error:" + err) ;
             }
         );
     
@@ -366,8 +366,8 @@ Arrête d'enregistrer un fichier audio.
 ### Petit exemple
 
     Enregistrer de l'audio / / function recordAudio() {var src = « myrecording.mp3 » ;
-        var mediaRec = new Media (src, / / réussite rappel function() {console.log ("recordAudio (): Audio succès") ;
-            }, / / erreur rappel function(err) {console.log ("recordAudio (): Audio Error:" + err.code) ;
+        var mediaRec = new Media (src, / / réussite rappel function() {mycon.log ("recordAudio (): Audio succès") ;
+            }, / / erreur rappel function(err) {mycon.log ("recordAudio (): Audio Error:" + err.code) ;
             }
         );
     

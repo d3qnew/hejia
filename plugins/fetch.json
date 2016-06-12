@@ -1,9 +1,8 @@
 {
     "cordova-plugin-dialogs": {
         "source": {
-            "type": "git",
-            "url": "https://git-wip-us.apache.org/repos/asf/cordova-plugin-dialogs.git",
-            "subdir": "."
+            "type": "registry",
+            "id": "cordova-plugin-dialogs@1.2.2-dev"
         },
         "is_top_level": true,
         "variables": {}
@@ -151,15 +150,6 @@
         "is_top_level": true,
         "variables": {}
     },
-    "cordova-plugin-console": {
-        "source": {
-            "type": "git",
-            "url": "https://git-wip-us.apache.org/repos/asf/cordova-plugin-console.git",
-            "subdir": "."
-        },
-        "is_top_level": true,
-        "variables": {}
-    },
     "cordova-plugin-whitelist": {
         "source": {
             "type": "registry",
@@ -168,10 +158,18 @@
         "is_top_level": true,
         "variables": {}
     },
-    "cordova-plugin-email-composer": {
+    "cordova-plugin-email": {
         "source": {
             "type": "registry",
-            "id": "cordova-plugin-email-composer@0.8.3"
+            "id": "cordova-plugin-email"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-console": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-console"
         },
         "is_top_level": true,
         "variables": {}

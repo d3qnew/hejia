@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root>
+    <xilie>m76</xilie>
+    <windows>
+        <w1>
+            <LeiXing>内平开下悬</LeiXing>
+            <DanJia>0</DanJia>
+            <JiaGe>2980</JiaGe>
+        </w1>
+        <w2>
+            <LeiXing>内平开</LeiXing>
+            <DanJia>0</DanJia>
+            <JiaGe>2780</JiaGe>
+        </w2>
+        <w3>
+            <LeiXing>固定</LeiXing>
+            <DanJia>0</DanJia>
+            <JiaGe>2380</JiaGe>
+        </w3>
+        <w4>
+            <LeiXing>立狐固定</LeiXing>
+            <DanJia>0</DanJia>
+            <JiaGe>4180</JiaGe>
+        </w4>
+    </windows>
+    <doors>
+        <d1>
+            <LeiXing>内平开下悬</LeiXing>
+            <DanJia>0</DanJia>
+            <JiaGe>3280</JiaGe>
+        </d1>
+        <d2>
+            <LeiXing>内(外)平开(转轴)</LeiXing>
+            <DanJia>0</DanJia>
+            <JiaGe>3080</JiaGe>
+        </d2>
+        <d3>
+            <LeiXing>外(内)平开(加重合页)</LeiXing>
+            <DanJia>0</DanJia>
+            <JiaGe>3580</JiaGe>
+        </d3>
+        <d4>
+            <LeiXing>推拉下悬门</LeiXing>
+            <DanJia>0</DanJia>
+            <JiaGe>2680</JiaGe>
+        </d4>
+        <d5>
+            <LeiXing>折叠推拉门(宽&lt;5800mm)</LeiXing>
+            <DanJia>0</DanJia>
+            <JiaGe>2780</JiaGe>
+        </d5>
+        <d6>
+            <LeiXing>提升推拉门(宽&lt;5800mm)</LeiXing>
+            <DanJia>0</DanJia>
+            <JiaGe>4480</JiaGe>
+        </d6>
+    </doors>
+    
+</root>

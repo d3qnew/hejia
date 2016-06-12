@@ -26,7 +26,7 @@ El acceso es por un global `navigator.compass` objeto.
 Aunque el objeto está unido al ámbito global `navigator` , no estará disponible hasta después de la `deviceready` evento.
 
     document.addEventListener ("deviceready", onDeviceReady, false);
-    function onDeviceReady() {console.log(navigator.compass)};
+    function onDeviceReady() {mycon.log(navigator.compass)};
     
 
 ## Instalación

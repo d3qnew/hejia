@@ -33,7 +33,7 @@ Sebbene l'oggetto sia in ambito globale, funzionalità fornite da questo plugin 
 
     document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady() {
-        console.log("navigator.geolocation works well");
+        mycon.log("navigator.geolocation works well");
     }
     
 

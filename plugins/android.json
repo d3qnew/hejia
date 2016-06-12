@@ -7,30 +7,6 @@
         "files": {}
     },
     "installed_plugins": {
-        "cordova-plugin-dialogs": {
-            "PACKAGE_NAME": "com.coolappz.hejia"
-        },
-        "cordova-plugin-globalization": {
-            "PACKAGE_NAME": "com.coolappz.hejia"
-        },
-        "cordova-plugin-media": {
-            "PACKAGE_NAME": "com.coolappz.hejia"
-        },
-        "cordova-plugin-file-transfer": {
-            "PACKAGE_NAME": "com.coolappz.hejia"
-        },
-        "cordova-plugin-media-capture": {
-            "PACKAGE_NAME": "com.coolappz.hejia"
-        },
-        "cordova-plugin-device-orientation": {
-            "PACKAGE_NAME": "com.coolappz.hejia"
-        },
-        "cordova-plugin-file": {
-            "PACKAGE_NAME": "com.coolappz.hejia"
-        },
-        "cordova-plugin-device": {
-            "PACKAGE_NAME": "com.coolappz.hejia"
-        },
         "cordova-plugin-battery-status": {
             "PACKAGE_NAME": "com.coolappz.hejia"
         },
@@ -40,13 +16,37 @@
         "cordova-plugin-contacts": {
             "PACKAGE_NAME": "com.coolappz.hejia"
         },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.coolappz.hejia"
+        },
         "cordova-plugin-device-motion": {
+            "PACKAGE_NAME": "com.coolappz.hejia"
+        },
+        "cordova-plugin-device-orientation": {
+            "PACKAGE_NAME": "com.coolappz.hejia"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "com.coolappz.hejia"
+        },
+        "cordova-plugin-email": {
+            "PACKAGE_NAME": "com.coolappz.hejia"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.coolappz.hejia"
+        },
+        "cordova-plugin-file-transfer": {
             "PACKAGE_NAME": "com.coolappz.hejia"
         },
         "cordova-plugin-geolocation": {
             "PACKAGE_NAME": "com.coolappz.hejia"
         },
-        "cordova-plugin-vibration": {
+        "cordova-plugin-globalization": {
+            "PACKAGE_NAME": "com.coolappz.hejia"
+        },
+        "cordova-plugin-media": {
+            "PACKAGE_NAME": "com.coolappz.hejia"
+        },
+        "cordova-plugin-media-capture": {
             "PACKAGE_NAME": "com.coolappz.hejia"
         },
         "cordova-plugin-network-information": {
@@ -55,13 +55,13 @@
         "cordova-plugin-splashscreen": {
             "PACKAGE_NAME": "com.coolappz.hejia"
         },
-        "cordova-plugin-console": {
+        "cordova-plugin-vibration": {
             "PACKAGE_NAME": "com.coolappz.hejia"
         },
         "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.coolappz.hejia"
         },
-        "cordova-plugin-email-composer": {
+        "cordova-plugin-console": {
             "PACKAGE_NAME": "com.coolappz.hejia"
         }
     },

@@ -12,7 +12,7 @@
  *  limitations under the License.
  */
 
-#include "console.h"
+#include "mycon.h"
 
 #include <iostream>
 

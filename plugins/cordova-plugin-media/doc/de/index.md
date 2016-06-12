@@ -29,7 +29,7 @@ Obwohl im globalen Gültigkeitsbereich, steht es nicht bis nach dem `deviceready
 
     document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady() {
-        console.log(Media);
+        mycon.log(Media);
     }
     
 
@@ -136,12 +136,12 @@ Gibt die aktuelle Position in einer Audiodatei. Außerdem aktualisiert `das Medi
             // success callback
             function (position) {
                 if (position > -1) {
-                    console.log((position) + " sec");
+                    mycon.log((position) + " sec");
                 }
             },
             // error callback
             function (e) {
-                console.log("Error getting pos=" + e);
+                mycon.log("Error getting pos=" + e);
             }
         );
     }, 1000);
@@ -190,9 +190,9 @@ Pausen Abspielen einer Audiodatei.
         // Play the audio file at url
         var my_media = new Media(url,
             // success callback
-            function () { console.log("playAudio():Audio Success"); },
+            function () { mycon.log("playAudio():Audio Success"); },
             // error callback
-            function (err) { console.log("playAudio():Audio Error: " + err); }
+            function (err) { mycon.log("playAudio():Audio Error: " + err); }
         );
     
         // Play audio
@@ -221,11 +221,11 @@ Startet oder setzt fort, Abspielen einer Audiodatei.
         var my_media = new Media(url,
             // success callback
             function () {
-                console.log("playAudio():Audio Success");
+                mycon.log("playAudio():Audio Success");
             },
             // error callback
             function (err) {
-                console.log("playAudio():Audio Error: " + err);
+                mycon.log("playAudio():Audio Error: " + err);
             }
         );
         // Play audio
@@ -323,11 +323,11 @@ Stellen Sie die Lautstärke für eine audio-Datei.
         var my_media = new Media(url,
             // success callback
             function() {
-                console.log("playAudio():Audio Success");
+                mycon.log("playAudio():Audio Success");
             },
             // error callback
             function(err) {
-                console.log("playAudio():Audio Error: "+err);
+                mycon.log("playAudio():Audio Error: "+err);
         });
     
         // Play audio
@@ -368,12 +368,12 @@ Beginnt mit der Aufnahme einer audio-Datei.
         var mediaRec = new Media(src,
             // success callback
             function() {
-                console.log("recordAudio():Audio Success");
+                mycon.log("recordAudio():Audio Success");
             },
     
             // error callback
             function(err) {
-                console.log("recordAudio():Audio Error: "+ err.code);
+                mycon.log("recordAudio():Audio Error: "+ err.code);
             });
     
         // Record audio
@@ -423,11 +423,11 @@ Beendet die Wiedergabe einer Audiodatei.
         var my_media = new Media(url,
             // success callback
             function() {
-                console.log("playAudio():Audio Success");
+                mycon.log("playAudio():Audio Success");
             },
             // error callback
             function(err) {
-                console.log("playAudio():Audio Error: "+err);
+                mycon.log("playAudio():Audio Error: "+err);
             }
         );
     
@@ -464,12 +464,12 @@ Stoppt die Aufnahme einer audio-Datei.
         var mediaRec = new Media(src,
             // success callback
             function() {
-                console.log("recordAudio():Audio Success");
+                mycon.log("recordAudio():Audio Success");
             },
     
             // error callback
             function(err) {
-                console.log("recordAudio():Audio Error: "+ err.code);
+                mycon.log("recordAudio():Audio Error: "+ err.code);
             }
         );
     

@@ -39,7 +39,7 @@ FileWriter 仕様も実装しています: <http://dev.w3.org/2009/dap/file-syst
 
     document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady() {
-        console.log(cordova.file);
+        mycon.log(cordova.file);
     }
     
 
@@ -231,7 +231,7 @@ IOS デバイスに永続的なファイルを格納する 2 つの有効な場�
   * デバイスの準備ができているイベント後クローム ファイルシステムはすぐに準備ができています。回避策としては `filePluginIsReady` イベントにサブスクライブできます。例: 
 
 ```javascript
-window.addEventListener('filePluginIsReady', function(){ console.log('File plugin is ready');}, false);
+window.addEventListener('filePluginIsReady', function(){ mycon.log('File plugin is ready');}, false);
 ```
 
 `window.isFilePluginReadyRaised` 関数を使用して、イベントが既に発生したかどうかを確認できます。 -Chrome に window.requestFileSystem 一時と永続的なファイル ・ システムのクォータの制限はありません。 -クロム内の永続ストレージを増加する `window.initPersistentFileSystem` メソッドを呼び出す必要があります。 永続的な記憶域のクォータは、既定では 5 MB です。 クロムが必要です `--許可-ファイル-アクセス--ファイルから` `file:///` プロトコル経由でサポート API に引数を実行します。 -`ファイル` オブジェクト フラグを使用する場合ない変更されます `{create:true}` 既存の `エントリ` を取得するとき。 -イベント `cancelable` プロパティを設定するクロムの場合は true。 これは [仕様](http://dev.w3.org/2009/dap/file-system/file-writer.html) に反して。 -クロムメッキで `網` 関数を返します `ファイルシステム：`-アプリケーションのホストによってパスのプレフィックスします。 たとえば、`filesystem:file:///persistent/somefile.txt`、`filesystem:http://localhost:8080/persistent/somefile.txt`。 -`toURL` の関数の結果にはディレクトリ エントリ場合末尾にスラッシュが含まれていません。 クロムは、スラッシュ後塵 url を持つディレクトリが正しく解決されるも。 -`resolveLocalFileSystemURL` メソッドは、受信 `url` が `ファイルシステム` のプレフィックスが必要です。 たとえば、`resolveLocalFileSystemURL` の `url` パラメーター フォーム `filesystem:file:///persistent/somefile.txt` で人造人間フォーム `file:///persistent/somefile.txt` とは対照的にする必要があります。 -廃止された `toNativeURL` 関数はサポートされていません、スタブはありません。 -`setMetadata` 関数は、仕様に記載されていないありサポートされていません。 -INVALID_MODIFICATION_ERR （コード: 9) の代わりにスローされた SYNTAX_ERR(code: 8) の非実在しないファイルシステムの依頼を。 -INVALID_MODIFICATION_ERR （コード: 9) の代わりにスローされた PATH_EXISTS_ERR(code: 12)、排他的なファイルまたはディレクトリを作成しようとするが既に存在します。 -INVALID_MODIFICATION_ERR （コード: 9) の代わりにスローされた NO_MODIFICATION_ALLOWED_ERR(code: 6) ルート ・ ファイル ・ システムで removeRecursively を呼び出すをしようとして。 -INVALID_MODIFICATION_ERR （コード: 9) の代わりにスローされた NOT_FOUND_ERR(code: 1) [moveto] ディレクトリが存在しないをしようとして。

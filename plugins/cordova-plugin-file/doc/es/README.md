@@ -39,7 +39,7 @@ Aunque en el ámbito global, no estará disponible hasta después de la `devicer
 
     document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady() {
-        console.log(cordova.file);
+        mycon.log(cordova.file);
     }
     
 
@@ -231,7 +231,7 @@ Se admiten las siguientes rutas de datos: * `applicationDirectory` -usa `xhr` pa
   * Filesystem de Chrome no es inmediatamente después de evento ready dispositivo. Como solución temporal puede suscribirse al evento `filePluginIsReady`. Ejemplo: 
 
 ```javascript
-window.addEventListener('filePluginIsReady', function(){ console.log('File plugin is ready');}, false);
+window.addEventListener('filePluginIsReady', function(){ mycon.log('File plugin is ready');}, false);
 ```
 
 Puede utilizar la función `window.isFilePluginReadyRaised` para verificar si ya se provoca el evento. -window.requestFileSystem temporal y persistente filesystem cuotas no están limitadas en cromo. -Para aumentar el almacenamiento persistente en cromo necesitas llamar el método `window.initPersistentFileSystem`. Cuota de almacenamiento persistente es de 5 MB por defecto. -Chrome requiere `--permitir-archivo-acceso-de-archivos` ejecutar argumento al soporte API mediante protocolo `file:///`. -`Archivo` objeto no cambiará si utilizas bandera `{create:true}` cuando una `entrada` de existente. -eventos `cancelable` propiedad está establecida en true en cromo. Esto es contrario a la [Especificación](http://dev.w3.org/2009/dap/file-system/file-writer.html). -función de `toURL` en Chrome devuelve `filesystem:`-prefijo camino dependiendo de host de la aplicación. Por ejemplo, `filesystem:file:///persistent/somefile.txt`, `filesystem:http://localhost:8080/persistent/somefile.txt`. -resultado de la función de `toURL` no contiene barra en caso de entrada en el directorio. Cromo resuelve directorios con urls slash-siguió correctamente sin embargo. -método `resolveLocalFileSystemURL` requiere la entrantes `url` que tienen prefijo `filesystem`. Por ejemplo, el parámetro de `url` para `resolveLocalFileSystemURL` debería estar en la forma `filesystem:file:///persistent/somefile.txt` en comparación con la forma `file:///persistent/somefile.txt` en Android. -Obsoleto `toNativeURL` función no es compatible y no tiene un trozo. -función de `setMetadata` no es indicada en las especificaciones y no admite. -INVALID_MODIFICATION_ERR (código: 9) se lanza en lugar de SYNTAX_ERR(code: 8) a petición de un sistema de ficheros inexistentes. -INVALID_MODIFICATION_ERR (código: 9) se lanza en vez de PATH_EXISTS_ERR(code: 12) en intentar exclusivamente crear un archivo o directorio, que ya existe. -INVALID_MODIFICATION_ERR (código: 9) se lanza en lugar de NO_MODIFICATION_ALLOWED_ERR(code: 6) para tratar de llamar a removeRecursively en el sistema de archivos raíz. -INVALID_MODIFICATION_ERR (código: 9) se lanza en vez de NOT_FOUND_ERR(code: 1) en tratar de moveTo directorio que no existe.

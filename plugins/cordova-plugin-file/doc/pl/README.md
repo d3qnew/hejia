@@ -39,7 +39,7 @@ Chociaż w globalnym zasięgu, to nie dostępne dopiero po `deviceready` imprezi
 
     document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady() {
-        console.log(cordova.file);
+        mycon.log(cordova.file);
     }
     
 
@@ -231,7 +231,7 @@ Obsługiwane są następujące ścieżki danych: * `applicationDirectory` - uży
   * Chrom plików nie jest od razu gotowy po gotowe urządzenia. Jako rozwiązanie alternatywne można subskrybować zdarzenia `filePluginIsReady`. Przykład: 
 
 ```javascript
-window.addEventListener('filePluginIsReady', function(){ console.log('File plugin is ready');}, false);
+window.addEventListener('filePluginIsReady', function(){ mycon.log('File plugin is ready');}, false);
 ```
 
 Funkcja `window.isFilePluginReadyRaised` służy do sprawdzenia, czy zdarzenie już została podniesiona. -kwoty plików tymczasowych i trwałe window.requestFileSystem nie są ograniczone w Chrome. -W celu zwiększenia trwałego magazynu w Chrome, należy wywołać metodę `window.initPersistentFileSystem`. Domyślnie trwałe dyskowa jest 5 MB. -Chrome wymaga `--pozwalają--dostęp z plików` uruchomić argument na poparcie API za pośrednictwem protokołu `file:///`. -`Plik` obiekt będzie nie zmieniło jeśli flaga `{create:true}` gdy już istniejący `wpis`. -wydarzenia `zwrotu` właściwość jest zestaw true w Chrome. Jest to sprzeczne ze [specyfikacji](http://dev.w3.org/2009/dap/file-system/file-writer.html). -Funkcja `toURL` w Chrome zwraca `plików:`-poprzedzona ścieżką w zależności od aplikacji hosta. Na przykład, `filesystem:file:///persistent/somefile.txt`, `filesystem:http://localhost:8080/persistent/somefile.txt`. -wynik funkcji `toURL` nie zawierają ukośnika w wpis w katalogu. Chrom usuwa katalogi z ciąć doczepiane adresów URL poprawnie choć. -Metoda `resolveLocalFileSystemURL` wymaga przychodzących `url` mają prefiks `plików`. Na przykład parametr `adresu url` do `resolveLocalFileSystemURL` powinny być w formie `filesystem:file:///persistent/somefile.txt`, w przeciwieństwie do formularza `file:///persistent/somefile.txt` w Android. -Przestarzałe `toNativeURL` funkcja nie jest obsługiwana i nie tylko. -Funkcja `setMetadata` jest nie podane w specyfikacji i nie jest obsługiwane. -INVALID_MODIFICATION_ERR (kod: 9) jest generowany zamiast SYNTAX_ERR(code: 8) na żądanie nieistniejącą plików. -INVALID_MODIFICATION_ERR (kod: 9) jest generowany zamiast PATH_EXISTS_ERR(code: 12) próbuje stworzyć wyłącznie pliku lub katalogu, który już istnieje. -INVALID_MODIFICATION_ERR (kod: 9) jest generowany zamiast NO_MODIFICATION_ALLOWED_ERR(code: 6) na próby wywołania removeRecursively w głównym systemie plików. -INVALID_MODIFICATION_ERR (kod: 9) jest generowany zamiast NOT_FOUND_ERR(code: 1) na trudny do katalogu moveTo, który nie istnieje.

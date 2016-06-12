@@ -33,7 +33,7 @@
 ### 1.0.1 (Jun 17, 2015)
 * [CB-9128](https://issues.apache.org/jira/browse/CB-9128) cordova-plugin-device-orientation documentation translation: cordova-plugin-device-orientation
 * fix npm md issue
-* Remove console log message from test
+* Remove mycon log message from test
 
 ### 1.0.0 (Apr 15, 2015)
 * [CB-8746](https://issues.apache.org/jira/browse/CB-8746) gave plugin major version bump

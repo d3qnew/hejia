@@ -26,7 +26,7 @@ Accès se fait par un global `navigator.accelerometer` objet.
 Bien que l'objet est attaché à la portée globale `navigator` , il n'est pas disponible jusqu'après la `deviceready` événement.
 
     document.addEventListener (« deviceready », onDeviceReady, false) ;
-    function onDeviceReady() {console.log(navigator.accelerometer);}
+    function onDeviceReady() {mycon.log(navigator.accelerometer);}
     
 
 ## Installation

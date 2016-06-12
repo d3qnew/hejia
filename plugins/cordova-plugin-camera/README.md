@@ -32,7 +32,7 @@ Although the object is attached to the global scoped `navigator`, it is not avai
 
     document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady() {
-        console.log(navigator.camera);
+        mycon.log(navigator.camera);
     }
 
 
@@ -183,7 +183,7 @@ __Supported Platforms__
 navigator.camera.cleanup(onSuccess, onFail);
 
 function onSuccess() {
-    console.log("Camera cleanup success.")
+    mycon.log("Camera cleanup success.")
 }
 
 function onFail(message) {
@@ -587,7 +587,7 @@ function openCamera(selection) {
         func(imageUri);
 
     }, function cameraError(error) {
-        console.debug("Unable to obtain picture: " + error, "app");
+        mycon.debug("Unable to obtain picture: " + error, "app");
 
     }, options);
 }
@@ -630,7 +630,7 @@ function openCamera(selection) {
         // Do something
 
     }, function cameraError(error) {
-        console.debug("Unable to obtain picture: " + error, "app");
+        mycon.debug("Unable to obtain picture: " + error, "app");
 
     }, options);
 }
@@ -652,7 +652,7 @@ function openFilePicker(selection) {
         // Do something
 
     }, function cameraError(error) {
-        console.debug("Unable to obtain picture: " + error, "app");
+        mycon.debug("Unable to obtain picture: " + error, "app");
 
     }, options);
 }
@@ -681,7 +681,7 @@ function openFilePicker(selection) {
         // Do something with image
 
     }, function cameraError(error) {
-        console.debug("Unable to obtain picture: " + error, "app");
+        mycon.debug("Unable to obtain picture: " + error, "app");
 
     }, options);
 }
@@ -701,7 +701,7 @@ function getFileEntry(imgUri) {
 
         // Do something with the FileEntry object, like write to it, upload it, etc.
         // writeFile(fileEntry, imgUri);
-        console.log("got file: " + fileEntry.fullPath);
+        mycon.log("got file: " + fileEntry.fullPath);
         // displayFileData(fileEntry.nativeURL, "Native URL");
 
     }, function () {
@@ -727,7 +727,7 @@ function createNewFileEntry(imgUri) {
 
             // Do something with it, like write to it, upload it, etc.
             // writeFile(fileEntry, imgUri);
-            console.log("got file: " + fileEntry.fullPath);
+            mycon.log("got file: " + fileEntry.fullPath);
             // displayFileData(fileEntry.fullPath, "File copied to");
 
         }, onErrorCreateFile);

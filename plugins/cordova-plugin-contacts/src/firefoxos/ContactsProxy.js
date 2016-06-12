@@ -348,7 +348,7 @@ function remove(successCB, errorCB, ids) {
     for (i = 0; i < ids.length; i++){
         // throw an error if no id provided
         if (!_hasId(ids[i])) {
-            console.error('FFOS: Attempt to remove unsaved contact');
+            mycon.error('FFOS: Attempt to remove unsaved contact');
             errorCB(0);
             return;
         }
@@ -357,7 +357,7 @@ function remove(successCB, errorCB, ids) {
             filterBy: ['id'], filterValue: ids[i], filterOp: 'equals'});
         search.onsuccess = function() {
             if (search.result.length === 0) {
-                console.error('FFOS: Attempt to remove a non existing contact');
+                mycon.error('FFOS: Attempt to remove a non existing contact');
                 errorCB(0);
                 return;
             }
@@ -430,13 +430,13 @@ function search(successCB, errorCB, params) {
         if (searchField === 'displayName' && 'init' in new mozContact()) {
             // ``init`` in ``mozContact`` indicates FFOS version 1.2 or below
             // Searching by name (in moz) is then forbidden
-            console.log('FFOS ContactProxy: Unable to search by displayName on FFOS 1.2');
+            mycon.log('FFOS ContactProxy: Unable to search by displayName on FFOS 1.2');
             continue;
         } 
         if (mozField) {
             filterBy.push(mozField);
         } else {
-            console.log('FXOS ContactProxy: inallowed field passed to search filtered out: ' + searchField);
+            mycon.log('FXOS ContactProxy: inallowed field passed to search filtered out: ' + searchField);
         }
     }
 

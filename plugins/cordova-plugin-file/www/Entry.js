@@ -208,7 +208,7 @@ Entry.prototype.toURL = function() {
  * and CB-6300.
  */
 Entry.prototype.toNativeURL = function() {
-    console.log("DEPRECATED: Update your code to use 'toURL'");
+    mycon.log("DEPRECATED: Update your code to use 'toURL'");
     return this.toURL();
 };
 
@@ -219,7 +219,7 @@ Entry.prototype.toNativeURL = function() {
  * @return uri
  */
 Entry.prototype.toURI = function(mimeType) {
-    console.log("DEPRECATED: Update your code to use 'toURL'");
+    mycon.log("DEPRECATED: Update your code to use 'toURL'");
     return this.toURL();
 };
 

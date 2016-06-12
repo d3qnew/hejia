@@ -27,7 +27,7 @@ Anche se in ambito globale, non sono disponibili fino a dopo l'evento `devicerea
 
     document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady() {
-        console.log(FileTransfer);
+        mycon.log(FileTransfer);
     }
     
 
@@ -98,15 +98,15 @@ L'oggetto `FileTransfer` fornisce un modo per caricare i file utilizzando una ri
     //    for example, cdvfile://localhost/persistent/path/to/file.txt
     
     var win = function (r) {
-        console.log("Code = " + r.responseCode);
-        console.log("Response = " + r.response);
-        console.log("Sent = " + r.bytesSent);
+        mycon.log("Code = " + r.responseCode);
+        mycon.log("Response = " + r.response);
+        mycon.log("Sent = " + r.bytesSent);
     }
     
     var fail = function (error) {
         alert("An error has occurred: Code = " + error.code);
-        console.log("upload error source " + error.source);
-        console.log("upload error target " + error.target);
+        mycon.log("upload error source " + error.source);
+        mycon.log("upload error target " + error.target);
     }
     
     var options = new FileUploadOptions();
@@ -127,15 +127,15 @@ L'oggetto `FileTransfer` fornisce un modo per caricare i file utilizzando una ri
 ### Esempio con intestazioni di caricare ed eventi Progress (Android e iOS solo)
 
     function win(r) {
-        console.log("Code = " + r.responseCode);
-        console.log("Response = " + r.response);
-        console.log("Sent = " + r.bytesSent);
+        mycon.log("Code = " + r.responseCode);
+        mycon.log("Response = " + r.response);
+        mycon.log("Sent = " + r.bytesSent);
     }
     
     function fail(error) {
         alert("An error has occurred: Code = " + error.code);
-        console.log("upload error source " + error.source);
-        console.log("upload error target " + error.target);
+        mycon.log("upload error source " + error.source);
+        mycon.log("upload error target " + error.target);
     }
     
     var uri = encodeURI("http://some.server.com/upload.php");
@@ -208,12 +208,12 @@ Un oggetto `FileUploadResult` viene passato al metodo di callback del metodo `up
         uri,
         fileURL,
         function(entry) {
-            console.log("download complete: " + entry.toURL());
+            mycon.log("download complete: " + entry.toURL());
         },
         function(error) {
-            console.log("download error source " + error.source);
-            console.log("download error target " + error.target);
-            console.log("upload error code" + error.code);
+            mycon.log("download error source " + error.source);
+            mycon.log("download error target " + error.target);
+            mycon.log("upload error code" + error.code);
         },
         false,
         {
@@ -234,14 +234,14 @@ Interrompe un trasferimento in corso. Il callback onerror viene passato un ogget
     //    for example, cdvfile://localhost/persistent/path/to/file.txt
     
     var win = function(r) {
-        console.log("Should not be called.");
+        mycon.log("Should not be called.");
     }
     
     var fail = function(error) {
         // error.code == FileTransferError.ABORT_ERR
         alert("An error has occurred: Code = " + error.code);
-        console.log("upload error source " + error.source);
-        console.log("upload error target " + error.target);
+        mycon.log("upload error source " + error.source);
+        mycon.log("upload error target " + error.target);
     }
     
     var options = new FileUploadOptions();

@@ -33,7 +33,7 @@ Obwohl das Objekt im globalen Gültigkeitsbereich ist, stehen Features von diese
 
     document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady() {
-        console.log("navigator.geolocation works well");
+        mycon.log("navigator.geolocation works well");
     }
     
 

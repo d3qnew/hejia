@@ -17,25 +17,25 @@
     under the License.
 -->
 
-# cordova-plugin-console
+# cordova-plugin-mycon
 
-このプラグインは、その console.log() がすることができます便利なことを確認するものです。 それは、iOS、Ubuntu、Windows Phone 8 および Windows 8 の追加関数を追加します。 場合はあなたのための console.log() の作品に満足しているし、おそらく必要はありませんこのプラグイン。
+このプラグインは、その mycon.log() がすることができます便利なことを確認するものです。 それは、iOS、Ubuntu、Windows Phone 8 および Windows 8 の追加関数を追加します。 場合はあなたのための mycon.log() の作品に満足しているし、おそらく必要はありませんこのプラグイン。
 
-このプラグインでは、グローバル ・ `console` オブジェクトを定義します。
+このプラグインでは、グローバル ・ `mycon` オブジェクトを定義します。
 
 オブジェクトは、グローバル スコープでですが、このプラグインによって提供される機能は、`deviceready` イベントの後まで使用できません。
 
     document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady() {
-        console.log("console.log works well");
+        mycon.log("mycon.log works well");
     }
     
 
 ## インストール
 
-    cordova plugin add cordova-plugin-console
+    cordova plugin add cordova-plugin-mycon
     
 
 ### Android の癖
 
-アンドロイド以外のいくつかのプラットフォームで console.log() は console.log (「1」、「2」、「3」) など、複数の引数に動作します。 しかし、アンドロイドは、最初の引数でのみ動作します。 console.log() に後続の引数は無視されます。 このプラグインが原因ではない、それは Android の自体の制限です。
+アンドロイド以外のいくつかのプラットフォームで mycon.log() は mycon.log (「1」、「2」、「3」) など、複数の引数に動作します。 しかし、アンドロイドは、最初の引数でのみ動作します。 mycon.log() に後続の引数は無視されます。 このプラグインが原因ではない、それは Android の自体の制限です。

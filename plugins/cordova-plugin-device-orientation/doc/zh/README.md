@@ -29,7 +29,7 @@
 
     document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady() {
-        console.log(navigator.compass);
+        mycon.log(navigator.compass);
     }
     
 

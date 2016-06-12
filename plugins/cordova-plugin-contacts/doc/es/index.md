@@ -24,7 +24,7 @@ Este plugin define un global `navigator.contacts` objeto que proporciona acceso 
 Aunque el objeto está unido al ámbito global `navigator` , no estará disponible hasta después de la `deviceready` evento.
 
     document.addEventListener ("deviceready", onDeviceReady, false);
-    function onDeviceReady() {console.log(navigator.contacts)};
+    function onDeviceReady() {mycon.log(navigator.contacts)};
     
 
 **ADVERTENCIA**: recopilación y uso de datos plantea cuestiones de privacidad importante. Política de privacidad de su aplicación debe discutir cómo la aplicación utiliza datos de contacto y si es compartida con terceros. Información de contacto se considera sensible porque revela la gente con quien se comunica una persona. Por lo tanto, además de política de privacidad de la app, fuertemente considere dar un aviso de just-in-time antes de la aplicación accede a ellos o utiliza los datos de contacto, si el sistema operativo del dispositivo no hacerlo ya. Que el aviso debe proporcionar la misma información mencionada, además de obtener un permiso del usuario (por ejemplo, presentando opciones para **Aceptar** y **No gracias**). Tenga en cuenta que algunos mercados de aplicación podrán exigir la aplicación para proporcionar un aviso de just-in-time y obtener el permiso del usuario antes de acceder a datos de contacto. Una experiencia de usuario clara y fácil de entender que rodean el uso de contacto datos ayuda a evitar la confusión del usuario y percibe uso indebido de los datos de contacto. Para obtener más información, por favor consulte a la guía de privacidad.
@@ -164,8 +164,8 @@ El `navigator.contacts.pickContact` método lanza el selector para seleccionar u
 
 ### Ejemplo
 
-    navigator.contacts.pickContact(function(contact) {console.log (' se ha seleccionado el siguiente contacto: "+ JSON.stringify(contact));
-        }, function(err) {console.log ('Error: ' + err);
+    navigator.contacts.pickContact(function(contact) {mycon.log (' se ha seleccionado el siguiente contacto: "+ JSON.stringify(contact));
+        }, function(err) {mycon.log ('Error: ' + err);
         });
     
 

@@ -97,7 +97,7 @@ exports.defineManualTests = function (contentEl, createActionButton) {
     var camSaveToPhotoAlbumDefault = ['saveToPhotoAlbum', true];
 
     function log(value) {
-        console.log(value);
+        mycon.log(value);
         document.getElementById('camera_status').textContent += (new Date() - pageStartTime) / 1000 + ': ' + value + '\n';
     }
 
@@ -175,7 +175,7 @@ exports.defineManualTests = function (contentEl, createActionButton) {
         options.fileName = 'test.jpg';
         options.mimeType = "image/jpeg";
         ft.onprogress = function (progressEvent) {
-            console.log('progress: ' + progressEvent.loaded + ' of ' + progressEvent.total);
+            mycon.log('progress: ' + progressEvent.loaded + ' of ' + progressEvent.total);
         };
         var server = "http://cordova-filetransfer.jitsu.com";
 
@@ -253,17 +253,17 @@ exports.defineManualTests = function (contentEl, createActionButton) {
             //rename moved file back to original name so other tests can reference image
             resolveLocalFileSystemURI(destDirEntry.nativeURL+'moved_file.png', function(fileEntry) {
                 fileEntry.moveTo(destDirEntry, origName, logCallback('FileEntry.moveTo', true), logCallback('FileEntry.moveTo', false));
-                console.log('Cleanup: successfully renamed file back to original name');
+                mycon.log('Cleanup: successfully renamed file back to original name');
             }, function () {
-                console.log('Cleanup: failed to rename file back to original name');
+                mycon.log('Cleanup: failed to rename file back to original name');
             });
 
             //remove copied file
             resolveLocalFileSystemURI(destDirEntry.nativeURL+'copied_file.png', function(fileEntry) {
                 fileEntry.remove(logCallback('FileEntry.remove', true), logCallback('FileEntry.remove', false));
-                console.log('Cleanup: successfully removed copied file');
+                mycon.log('Cleanup: successfully removed copied file');
             }, function () {
-                console.log('Cleanup: failed to remove copied file');
+                mycon.log('Cleanup: failed to remove copied file');
             });
         };
 

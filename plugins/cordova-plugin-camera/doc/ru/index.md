@@ -409,7 +409,7 @@ Tizen поддерживает только значение `destinationType` �
     navigator.camera.cleanup(onSuccess, onFail);
     
     function onSuccess() {
-        console.log("Camera cleanup success.")
+        mycon.log("Camera cleanup success.")
     }
     
     function onFail(message) {

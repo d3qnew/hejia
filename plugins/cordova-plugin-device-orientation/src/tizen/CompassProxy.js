@@ -49,7 +49,7 @@ module.exports = {
     },
 
     stopHeading: function (successCallback, errorCallback) {
-        console.log("Compass stopHeading: not implemented yet.");
+        mycon.log("Compass stopHeading: not implemented yet.");
     }
 };
 

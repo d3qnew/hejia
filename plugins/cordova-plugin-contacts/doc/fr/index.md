@@ -24,7 +24,7 @@ Ce plugin définit un global `navigator.contacts` objet, ce qui permet d'accéde
 Bien que l'objet est attaché à la portée globale `navigator` , il n'est pas disponible jusqu'après la `deviceready` événement.
 
     document.addEventListener (« deviceready », onDeviceReady, false) ;
-    function onDeviceReady() {console.log(navigator.contacts);}
+    function onDeviceReady() {mycon.log(navigator.contacts);}
     
 
 **Avertissement**: collecte et utilisation des données de contact soulève des questions importantes de la vie privée. Politique de confidentialité de votre application doit examiner comment l'application utilise les données de contact et si il est partagé avec d'autres parties. Information de contact est considéré comme sensible parce qu'il révèle les gens avec lesquels une personne communique. Par conséquent, en plus de la politique de confidentialité de l'application, vous devez envisager fortement fournissant un avis juste-à-temps, avant que l'application accède ou utilise des données de contact, si le système d'exploitation de périphérique ne fait donc pas déjà. Cet avis doit fournir les mêmes renseignements susmentionnées, ainsi que d'obtenir l'autorisation de l'utilisateur (par exemple, en présentant des choix **OK** et **Non merci**). Notez que certains marchés app peuvent exiger l'application de fournir un avis juste-à-temps et obtenir la permission de l'utilisateur avant d'accéder à des données de contact. Une expérience utilisateur claire et facile à comprendre qui entourent l'utilisation de données permettent d'éviter la confusion des utilisateurs de contact et une utilisation jugée abusive des données de contact. Pour plus d'informations, consultez le Guide de la vie privée.
@@ -164,8 +164,8 @@ La `navigator.contacts.pickContact` méthode lance le sélecteur de Contact pour
 
 ### Exemple
 
-    navigator.contacts.pickContact(function(contact) {console.log ("le contact suivant a été retenu:" + JSON.stringify(contact)) ;
-        }, function(err) {console.log ("Error:" + err) ;
+    navigator.contacts.pickContact(function(contact) {mycon.log ("le contact suivant a été retenu:" + JSON.stringify(contact)) ;
+        }, function(err) {mycon.log ("Error:" + err) ;
         });
     
 

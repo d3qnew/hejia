@@ -25,7 +25,7 @@ Ce plugin définit un global `device` objet qui décrit le matériel et les logi
 
     document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady() {
-        console.log(device.cordova);
+        mycon.log(device.cordova);
     }
     
 

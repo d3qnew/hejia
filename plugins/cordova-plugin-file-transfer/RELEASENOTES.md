@@ -86,7 +86,7 @@
 * [wp8] Relaxed engine version requirement, using reflection to see if methods are available
 * Check for the existence of Json.net assembly to determin how we deserialize our headers.
 * relax engine requirement to allow -dev versions
-* Remove verbose console log messages
+* Remove verbose mycon log messages
 * fix bad commit (mine) for cordova-wp8@4.0.0 engine req
 * bump required cordova-wp8 version to 4.0.0
 * This closes #80, This closes #12

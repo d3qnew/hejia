@@ -5,11 +5,25 @@
  */
 
 
-function alertObj(obj){
-	var output = "";
-	for(var i in obj){  
-		var property=obj[i];  
-		output+=i+" = "+property+"\n"; 
-	}  
-	alert(output);
+function alertObj(obj) {
+    var output = "";
+    
+
+    function xunhuan(obj) {
+        
+        for (var i in obj) {
+
+            if (typeof (obj[i]) == 'object') {
+                 xunhuan(obj); 
+                
+            } else {                
+                output += i + " = " + obj[i] + "\n";
+            }
+            
+        }
+    }
+	
+    xunhuan(obj);
+	 
+	navigator.notification.alert(output);
 }

@@ -1,13 +1,11 @@
 var tempxml = '<?xml version="1.0" encoding="utf-8" standalone="no"?><dingdan>dingdan2</dingdan>';
 //console.log(tempxml);
 
-var fuc = function(){
-    
-}
+
 
 
 $("#t_cdir").click(function () {
-    console.log(app.dir.PERSISTENT);
+    console.log(app.writetype);
 });
 
 $("#t_getdir").click(function () {

@@ -27,7 +27,7 @@
 
     document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady() {
-        console.log(navigator.accelerometer);
+        mycon.log(navigator.accelerometer);
     }
     
 

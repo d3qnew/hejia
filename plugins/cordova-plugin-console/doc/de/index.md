@@ -17,25 +17,25 @@
     under the License.
 -->
 
-# cordova-plugin-console
+# cordova-plugin-mycon
 
-Dieses Plugin stellt sicher, dass der Befehl console.log() so hilfreich ist, wie er sein kann. Es fügt zusätzliche Funktion für iOS, Ubuntu, Windows Phone 8 und Windows 8 hinzu. Teilweise kann es vorkommen, dass der Befehl console.log() nicht korrekt erkannt wird, und es zu Fehlern bzw. zu nicht angezeigten Logs in der Console kommt. Wenn Sie mit der derzeitigen Funktionsweise zufrieden sind, kann es sein, dass Sie dieses Plugin nicht benötigen.
+Dieses Plugin stellt sicher, dass der Befehl mycon.log() so hilfreich ist, wie er sein kann. Es fügt zusätzliche Funktion für iOS, Ubuntu, Windows Phone 8 und Windows 8 hinzu. Teilweise kann es vorkommen, dass der Befehl mycon.log() nicht korrekt erkannt wird, und es zu Fehlern bzw. zu nicht angezeigten Logs in der Console kommt. Wenn Sie mit der derzeitigen Funktionsweise zufrieden sind, kann es sein, dass Sie dieses Plugin nicht benötigen.
 
-Dieses Plugin wird ein global-`console`-Objekt definiert.
+Dieses Plugin wird ein global-`mycon`-Objekt definiert.
 
 Obwohl das Objekt im globalen Gültigkeitsbereich ist, stehen Features von diesem Plugin nicht bis nach dem `deviceready`-Ereignis.
 
     document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady() {
-        console.log("console.log works well");
+        mycon.log("mycon.log works well");
     }
     
 
 ## Installation
 
-    cordova plugin add cordova-plugin-console
+    cordova plugin add cordova-plugin-mycon
     
 
 ### Android Eigenarten
 
-Auf einigen Plattformen als Android fungieren console.log() auf mehrere Argumente wie console.log ("1", "2", "3"). Android wird jedoch nur auf das erste Argument fungieren. Nachfolgende Argumente zu console.log() werden ignoriert. Dieses Plugin ist nicht die Verantwortung dafür, es ist eine Einschränkung von Android selbst.
+Auf einigen Plattformen als Android fungieren mycon.log() auf mehrere Argumente wie mycon.log ("1", "2", "3"). Android wird jedoch nur auf das erste Argument fungieren. Nachfolgende Argumente zu mycon.log() werden ignoriert. Dieses Plugin ist nicht die Verantwortung dafür, es ist eine Einschränkung von Android selbst.

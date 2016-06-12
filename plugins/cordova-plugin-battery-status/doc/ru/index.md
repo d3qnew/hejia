@@ -66,7 +66,7 @@ Windows Phone 7 не обеспечивает API, чтобы определит
     
     function onBatteryStatus(info) {
         // Handle the online event
-        console.log("Level: " + info.level + " isPlugged: " + info.isPlugged);
+        mycon.log("Level: " + info.level + " isPlugged: " + info.isPlugged);
     }
     
 

@@ -25,7 +25,7 @@
  */
 var CameraPopoverHandle = function() {
     this.setPosition = function(popoverOptions) {
-        console.log('CameraPopoverHandle.setPosition is only supported on iOS.');
+        mycon.log('CameraPopoverHandle.setPosition is only supported on iOS.');
     };
 };
 

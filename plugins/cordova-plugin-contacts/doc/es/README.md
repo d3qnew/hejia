@@ -27,7 +27,7 @@ Aunque el objeto está unido al ámbito global `navigator` , no estará disponib
 
     document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady() {
-        console.log(navigator.contacts);
+        mycon.log(navigator.contacts);
     }
     
 
@@ -189,8 +189,8 @@ El `navigator.contacts.pickContact` método lanza el selector para seleccionar u
 
 ### Ejemplo
 
-    navigator.contacts.pickContact(function(contact) {console.log (' se ha seleccionado el siguiente contacto: "+ JSON.stringify(contact));
-        }, function(err) {console.log ('Error: ' + err);
+    navigator.contacts.pickContact(function(contact) {mycon.log (' se ha seleccionado el siguiente contacto: "+ JSON.stringify(contact));
+        }, function(err) {mycon.log ('Error: ' + err);
         });
     
 

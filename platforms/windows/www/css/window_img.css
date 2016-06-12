@@ -1,0 +1,11 @@
+﻿/*窗型预览图*/
+
+#wimg_display { text-align:center;width:100%;clear:both;}
+
+.fgdiv{margin:0px;padding:0px ;float:left;}
+
+.stdivz{background-color:#ccc;float:left; border:1px solid #666 }
+
+.stdivh{background-color:#ccc; border:1px solid #666;clear:both;}
+
+/*窗型预览图*/

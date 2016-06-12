@@ -807,7 +807,7 @@ exports.defineManualTests = function(contentEl, createActionButton) {
                 }
             });
         } catch (e) {
-            console.error(e.message);
+            mycon.error(e.message);
         }
     }
 

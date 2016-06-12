@@ -31,7 +31,7 @@ Although the object is in the global scope, it is not available until after the 
 ```js
 document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
-    console.log(device.cordova);
+    mycon.log(device.cordova);
 }
 ```
 

@@ -26,7 +26,7 @@ Este plugin define global `FileTransfer` , `FileUploadOptions` constructores.
 Aunque en el ámbito global, no están disponibles hasta después de la `deviceready` evento.
 
     document.addEventListener ("deviceready", onDeviceReady, false);
-    function onDeviceReady() {console.log(FileTransfer)};
+    function onDeviceReady() {mycon.log(FileTransfer)};
     
 
 ## Instalación
@@ -92,7 +92,7 @@ El `FileTransfer` objeto proporciona una manera de subir archivos mediante una s
 
 ### Ejemplo
 
-    // !! Asume fileURL variable contiene una dirección URL válida a un archivo de texto en el dispositivo, / / por ejemplo, ganar var cdvfile://localhost/persistent/path/to/file.txt = function (r) {console.log ("código =" + r.responseCode);
+    // !! Asume fileURL variable contiene una dirección URL válida a un archivo de texto en el dispositivo, / / por ejemplo, ganar var cdvfile://localhost/persistent/path/to/file.txt = function (r) {mycon.log ("código =" + r.responseCode);
         Console.log ("respuesta =" + r.response);
         Console.log ("Sent =" + r.bytesSent);}
     
@@ -117,7 +117,7 @@ El `FileTransfer` objeto proporciona una manera de subir archivos mediante una s
 
 ### Ejemplo con cabeceras de subir y eventos de progreso (Android y iOS solamente)
 
-    function win(r) {console.log ("código =" + r.responseCode);
+    function win(r) {mycon.log ("código =" + r.responseCode);
         Console.log ("respuesta =" + r.response);
         Console.log ("Sent =" + r.bytesSent);}
     
@@ -185,8 +185,8 @@ A `FileUploadResult` objeto se pasa a la devolución del éxito de la `FileTrans
     // !! Asume fileURL variable contiene una dirección URL válida a un camino en el dispositivo, / / por ejemplo, File Transfer var cdvfile://localhost/persistent/path/to/downloads/ = new FileTransfer();
     var uri = encodeURI ("http://some.server.com/download.php");
     
-    fileTransfer.download (uri, fileURL, function(entry) {console.log ("descarga completa:" + entry.toURL());
-        }, function(error) {console.log ("error al descargar el origen" + error.source);
+    fileTransfer.download (uri, fileURL, function(entry) {mycon.log ("descarga completa:" + entry.toURL());
+        }, function(error) {mycon.log ("error al descargar el origen" + error.source);
             Console.log ("descargar error objetivo" + error.target);
             Console.log ("código de error de carga" + error.code);
         }, falso, {encabezados: {"Autorización": "Basic dGVzdHVzZXJuYW1lOnRlc3RwYXNzd29yZA =="}});
@@ -198,7 +198,7 @@ Aborta a una transferencia en curso. El callback onerror se pasa un objeto FileT
 
 ### Ejemplo
 
-    // !! Asume fileURL variable contiene una dirección URL válida a un archivo de texto en el dispositivo, / / por ejemplo, ganar cdvfile://localhost/persistent/path/to/file.txt var function(r) = {console.log ("no se debe llamar.");}
+    // !! Asume fileURL variable contiene una dirección URL válida a un archivo de texto en el dispositivo, / / por ejemplo, ganar cdvfile://localhost/persistent/path/to/file.txt var function(r) = {mycon.log ("no se debe llamar.");}
     
     var fallar = function(error) {/ / error.code == FileTransferError.ABORT_ERR alert ("ha ocurrido un error: código =" + error.code);
         Console.log ("error al cargar el origen" + error.source);

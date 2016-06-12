@@ -29,7 +29,7 @@ Obwohl das Objekt mit der globalen Gültigkeitsbereich `navigator` verbunden ist
 
     document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady() {
-        console.log(navigator.compass);
+        mycon.log(navigator.compass);
     }
     
 

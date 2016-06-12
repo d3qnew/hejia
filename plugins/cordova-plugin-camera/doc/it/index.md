@@ -25,7 +25,7 @@ Anche se l'oggetto è associato con ambito globale del `navigator`, non è dispo
 
     document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady() {
-        console.log(navigator.camera);
+        mycon.log(navigator.camera);
     }
     
 
@@ -426,7 +426,7 @@ Rimuove i file di immagine intermedia che vengono tenuti in custodia temporanea 
     navigator.camera.cleanup(onSuccess, onFail);
     
     function onSuccess() {
-        console.log("Camera cleanup success.")
+        mycon.log("Camera cleanup success.")
     }
     
     function onFail(message) {

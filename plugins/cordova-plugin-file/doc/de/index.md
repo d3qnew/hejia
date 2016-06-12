@@ -41,7 +41,7 @@ Obwohl im globalen Gültigkeitsbereich, steht es nicht bis nach dem `deviceready
 
     document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady() {
-        console.log(cordova.file);
+        mycon.log(cordova.file);
     }
     
 
@@ -232,7 +232,7 @@ Die folgenden Datenpfade werden unterstützt: * `applicationDirectory` - `xhr` v
 *   Chrom-Dateisystem ist nicht sofort nach Gerät bereit. Als Workaround können Sie `FilePluginIsReady`-Ereignis abonnieren. Beispiel: 
 
     javascript
-    window.addEventListener('filePluginIsReady', function(){ console.log('File plugin is ready');}, false);
+    window.addEventListener('filePluginIsReady', function(){ mycon.log('File plugin is ready');}, false);
     
 
 `Window.isFilePluginReadyRaised`-Funktion können Sie überprüfen, ob Ereignis bereits ausgelöst wurde. -window.requestFileSystem temporär und PERSISTENTE Dateisystem-Quoten sind nicht begrenzt, in Chrom. -Um die dauerhafte Speicherung in Chrom zu erhöhen benötigen Sie `window.initPersistentFileSystem`-Methode aufrufen. Permanenter Speicherkontingent beträgt 5 MB standardmäßig. -Chrome erforderlich `--erlauben-Datei-Zugriff-aus-Files` Argument an den Support API via `file:///` Protokoll führen. -`Datei`-Objekt wird nicht geändert werden, wenn Sie Flag verwenden `{create:true}` als einen vorhandenen `Eintrag` zu erhalten. -Veranstaltungen `cancelable`-Eigenschaft festgelegt ist in Chrom wahr. Dies widerspricht der [Spezifikation][5]. -`toURL`-Funktion in Chrome zurück `Dateisystem:`-Pfad je nach Anwendungshost vorangestellt. Z. B. `filesystem:file:///persistent/somefile.txt`, `Filesystem:http://localhost:8080/persistent/somefile.txt`. -`toURL` Funktionsergebnis enthält keine nachgestellten Schrägstrich bei Verzeichniseintrag. Chrom löst Verzeichnisse mit Schrägstrich-gezogene Urls aber korrekt. -`ResolveLocalFileSystemURL`-Methode erfordert die eingehenden `Url` `Dateisystem` Präfix haben. Beispielsweise sollte die `Url`-Parameter für `ResolveLocalFileSystemURL` in der Form `filesystem:file:///persistent/somefile.txt` im Gegensatz zu der Form `file:///persistent/somefile.txt` in Android. -Veraltete `ToNativeURL`-Funktion wird nicht unterstützt und muss keinen Stub. -`SetMetadata`-Funktion ist nicht in den Spezifikationen angegeben und nicht unterstützt. -INVALID_MODIFICATION_ERR (Code: 9) wird ausgelöst, statt SYNTAX_ERR(code: 8) auf anfordern des Dateisystems nicht existent. -INVALID_MODIFICATION_ERR (Code: 9) wird ausgelöst, anstatt PATH_EXISTS_ERR(code: 12) zu versuchen, die ausschließlich eine Datei oder ein Verzeichnis zu erstellen, die bereits vorhanden ist. -INVALID_MODIFICATION_ERR (Code: 9) wird ausgelöst, anstatt NO_MODIFICATION_ALLOWED_ERR(code: 6) zu versuchen, rufen Sie RemoveRecursively auf das Root-Dateisystem. -INVALID_MODIFICATION_ERR (Code: 9) wird ausgelöst, anstatt NOT_FOUND_ERR(code: 1) zu versuchen, MoveTo-Verzeichnis, das nicht vorhanden ist.

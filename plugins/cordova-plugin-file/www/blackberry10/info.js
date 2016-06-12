@@ -42,7 +42,7 @@ cordova.exec(
         info.localPath = path.replace('/data', '/app/native');
     },
     function () {
-        console.error('Unable to determine local storage file path');
+        mycon.error('Unable to determine local storage file path');
     },
     'File',
     'getHomePath',

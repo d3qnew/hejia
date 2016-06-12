@@ -72,8 +72,8 @@ exports.defineAutoTests = function () {
         };
 
         var onError = function(err){
-            console.log(err);
-            console.log("Skipping gyroscope tests, marking all as pending.");
+            mycon.log(err);
+            mycon.log("Skipping gyroscope tests, marking all as pending.");
             isAccelExist = false;
             expect(true).toBe(true);
             done();
@@ -272,7 +272,7 @@ exports.defineManualTests = function (contentEl, createActionButton) {
      * Stop watching the acceleration
      */
     function stopAccel() {
-        console.log("stopAccel()");
+        mycon.log("stopAccel()");
         setAccelStatus("Stopped");
         if (watchAccelId) {
             navigator.accelerometer.clearWatch(watchAccelId);
@@ -284,7 +284,7 @@ exports.defineManualTests = function (contentEl, createActionButton) {
      * Start watching acceleration
      */
     var watchAccel = function () {
-        console.log("watchAccel()");
+        mycon.log("watchAccel()");
 
         // Success callback
         var success = function (a) {
@@ -295,7 +295,7 @@ exports.defineManualTests = function (contentEl, createActionButton) {
 
         // Fail callback
         var fail = function (e) {
-            console.log("watchAccel fail callback with error code " + e);
+            mycon.log("watchAccel fail callback with error code " + e);
             stopAccel();
             setAccelStatus(e);
         };
@@ -312,7 +312,7 @@ exports.defineManualTests = function (contentEl, createActionButton) {
      * Get current acceleration
      */
     var getAccel = function () {
-        console.log("getAccel()");
+        mycon.log("getAccel()");
 
         // Stop accel if running
         stopAccel();
@@ -322,12 +322,12 @@ exports.defineManualTests = function (contentEl, createActionButton) {
             document.getElementById('x').innerHTML = roundNumber(a.x);
             document.getElementById('y').innerHTML = roundNumber(a.y);
             document.getElementById('z').innerHTML = roundNumber(a.z);
-            console.log("getAccel success callback");
+            mycon.log("getAccel success callback");
         };
 
         // Fail callback
         var fail = function (e) {
-            console.log("getAccel fail callback with error code " + e);
+            mycon.log("getAccel fail callback with error code " + e);
             setAccelStatus(e);
         };
 

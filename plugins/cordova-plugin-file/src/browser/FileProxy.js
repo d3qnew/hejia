@@ -808,7 +808,7 @@
             request.onupgradeneeded = function(e) {
                 // First open was called or higher db version was used.
 
-                // console.log('onupgradeneeded: oldVersion:' + e.oldVersion,
+                // mycon.log('onupgradeneeded: oldVersion:' + e.oldVersion,
                 //           'newVersion:' + e.newVersion);
 
                 self.db = e.target.result;
@@ -968,14 +968,14 @@
         function onError(e) {
             switch (e.target.errorCode) {
                 case 12:
-                    console.log('Error - Attempt to open db with a lower version than the ' +
+                    mycon.log('Error - Attempt to open db with a lower version than the ' +
                         'current one.');
                     break;
                 default:
-                    console.log('errorCode: ' + e.target.errorCode);
+                    mycon.log('errorCode: ' + e.target.errorCode);
             }
 
-            console.log(e, e.code, e.message);
+            mycon.log(e, e.code, e.message);
         }
 
     })(module.exports, window);

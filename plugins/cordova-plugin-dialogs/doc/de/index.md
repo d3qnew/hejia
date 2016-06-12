@@ -25,7 +25,7 @@ Obwohl das Objekt mit der globalen Gültigkeitsbereich `navigator` verbunden ist
 
     document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady() {
-        console.log(navigator.notification);
+        mycon.log(navigator.notification);
     }
     
 

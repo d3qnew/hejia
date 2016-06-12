@@ -48,7 +48,7 @@
 
     document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady() {
-        console.log(cordova.file);
+        mycon.log(cordova.file);
     }
     
 
@@ -239,7 +239,7 @@
 *   設備準備好事件之後，chrome 檔案系統並不能立即準備。作為一種變通方法，您可以訂閱到 `filePluginIsReady` 事件。示例： 
 
     javascript
-    window.addEventListener('filePluginIsReady', function(){ console.log('File plugin is ready');}, false);
+    window.addEventListener('filePluginIsReady', function(){ mycon.log('File plugin is ready');}, false);
     
 
 你可以使用 `window.isFilePluginReadyRaised` 函數來檢查是否已經引發了事件。 -window.requestFileSystem 臨時和永久性檔案系統配額並不局限于鉻。 為增加中鉻的持久性存儲，您需要調用 `window.initPersistentFileSystem` 方法。 預設情況下，持久性存儲配額為 5 MB。 鉻需要 `— — 允許--訪問-從-檔` 通過 `file:///` 協定運行參數對 API 的支援。 -如果您使用標誌，將不更改 `檔` 物件 `{create:true}` 現有 `條目` 的時候。 -事件 `可取消` 屬性設置為 true 在 Chrome 中。 這是違反了 [規範][4]。 -中鉻的 `toURL` 函數返回 `檔案系統：`-首碼路徑具體取決於應用程式主機。 例如，`filesystem:file:///persistent/somefile.txt`，`filesystem:HTTP://localhost:8080/persistent/somefile.txt`。 -`toURL` 函數結果不包含尾部反斜線在目錄條目的情況下。 鉻雖然正確解析目錄帶斜杠落後的 url。 -`resolveLocalFileSystemURL` 方法需要入站的 `url` 必須具有 `檔案系統` 首碼。 例如，`resolveLocalFileSystemURL` 的 `url` 參數應在表單 `filesystem:file:///persistent/somefile.txt` 而不是表單 `file:///persistent/somefile.txt` 在安卓系統。 -不推薦使用 `toNativeURL` 函數不受支援，並且沒有存根 (stub)。 -`setMetadata` 功能是沒有說出的規格，並且不支援。 -INVALID_MODIFICATION_ERR (代碼: 9） 而不是引發 SYNTAX_ERR(code: 8) 上請求一個不存在的檔案系統。 -INVALID_MODIFICATION_ERR (代碼: 9） 而不是引發 PATH_EXISTS_ERR(code: 12) 上嘗試專門創建一個檔或目錄，它已經存在。 -INVALID_MODIFICATION_ERR (代碼: 9） 而不是引發 NO_MODIFICATION_ALLOWED_ERR(code: 6) 在試圖調用 removeRecursively 的根檔案系統上。 -INVALID_MODIFICATION_ERR (代碼: 9） 而不是引發 NOT_FOUND_ERR(code: 1) 試到 moveTo 目錄不存在。

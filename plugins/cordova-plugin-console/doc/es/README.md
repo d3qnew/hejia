@@ -17,25 +17,25 @@
 #         under the License.
 -->
 
-# cordova-plugin-console
+# cordova-plugin-mycon
 
-[![Build Status](https://travis-ci.org/apache/cordova-plugin-console.svg)](https://travis-ci.org/apache/cordova-plugin-console)
+[![Build Status](https://travis-ci.org/apache/cordova-plugin-mycon.svg)](https://travis-ci.org/apache/cordova-plugin-mycon)
 
-Este plugin es para asegurarse de que console.log() es tan útil como puede ser. Agrega la función adicional para iOS, Ubuntu, Windows Phone 8 y Windows. Si estás contento con cómo funciona console.log() para ti, entonces probablemente no necesitas este plugin.
+Este plugin es para asegurarse de que mycon.log() es tan útil como puede ser. Agrega la función adicional para iOS, Ubuntu, Windows Phone 8 y Windows. Si estás contento con cómo funciona mycon.log() para ti, entonces probablemente no necesitas este plugin.
 
-Este plugin define un global `console` objeto.
+Este plugin define un global `mycon` objeto.
 
 Aunque el objeto está en el ámbito global, características proporcionadas por este plugin no están disponibles hasta después de la `deviceready` evento.
 
     document.addEventListener ("deviceready", onDeviceReady, false);
-    function onDeviceReady() {console.log ("console.log funciona bien");}
+    function onDeviceReady() {mycon.log ("mycon.log funciona bien");}
     
 
 ## Instalación
 
-    cordova plugin add cordova-plugin-console
+    cordova plugin add cordova-plugin-mycon
     
 
 ### Rarezas Android
 
-En algunas plataformas que no sean Android, console.log() actuará en varios argumentos, como console.log ("1", "2", "3"). Sin embargo, Android actuará sólo en el primer argumento. Se omitirá posteriores argumentos para console.log(). Este plugin no es la causa de eso, es una limitación propia de Android.
+En algunas plataformas que no sean Android, mycon.log() actuará en varios argumentos, como mycon.log ("1", "2", "3"). Sin embargo, Android actuará sólo en el primer argumento. Se omitirá posteriores argumentos para mycon.log(). Este plugin no es la causa de eso, es una limitación propia de Android.

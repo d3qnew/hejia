@@ -43,16 +43,16 @@ var globalization = {
     *                                function () {});
     */
     getPreferredLanguage:function(successCB, failureCB) {
-        console.log('exec(successCB, failureCB, "Globalization","getPreferredLanguage", []);');
+        mycon.log('exec(successCB, failureCB, "Globalization","getPreferredLanguage", []);');
 
         tizen.systeminfo.getPropertyValue (
             "LOCALE",
             function (localeInfo) {
-                console.log("Cordova, getLocaleName, language is  " + localeInfo.language);
+                mycon.log("Cordova, getLocaleName, language is  " + localeInfo.language);
                 successCB( {"value": localeInfo.language});
             },
             function(error) {
-                console.log("Cordova, getLocaleName, An error occurred " + error.message);
+                mycon.log("Cordova, getLocaleName, An error occurred " + error.message);
                 failureCB(new GlobalizationError(GlobalizationError.UNKNOWN_ERROR , "cannot retrieve language name"));
             }
         );
@@ -79,11 +79,11 @@ var globalization = {
         tizen.systeminfo.getPropertyValue (
             "LOCALE",
             function (localeInfo) {
-                console.log("Cordova, getLocaleName, locale name (country) is  " + localeInfo.country);
+                mycon.log("Cordova, getLocaleName, locale name (country) is  " + localeInfo.country);
                 successCB( {"value":localeInfo.language});
             },
             function(error) {
-                console.log("Cordova, getLocaleName, An error occurred " + error.message);
+                mycon.log("Cordova, getLocaleName, An error occurred " + error.message);
                 failureCB(new GlobalizationError(GlobalizationError.UNKNOWN_ERROR , "cannot retrieve locale name"));
             }
         );
@@ -116,7 +116,7 @@ var globalization = {
     *                {formatLength:'short'});
     */
     dateToString:function(date, successCB, failureCB, options) {
-        console.log('exec(successCB, failureCB, "Globalization", "dateToString", [{"date": dateValue, "options": options}]);');
+        mycon.log('exec(successCB, failureCB, "Globalization", "dateToString", [{"date": dateValue, "options": options}]);');
 
         var tzdate = null;
         var format = null;
@@ -130,7 +130,7 @@ var globalization = {
             else{
                 format = tzdate.toLocaleString();
             }
-            console.log('Cordova, globalization, dateToString ' +format);
+            mycon.log('Cordova, globalization, dateToString ' +format);
         }
 
         if (format)
@@ -180,7 +180,7 @@ var globalization = {
     */
     stringToDate:function(dateString, successCB, failureCB, options) {
         argscheck.checkArgs('sfFO', 'Globalization.stringToDate', arguments);
-        console.log('exec(successCB, failureCB, "Globalization", "stringToDate", [{"dateString": dateString, "options": options}]);');
+        mycon.log('exec(successCB, failureCB, "Globalization", "stringToDate", [{"dateString": dateString, "options": options}]);');
 
         //not supported
         failureCB(new GlobalizationError(GlobalizationError.PARSING_ERROR , "unsupported"));
@@ -220,7 +220,7 @@ var globalization = {
     *                {formatLength:'short'});
     */
     getDatePattern:function(successCB, failureCB, options) {
-        console.log(' exec(successCB, failureCB, "Globalization", "getDatePattern", [{"options": options}]);');
+        mycon.log(' exec(successCB, failureCB, "Globalization", "getDatePattern", [{"options": options}]);');
 
         var shortFormat = (options) ? ( options.formatLength === 'short') : true;
 
@@ -274,7 +274,7 @@ var globalization = {
     */
     getDateNames:function(successCB, failureCB, options) {
         argscheck.checkArgs('fFO', 'Globalization.getDateNames', arguments);
-        console.log('exec(successCB, failureCB, "Globalization", "getDateNames", [{"options": options}]);');
+        mycon.log('exec(successCB, failureCB, "Globalization", "getDateNames", [{"options": options}]);');
 
         failureCB(new GlobalizationError(GlobalizationError.UNKNOWN_ERROR , "unsupported"));
     },
@@ -304,14 +304,14 @@ var globalization = {
         var tzdate = null,
             isDLS = false;
 
-        console.log('exec(successCB, failureCB, "Globalization", "isDayLightSavingsTime", [{"date": dateValue}]);');
-        console.log("date " + date + " value " + date.valueOf()) ;
+        mycon.log('exec(successCB, failureCB, "Globalization", "isDayLightSavingsTime", [{"date": dateValue}]);');
+        mycon.log("date " + date + " value " + date.valueOf()) ;
 
         tzdate = new tizen.TZDate(date);
         if (tzdate) {
             isDLS = tzdate && tzdate.isDST();
 
-            console.log ("Cordova, globalization, isDayLightSavingsTime, " + isDLS);
+            mycon.log ("Cordova, globalization, isDayLightSavingsTime, " + isDLS);
 
             successCB({"dst":isDLS});
         }
@@ -340,7 +340,7 @@ var globalization = {
     */
     getFirstDayOfWeek:function(successCB, failureCB) {
         argscheck.checkArgs('fF', 'Globalization.getFirstDayOfWeek', arguments);
-        console.log('exec(successCB, failureCB, "Globalization", "getFirstDayOfWeek", []);');
+        mycon.log('exec(successCB, failureCB, "Globalization", "getFirstDayOfWeek", []);');
 
         // there is no API to get the fist day of the week in Tizen Dvice API
         successCB({value:1});
@@ -375,7 +375,7 @@ var globalization = {
     */
     numberToString:function(number, successCB, failureCB, options) {
         argscheck.checkArgs('nfFO', 'Globalization.numberToString', arguments);
-        console.log('exec(successCB, failureCB, "Globalization", "numberToString", [{"number": number, "options": options}]);');
+        mycon.log('exec(successCB, failureCB, "Globalization", "numberToString", [{"number": number, "options": options}]);');
         //not supported
         failureCB(new GlobalizationError(GlobalizationError.UNKNOWN_ERROR , "unsupported"));
     },
@@ -405,7 +405,7 @@ var globalization = {
     */
     stringToNumber:function(numberString, successCB, failureCB, options) {
         argscheck.checkArgs('sfFO', 'Globalization.stringToNumber', arguments);
-        console.log('exec(successCB, failureCB, "Globalization", "stringToNumber", [{"numberString": numberString, "options": options}]);');
+        mycon.log('exec(successCB, failureCB, "Globalization", "stringToNumber", [{"numberString": numberString, "options": options}]);');
 
         //not supported
         failureCB(new GlobalizationError(GlobalizationError.UNKNOWN_ERROR , "unsupported"));
@@ -445,7 +445,7 @@ var globalization = {
     */
     getNumberPattern:function(successCB, failureCB, options) {
         argscheck.checkArgs('fFO', 'Globalization.getNumberPattern', arguments);
-        console.log('exec(successCB, failureCB, "Globalization", "getNumberPattern", [{"options": options}]);');
+        mycon.log('exec(successCB, failureCB, "Globalization", "getNumberPattern", [{"options": options}]);');
 
         //not supported
         failureCB(new GlobalizationError(GlobalizationError.UNKNOWN_ERROR , "unsupported"));
@@ -480,7 +480,7 @@ var globalization = {
     */
     getCurrencyPattern:function(currencyCode, successCB, failureCB) {
         argscheck.checkArgs('sfF', 'Globalization.getCurrencyPattern', arguments);
-        console.log('exec(successCB, failureCB, "Globalization", "getCurrencyPattern", [{"currencyCode": currencyCode}]);');
+        mycon.log('exec(successCB, failureCB, "Globalization", "getCurrencyPattern", [{"currencyCode": currencyCode}]);');
 
         //not supported
         failureCB(new GlobalizationError(GlobalizationError.UNKNOWN_ERROR , "unsupported"));

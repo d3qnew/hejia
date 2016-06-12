@@ -26,7 +26,7 @@
  */
 
 module.exports = function (success, fail, args) {
-    console.error("setMetadata not supported on BB10", arguments);
+    mycon.error("setMetadata not supported on BB10", arguments);
     if (typeof(fail) === 'function') {
         fail();
     }

@@ -14,13 +14,10 @@ function onerror(error) {
 
 function createFile(filename, date,fuc) {
 
-    var date = date;
-    var filename = filename;
-    var fuc = fuc;
     var directory = "hejiadan";
     var size = 0;
     var newFile;
-    window.requestFileSystem(app.dir.PERSISTENT, size, onFileSystemSuccess, onerror);
+    window.requestFileSystem(app.writetype, size, onFileSystemSuccess, onerror);
 
     function onFileSystemSuccess(fileSystem) {
         newFile = fileSystem.root.getDirectory(directory, {
@@ -43,14 +40,14 @@ function createFile(filename, date,fuc) {
     function onFileWriterSuccess(writer) {
         //  log("fileName="+writer.fileName+";fileLength="+writer.length+";position="+writer.position);  
         writer.onwrite = function (evt) {//当写入成功完成后调用的回调函数  
-            alert("保存成功");
+            navigator.notification.alert("保存成功");
             fuc;
         };
         writer.onerror = function (evt) {//写入失败后调用的回调函数  
-            alert("保存失败");
+            console.log("保存失败");
         };
         writer.onabort = function (evt) {//写入被中止后调用的回调函数，例如通过调用abort()  
-            alert("保存终止");
+            console.log("保存终止");
         };
         // 快速将文件指针指向文件的尾部 ,可以append  
         //  writer.seek(writer.length);   
@@ -66,13 +63,12 @@ function createFile(filename, date,fuc) {
 //文件列表
 
 listFile = function (fuc) {
-    var fuc = fuc;
     var dir;
     var directory = "hejiadan";
     var fileEntry;
     var files;
     
-    window.requestFileSystem(app.dir.PERSISTENT, 0, onFileSystemSuccess, onerror);
+    window.requestFileSystem(app.writetype, 0, onFileSystemSuccess, onerror);
         
     function onFileSystemSuccess(fileSystem) {
         dir = fileSystem.root.getDirectory(directory, {
@@ -101,51 +97,46 @@ listFile = function (fuc) {
 ////////////////////////////////////////////////////////////////////////////////
 //读取文件
 readFile = function (filename,fuc) {
-    var filename = filename;
-    var fuc = fuc;
     var storeNotification = "on";//data read  
     var filePath = 'hejiadan/' + filename;//default file path 
 
-    window.requestFileSystem(app.dir.PERSISTENT, 0, gotFS, onerror);
+    window.requestFileSystem(app.writetype, 0, gotFS, onerror);
 
     function gotFS(fileSystem) {
+        //console.log(fileSystem);
         fileSystem.root.getFile(filePath, {
-            create: true,
+            create: false,
             exclusive: false
         }, gotFileEntry, onerror);
     }
 
     function gotFileEntry(fileEntry) {
+        //console.log(fileEntry);
         fileEntry.file(gotFile, onerror);
     }
 
     function gotFile(file) {
-        readAsText(file);
-    }
-
-    function readAsText(file) {
+        //console.log(file);
         var reader = new FileReader();
+        reader.readAsText(file);
         reader.onloadend = function (evt) {
-
             storeNotification = evt.target.result;//将读取到的数据赋值给变量  
             if (storeNotification == null || storeNotification.length == 0) {
                 storeNotification = "on";
             }
             fuc(storeNotification);
         };
-        reader.readAsText(file);
-
+        
     }
+
+
 };
 
 ////////////////////////////////////////////////////////////////////////////////
 //删除文件
 
 var delFile = function (filename,fuc) {
-    var filename = filename;
-    var fuc = fuc;
-
-    window.requestFileSystem(app.dir.PERSISTENT, 0, reFileSystem, onerror);
+    window.requestFileSystem(app.writetype, 0, reFileSystem, onerror);
 
     function reFileSystem(fs) {
         //console.log(fs);
@@ -157,7 +148,7 @@ var delFile = function (filename,fuc) {
         // fileEntry.name == 'someFile.txt'
         // fileEntry.fullPath == '/someFile.txt'
         //writeFile(fileEntry, null);
-        fileEntry.remove(function(){console.log("ok"),fuc()},onerror);
+        fileEntry.remove(function(){console.log("ok"),fuc},onerror);
     }
     
 

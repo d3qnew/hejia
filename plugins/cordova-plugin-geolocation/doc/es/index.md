@@ -32,7 +32,7 @@ Este plugin define un global `navigator.geolocation` objeto (para plataformas do
 Aunque el objeto está en el ámbito global, características proporcionadas por este plugin no están disponibles hasta después de la `deviceready` evento.
 
     document.addEventListener ("deviceready", onDeviceReady, false);
-    function onDeviceReady() {console.log ("navigator.geolocation funciona bien");}
+    function onDeviceReady() {mycon.log ("navigator.geolocation funciona bien");}
     
 
 ## Instalación

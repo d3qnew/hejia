@@ -17,25 +17,25 @@
     under the License.
 -->
 
-# cordova-plugin-console
+# cordova-plugin-mycon
 
-Questo plugin è intesa a garantire che console.log() è tanto utile quanto può essere. Aggiunge una funzione aggiuntiva per iOS, Ubuntu, Windows 8 e Windows Phone 8. Se sei soddisfatto di come console.log() funziona per voi, quindi probabilmente non è necessario questo plugin.
+Questo plugin è intesa a garantire che mycon.log() è tanto utile quanto può essere. Aggiunge una funzione aggiuntiva per iOS, Ubuntu, Windows 8 e Windows Phone 8. Se sei soddisfatto di come mycon.log() funziona per voi, quindi probabilmente non è necessario questo plugin.
 
-Questo plugin definisce un oggetto globale `console`.
+Questo plugin definisce un oggetto globale `mycon`.
 
 Sebbene l'oggetto sia in ambito globale, funzionalità fornite da questo plugin non sono disponibili fino a dopo l'evento `deviceready`.
 
     document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady() {
-        console.log("console.log works well");
+        mycon.log("mycon.log works well");
     }
     
 
 ## Installazione
 
-    cordova plugin add cordova-plugin-console
+    cordova plugin add cordova-plugin-mycon
     
 
 ### Stranezze Android
 
-Su alcune piattaforme diverse da Android, console.log() agirà su più argomenti, come ad esempio console ("1", "2", "3"). Tuttavia, Android agirà solo sul primo argomento. Argomenti successivi a console.log() verranno ignorati. Questo plugin non è la causa di ciò, è una limitazione di Android stesso.
+Su alcune piattaforme diverse da Android, mycon.log() agirà su più argomenti, come ad esempio mycon ("1", "2", "3"). Tuttavia, Android agirà solo sul primo argomento. Argomenti successivi a mycon.log() verranno ignorati. Questo plugin non è la causa di ciò, è una limitazione di Android stesso.

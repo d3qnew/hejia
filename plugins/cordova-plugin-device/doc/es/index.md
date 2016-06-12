@@ -23,7 +23,7 @@ Este plugin define un global `device` objeto que describe del dispositivo hardwa
 
     document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady() {
-        console.log(device.cordova);
+        mycon.log(device.cordova);
     }
     
 

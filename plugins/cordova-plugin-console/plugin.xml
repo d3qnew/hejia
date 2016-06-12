@@ -19,14 +19,14 @@
 -->
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-           id="cordova-plugin-console"
-      version="1.0.4-dev">
+           id="cordova-plugin-mycon"
+      version="1.0.3">
 
     <name>Console</name>
     <description>Cordova Console Plugin</description>
     <license>Apache 2.0</license>
-    <keywords>cordova,console</keywords>
-    <repo>https://git-wip-us.apache.org/repos/asf/cordova-plugin-console.git</repo>
+    <keywords>cordova,mycon</keywords>
+    <repo>https://git-wip-us.apache.org/repos/asf/cordova-plugin-mycon.git</repo>
     <issue>https://issues.apache.org/jira/browse/CB/component/12320644</issue>
 
     <!-- ios -->
@@ -38,8 +38,8 @@
 		</feature>
         </config-file>
 
-        <js-module src="www/console-via-logger.js" name="console">
-            <clobbers target="console" />
+        <js-module src="www/mycon-via-logger.js" name="mycon">
+            <clobbers target="mycon" />
         </js-module>
 
         <js-module src="www/logger.js" name="logger">
@@ -53,16 +53,16 @@
 
     <!-- ubuntu -->
     <platform name="ubuntu">
-        <js-module src="www/console-via-logger.js" name="console">
-            <clobbers target="console" />
+        <js-module src="www/mycon-via-logger.js" name="mycon">
+            <clobbers target="mycon" />
         </js-module>
 
         <js-module src="www/logger.js" name="logger">
             <clobbers target="cordova.logger" />
         </js-module>
 
-        <header-file src="src/ubuntu/console.h" />
-        <source-file src="src/ubuntu/console.cpp" />
+        <header-file src="src/ubuntu/mycon.h" />
+        <source-file src="src/ubuntu/mycon.cpp" />
 
     </platform>
 
@@ -74,8 +74,8 @@
             </feature>
         </config-file>
 
-        <js-module src="www/console-via-logger.js" name="console">
-            <clobbers target="console" />
+        <js-module src="www/mycon-via-logger.js" name="mycon">
+            <clobbers target="mycon" />
         </js-module>
 
         <js-module src="www/logger.js" name="logger">
@@ -93,8 +93,8 @@
             </feature>
         </config-file>
 
-        <js-module src="www/console-via-logger.js" name="console">
-            <clobbers target="console" />
+        <js-module src="www/mycon-via-logger.js" name="mycon">
+            <clobbers target="mycon" />
         </js-module>
 
         <js-module src="www/logger.js" name="logger">
@@ -109,8 +109,8 @@
         <js-module src="www/logger.js" name="logger">
             <clobbers target="cordova.logger" />
         </js-module>
-        <js-module src="www/console-via-logger.js" name="console">
-            <clobbers target="console" />
+        <js-module src="www/mycon-via-logger.js" name="mycon">
+            <clobbers target="mycon" />
         </js-module>
     </platform>
 
@@ -119,8 +119,8 @@
         <js-module src="www/logger.js" name="logger">
             <clobbers target="cordova.logger" />
         </js-module>
-        <js-module src="www/console-via-logger.js" name="console">
-            <clobbers target="console" />
+        <js-module src="www/mycon-via-logger.js" name="mycon">
+            <clobbers target="mycon" />
         </js-module>
     </platform>
 

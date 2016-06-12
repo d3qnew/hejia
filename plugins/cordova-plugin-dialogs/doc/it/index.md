@@ -25,7 +25,7 @@ Anche se l'oggetto è associato con ambito globale del `navigator`, non è dispo
 
     document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady() {
-        console.log(navigator.notification);
+        mycon.log(navigator.notification);
     }
     
 

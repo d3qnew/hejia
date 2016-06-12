@@ -57,7 +57,7 @@ module.exports = {
 
         // Strings are deprecated!
         if (typeof _buttonLabels === 'string') {
-            console.log("Notification.confirm(string, function, string, string) is deprecated.  Use Notification.confirm(string, function, string, array).");
+            mycon.log("Notification.confirm(string, function, string, string) is deprecated.  Use Notification.confirm(string, function, string, array).");
         }
 
         _buttonLabels = convertButtonLabels(_buttonLabels);
@@ -84,7 +84,7 @@ module.exports = {
 
         // Strings are deprecated!
         if (typeof _buttonLabels === 'string') {
-            console.log("Notification.prompt(string, function, string, string) is deprecated.  Use Notification.confirm(string, function, string, array).");
+            mycon.log("Notification.prompt(string, function, string, string) is deprecated.  Use Notification.confirm(string, function, string, array).");
         }
 
         _buttonLabels = convertButtonLabels(_buttonLabels);

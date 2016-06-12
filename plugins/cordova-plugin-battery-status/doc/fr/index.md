@@ -66,7 +66,7 @@ Windows Phone 7 ne fournit pas d'API native pour déterminer le niveau de la bat
     
     function onBatteryStatus(info) {
         // Handle the online event
-        console.log("Level: " + info.level + " isPlugged: " + info.isPlugged);
+        mycon.log("Level: " + info.level + " isPlugged: " + info.isPlugged);
     }
     
 

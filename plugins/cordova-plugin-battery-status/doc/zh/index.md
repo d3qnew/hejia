@@ -66,7 +66,7 @@ Windows Phone 7 並不提供本機 Api 來確定電池計量水準，所以 `lev
     
     function onBatteryStatus(info) {
         // Handle the online event
-        console.log("Level: " + info.level + " isPlugged: " + info.isPlugged);
+        mycon.log("Level: " + info.level + " isPlugged: " + info.isPlugged);
     }
     
 

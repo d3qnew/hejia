@@ -29,8 +29,8 @@
 // DEBUG                        - constant for the level DEBUG
 // logLevel()                   - returns current log level
 // logLevel(value)              - sets and returns a new log level
-// useConsole()                 - returns whether logger is using console
-// useConsole(value)            - sets and returns whether logger is using console
+// useConsole()                 - returns whether logger is using mycon
+// useConsole(value)            - sets and returns whether logger is using mycon
 // log(message,...)             - logs a message at level LOG
 // error(message,...)           - logs a message at level ERROR
 // warn(message,...)            - logs a message at level WARN
@@ -50,7 +50,7 @@ var Queued       = [];
 var DeviceReady  = false;
 var CurrentLevel;
 
-var originalConsole = console;
+var originalConsole = mycon;
 
 /**
  * Logging levels
@@ -112,23 +112,23 @@ logger.level = function (value) {
  * Getter/Setter for the useConsole functionality
  *
  * When useConsole is true, the logger will log via the
- * browser 'console' object.
+ * browser 'mycon' object.
  */
 logger.useConsole = function (value) {
     if (arguments.length) UseConsole = !!value;
 
     if (UseConsole) {
-        if (typeof console == "undefined") {
-            throw new Error("global console object is not defined");
+        if (typeof mycon == "undefined") {
+            throw new Error("global mycon object is not defined");
         }
 
-        if (typeof console.log != "function") {
-            throw new Error("global console object does not have a log function");
+        if (typeof mycon.log != "function") {
+            throw new Error("global mycon object does not have a log function");
         }
 
-        if (typeof console.useLogger == "function") {
-            if (console.useLogger()) {
-                throw new Error("console and logger are too intertwingly");
+        if (typeof mycon.useLogger == "function") {
+            if (mycon.useLogger()) {
+                throw new Error("mycon and logger are too intertwingly");
             }
         }
     }
@@ -232,14 +232,14 @@ logger.logLevel = function(level /* , ... */) {
         exec(null, null, "Console", "logLevel", [level, message]);
     }
 
-    // Log using the console if that is enabled
+    // Log using the mycon if that is enabled
     if (UseConsole) {
-        // make sure console is not using logger
-        if (console.useLogger()) {
-            throw new Error("console and logger are too intertwingly");
+        // make sure mycon is not using logger
+        if (mycon.useLogger()) {
+            throw new Error("mycon and logger are too intertwingly");
         }
 
-        // log to the console
+        // log to the mycon
         switch (level) {
             case logger.LOG:   originalConsole.log(message); break;
             case logger.ERROR: originalConsole.log("ERROR: " + message); break;
@@ -252,7 +252,7 @@ logger.logLevel = function(level /* , ... */) {
 
 
 /**
- * Formats a string and arguments following it ala console.log()
+ * Formats a string and arguments following it ala mycon.log()
  *
  * Any remaining arguments will be appended to the formatted string.
  *

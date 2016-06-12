@@ -1222,8 +1222,8 @@
   navigator.mozL10n.ctx.ready(onReady.bind(navigator.mozL10n));
 
   if (DEBUG) {
-    navigator.mozL10n.ctx.addEventListener('error', console.error);
-    navigator.mozL10n.ctx.addEventListener('warning', console.warn);
+    navigator.mozL10n.ctx.addEventListener('error', mycon.error);
+    navigator.mozL10n.ctx.addEventListener('warning', mycon.warn);
   }
 
   function getDirection(lang) {

@@ -25,7 +25,7 @@ Mimo, że obiekt jest dołączony do globalnego zakresu `navigator`, to nie dost
 
     document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady() {
-        console.log(navigator.contacts);
+        mycon.log(navigator.contacts);
     }
     
 
@@ -178,9 +178,9 @@ Metoda `navigator.contacts.pickContact` uruchamia próbnika kontakt, wybierz jed
 ### Przykład
 
     navigator.contacts.pickContact(function(contact){
-            console.log('The following contact has been selected:' + JSON.stringify(contact));
+            mycon.log('The following contact has been selected:' + JSON.stringify(contact));
         },function(err){
-            console.log('Error: ' + err);
+            mycon.log('Error: ' + err);
         });
     
 
@@ -269,8 +269,8 @@ Metoda `navigator.contacts.pickContact` uruchamia próbnika kontakt, wybierz jed
         // clone the contact object
         var clone = contact.clone();
         clone.name.givenName = "John";
-        console.log("Original contact name = " + contact.name.givenName);
-        console.log("Cloned contact name = " + clone.name.givenName);
+        mycon.log("Original contact name = " + contact.name.givenName);
+        mycon.log("Cloned contact name = " + clone.name.givenName);
     
 
 ### Remove przykład

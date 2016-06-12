@@ -75,7 +75,7 @@ Windows Phone 8.1 obs≈Çuguje parametr `isPlugged` . `Parametr <em>jest</em> obs≈
     
     function onBatteryStatus(info) {
         // Handle the online event
-        console.log("Level: " + info.level + " isPlugged: " + info.isPlugged);
+        mycon.log("Level: " + info.level + " isPlugged: " + info.isPlugged);
     }
     
 

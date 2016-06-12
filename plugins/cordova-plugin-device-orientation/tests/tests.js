@@ -172,7 +172,7 @@ exports.defineManualTests = function (contentEl, createActionButton) {
      * Start watching compass
      */
     var watchCompass = function () {
-        console.log("watchCompass()");
+        mycon.log("watchCompass()");
 
         // Success callback
         var success = function (a) {
@@ -181,7 +181,7 @@ exports.defineManualTests = function (contentEl, createActionButton) {
 
         // Fail callback
         var fail = function (e) {
-            console.log("watchCompass fail callback with error code " + e);
+            mycon.log("watchCompass fail callback with error code " + e);
             stopCompass();
             setCompassStatus(e);
         };
@@ -201,7 +201,7 @@ exports.defineManualTests = function (contentEl, createActionButton) {
      * Get current compass
      */
     var getCompass = function () {
-        console.log("getCompass()");
+        mycon.log("getCompass()");
 
         // Stop compass if running
         stopCompass();
@@ -213,7 +213,7 @@ exports.defineManualTests = function (contentEl, createActionButton) {
 
         // Fail callback
         var fail = function (e) {
-            console.log("getCompass fail callback with error code " + e.toString);
+            mycon.log("getCompass fail callback with error code " + e.toString);
             setCompassStatus(e);
         };
 

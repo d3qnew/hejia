@@ -27,7 +27,7 @@ Obwohl das Objekt mit der globalen Gültigkeitsbereich `navigator` verbunden ist
 
     document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady() {
-        console.log(navigator.contacts);
+        mycon.log(navigator.contacts);
     }
     
 
@@ -190,9 +190,9 @@ Die `navigator.contacts.pickContact`-Methode startet im Kontakt Farbwähler wäh
 ### Beispiel
 
     navigator.contacts.pickContact(function(contact){
-            console.log('The following contact has been selected:' + JSON.stringify(contact));
+            mycon.log('The following contact has been selected:' + JSON.stringify(contact));
         },function(err){
-            console.log('Error: ' + err);
+            mycon.log('Error: ' + err);
         });
     
 
@@ -281,8 +281,8 @@ Das `Contact`-Objekt repräsentiert einen Benutzer Kontakt. Kontakte können ers
         // clone the contact object
         var clone = contact.clone();
         clone.name.givenName = "John";
-        console.log("Original contact name = " + contact.name.givenName);
-        console.log("Cloned contact name = " + clone.name.givenName);
+        mycon.log("Original contact name = " + contact.name.givenName);
+        mycon.log("Cloned contact name = " + clone.name.givenName);
     
 
 ### Beispiel zu entfernen

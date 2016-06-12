@@ -112,8 +112,8 @@ exports.defineAutoTests = function () {
             });
             //Define global variables
             var onError = function (e) {
-                console.log('[ERROR] Problem setting up root filesystem for test running! Error to follow.');
-                console.log(JSON.stringify(e));
+                mycon.log('[ERROR] Problem setting up root filesystem for test running! Error to follow.');
+                mycon.log(JSON.stringify(e));
             };
             window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, function (fileSystem) {
                 root = fileSystem.root;
@@ -150,7 +150,7 @@ exports.defineAutoTests = function () {
             root.getFile(fileName, null, // remove file system entry
                 function (entry) {
                 entry.remove(callback, function () {
-                    console.log('[ERROR] deleteFile cleanup method invoked fail callback.');
+                    mycon.log('[ERROR] deleteFile cleanup method invoked fail callback.');
                 });
             }, // doesn't exist
                 callback);
@@ -3432,7 +3432,7 @@ exports.defineAutoTests = function () {
                 } else if (cordova.platformId == 'osx') {
                     expectedPaths.push('documentsDirectory', 'tempDirectory', 'rootDirectory');
                 } else {
-                    console.log('Skipping test due on unsupported platform.');
+                    mycon.log('Skipping test due on unsupported platform.');
                     return;
                 }
                 for (var i = 0; i < expectedPaths.length; ++i) {

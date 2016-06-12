@@ -47,7 +47,7 @@ Although in the global scope, it is not available until after the `deviceready` 
 
     document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady() {
-        console.log(cordova.file);
+        mycon.log(cordova.file);
     }
 
 Report issues on the [Apache Cordova issue tracker](https://issues.apache.org/jira/issues/?jql=project%20%3D%20CB%20AND%20status%20in%20%28Open%2C%20%22In%20Progress%22%2C%20Reopened%29%20AND%20resolution%20%3D%20Unresolved%20AND%20component%20%3D%20%22Plugin%20File%22%20ORDER%20BY%20priority%20DESC%2C%20summary%20ASC%2C%20updatedDate%20DESC)
@@ -357,7 +357,7 @@ Chrome returns the path in the form `cdvfile://localhost/persistent/file`.
 - Chrome filesystem is not immediately ready after device ready event. As a workaround you can subscribe to `filePluginIsReady` event.
 Example:
 ```javascript
-window.addEventListener('filePluginIsReady', function(){ console.log('File plugin is ready');}, false);
+window.addEventListener('filePluginIsReady', function(){ mycon.log('File plugin is ready');}, false);
 ```
 You can use `window.isFilePluginReadyRaised` function to check whether event was already raised.
 - window.requestFileSystem TEMPORARY and PERSISTENT filesystem quotas are not limited in Chrome.
@@ -466,7 +466,7 @@ __Note__: This method requires following Content Security rules updates:
 ```javascript
 resolveLocalFileSystemURL('cdvfile://localhost/temporary/path/to/file.mp4', function(entry) {
     var nativePath = entry.toURL();
-    console.log('Native URI: ' + nativePath);
+    mycon.log('Native URI: ' + nativePath);
     document.getElementById('video').src = nativePath;
 ```
 
@@ -474,7 +474,7 @@ resolveLocalFileSystemURL('cdvfile://localhost/temporary/path/to/file.mp4', func
 
 ```javascript
 resolveLocalFileSystemURL(nativePath, function(entry) {
-    console.log('cdvfile URI: ' + entry.toInternalURL());
+    mycon.log('cdvfile URI: ' + entry.toInternalURL());
 ```
 
 **Using cdvfile in core plugins**

@@ -24,7 +24,7 @@ Este plugin permite acceder a algunos elementos de interfaz de usuario nativa di
 Aunque el objeto está unido al ámbito global `navigator` , no estará disponible hasta después de la `deviceready` evento.
 
     document.addEventListener ("deviceready", onDeviceReady, false);
-    function onDeviceReady() {console.log(navigator.notification)};
+    function onDeviceReady() {mycon.log(navigator.notification)};
     
 
 ## Instalación

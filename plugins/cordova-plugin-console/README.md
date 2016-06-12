@@ -1,7 +1,3 @@
----
-title: Console
-description: Get JavaScript logs in your native logs.
----
 <!---
 # license: Licensed to the Apache Software Foundation (ASF) under one
 #         or more contributor license agreements.  See the NOTICE file
@@ -21,74 +17,74 @@ description: Get JavaScript logs in your native logs.
 #         under the License.
 -->
 
-[![Build Status](https://travis-ci.org/apache/cordova-plugin-console.svg?branch=master)](https://travis-ci.org/apache/cordova-plugin-console)
+[![Build Status](https://travis-ci.org/apache/cordova-plugin-mycon.svg?branch=master)](https://travis-ci.org/apache/cordova-plugin-mycon)
 
-# cordova-plugin-console
+# cordova-plugin-mycon
 
-This plugin is meant to ensure that console.log() is as useful as it can be.
+This plugin is meant to ensure that mycon.log() is as useful as it can be.
 It adds additional function for iOS, Ubuntu, Windows Phone 8, and Windows. If
-you are happy with how console.log() works for you, then you probably
+you are happy with how mycon.log() works for you, then you probably
 don't need this plugin.
 
-This plugin defines a global `console` object.
+This plugin defines a global `mycon` object.
 
 Although the object is in the global scope, features provided by this plugin
 are not available until after the `deviceready` event.
 
     document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady() {
-        console.log("console.log works well");
+        mycon.log("mycon.log works well");
     }
 
 ## Installation
 
-    cordova plugin add cordova-plugin-console
+    cordova plugin add cordova-plugin-mycon
 
 ### Android Quirks
 
-On some platforms other than Android, console.log() will act on multiple
-arguments, such as console.log("1", "2", "3"). However, Android will act only
-on the first argument. Subsequent arguments to console.log() will be ignored.
+On some platforms other than Android, mycon.log() will act on multiple
+arguments, such as mycon.log("1", "2", "3"). However, Android will act only
+on the first argument. Subsequent arguments to mycon.log() will be ignored.
 This plugin is not the cause of that, it is a limitation of Android itself.
 
 ## Supported Methods
 
-The plugin support following methods of the `console` object:
+The plugin support following methods of the `mycon` object:
 
-- `console.log`
-- `console.error`
-- `console.exception`
-- `console.warn`
-- `console.info`
-- `console.debug`
-- `console.assert`
-- `console.dir`
-- `console.dirxml`
-- `console.time`
-- `console.timeEnd`
-- `console.table`
+- `mycon.log`
+- `mycon.error`
+- `mycon.exception`
+- `mycon.warn`
+- `mycon.info`
+- `mycon.debug`
+- `mycon.assert`
+- `mycon.dir`
+- `mycon.dirxml`
+- `mycon.time`
+- `mycon.timeEnd`
+- `mycon.table`
 
 ## Partially supported Methods
 
-Methods of the `console` object which implemented, but behave different from browser implementation:
+Methods of the `mycon` object which implemented, but behave different from browser implementation:
 
-- `console.group`
-- `console.groupCollapsed`
+- `mycon.group`
+- `mycon.groupCollapsed`
 
 The grouping methods are just log name of the group and don't actually indicate grouping for later
-calls to `console` object methods.
+calls to `mycon` object methods.
 
 ## Not supported Methods
 
-Methods of the `console` object which are implemented, but do nothing:
+Methods of the `mycon` object which are implemented, but do nothing:
 
-- `console.clear`
-- `console.trace`
-- `console.groupEnd`
-- `console.timeStamp`
-- `console.profile`
-- `console.profileEnd`
-- `console.count`
+- `mycon.clear`
+- `mycon.trace`
+- `mycon.groupEnd`
+- `mycon.timeStamp`
+- `mycon.profile`
+- `mycon.profileEnd`
+- `mycon.count`
 
 ## Supported formatting
 

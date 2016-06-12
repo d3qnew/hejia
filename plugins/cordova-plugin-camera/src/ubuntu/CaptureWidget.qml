@@ -37,7 +37,7 @@ Rectangle {
         objectName: "camera"
         id: camera
         onError: {
-            console.log(errorString);
+            mycon.log(errorString);
         }
         videoRecorder.audioBitRate: 128000
         imageCapture {

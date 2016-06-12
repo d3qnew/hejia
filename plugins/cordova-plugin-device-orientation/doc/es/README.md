@@ -29,7 +29,7 @@ Aunque el objeto está unido al ámbito global `navigator` , no estará disponib
 
     document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady() {
-        console.log(navigator.compass);
+        mycon.log(navigator.compass);
     }
     
 

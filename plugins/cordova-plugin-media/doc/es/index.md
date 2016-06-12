@@ -28,7 +28,7 @@ Este plugin define un global `Media` Constructor.
 Aunque en el ámbito global, no estará disponible hasta después de la `deviceready` evento.
 
     document.addEventListener ("deviceready", onDeviceReady, false);
-    function onDeviceReady() {console.log(Media)};
+    function onDeviceReady() {mycon.log(Media)};
     
 
 ## Instalación
@@ -125,8 +125,8 @@ Devuelve la posición actual dentro de un archivo de audio. También actualiza e
 
     Reproductor de audio / / var my_media = new Media (src, onSuccess, onError);
     
-    Actualización medios posición cada segundo var mediaTimer = setInterval(function () {/ / obtener medios posición my_media.getCurrentPosition (/ / función de devolución de llamada de éxito (posición) {si (posición > -1) {console.log((position) + "sec");
-                }}, / / función de callback de error (e) {console.log ("Error al obtener pos =" + e);
+    Actualización medios posición cada segundo var mediaTimer = setInterval(function () {/ / obtener medios posición my_media.getCurrentPosition (/ / función de devolución de llamada de éxito (posición) {si (posición > -1) {mycon.log((position) + "sec");
+                }}, / / función de callback de error (e) {mycon.log ("Error al obtener pos =" + e);
             }
         );
     }, 1000);
@@ -161,7 +161,7 @@ Detiene temporalmente la reproducción de un archivo de audio.
 
 ### Ejemplo rápido
 
-    Reproducir audio / / function playAudio(url) {/ / reproducción del archivo de audio en my_media var url = new Media (url, / / función de devolución de llamada de éxito () {console.log ("(playAudio): Audio éxito");}, / / función de callback de error (err) {console.log ("(playAudio): Audio Error:" + err);});
+    Reproducir audio / / function playAudio(url) {/ / reproducción del archivo de audio en my_media var url = new Media (url, / / función de devolución de llamada de éxito () {mycon.log ("(playAudio): Audio éxito");}, / / función de callback de error (err) {mycon.log ("(playAudio): Audio Error:" + err);});
     
         Reproducir audio my_media.play();
     
@@ -179,8 +179,8 @@ Inicia o reanuda la reproducción de un archivo de audio.
 
 ### Ejemplo rápido
 
-    Reproducir audio / / function playAudio(url) {/ / reproducción del archivo de audio en el url var my_media = new Media (url, / / función de devolución de llamada de éxito () {console.log ("(playAudio): Audio éxito");
-            }, / / función de callback de error (err) {console.log ("(playAudio): Audio Error:" + err);
+    Reproducir audio / / function playAudio(url) {/ / reproducción del archivo de audio en el url var my_media = new Media (url, / / función de devolución de llamada de éxito () {mycon.log ("(playAudio): Audio éxito");
+            }, / / función de callback de error (err) {mycon.log ("(playAudio): Audio Error:" + err);
             }
         );
         Reproducir audio my_media.play();
@@ -263,8 +263,8 @@ Ajuste el volumen para un archivo de audio.
 
 ### Ejemplo rápido
 
-    Reproducir audio / / function playAudio(url) {/ / reproducción del archivo de audio en el url var my_media = new Media (url, / / éxito callback function() {console.log ("(playAudio): Audio éxito");
-            }, / / error callback function(err) {console.log ("(playAudio): Audio Error:" + err);
+    Reproducir audio / / function playAudio(url) {/ / reproducción del archivo de audio en el url var my_media = new Media (url, / / éxito callback function() {mycon.log ("(playAudio): Audio éxito");
+            }, / / error callback function(err) {mycon.log ("(playAudio): Audio Error:" + err);
         });
     
         Reproducir audio my_media.play();
@@ -294,8 +294,8 @@ Empieza a grabar un archivo de audio.
 ### Ejemplo rápido
 
     Grabar audio / / function recordAudio() {var src = "myrecording.mp3";
-        var mediaRec = new Media (src, / / éxito callback function() {console.log ("(recordAudio): Audio éxito");
-            }, / / error callback function(err) {console.log ("(recordAudio): Audio Error:" + err.code);
+        var mediaRec = new Media (src, / / éxito callback function() {mycon.log ("(recordAudio): Audio éxito");
+            }, / / error callback function(err) {mycon.log ("(recordAudio): Audio Error:" + err.code);
             });
     
         Grabar audio mediaRec.startRecord();
@@ -337,8 +337,8 @@ Deja de reproducir un archivo de audio.
 
 ### Ejemplo rápido
 
-    Reproducir audio / / function playAudio(url) {/ / reproducción del archivo de audio en el url var my_media = new Media (url, / / éxito callback function() {console.log ("(playAudio): Audio éxito");
-            }, / / error callback function(err) {console.log ("(playAudio): Audio Error:" + err);
+    Reproducir audio / / function playAudio(url) {/ / reproducción del archivo de audio en el url var my_media = new Media (url, / / éxito callback function() {mycon.log ("(playAudio): Audio éxito");
+            }, / / error callback function(err) {mycon.log ("(playAudio): Audio Error:" + err);
             }
         );
     
@@ -366,8 +366,8 @@ Detiene la grabación de un archivo de audio.
 ### Ejemplo rápido
 
     Grabar audio / / function recordAudio() {var src = "myrecording.mp3";
-        var mediaRec = new Media (src, / / éxito callback function() {console.log ("(recordAudio): Audio éxito");
-            }, / / error callback function(err) {console.log ("(recordAudio): Audio Error:" + err.code);
+        var mediaRec = new Media (src, / / éxito callback function() {mycon.log ("(recordAudio): Audio éxito");
+            }, / / error callback function(err) {mycon.log ("(recordAudio): Audio Error:" + err.code);
             }
         );
     

@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <ul id="filelist"></ul>  
+        <script type="text/javascript">
+            function toArray(list) {
+                return Array.prototype.slice.call(list || [], 0);
+            }
+
+            function listResults(entries) {
+                // Document fragments can improve performance since they're only appended  
+                // to the DOM once. Only one browser reflow occurs.
+                var flist = new Array();
+                entries.forEach(function (entry, i) {
+                    flist.push(entry.name);
+                });
+                return flist;
+            }
+
+            function onInitFs(fs) {
+                var dirReader = fs.root.createReader();
+                var entries = [];
+                // Call the reader.readEntries() until no more results are returned.  
+                var readEntries = function () {
+                    dirReader.readEntries(function (results) {
+                        if (!results.length) {
+                            listResults(entries.sort());
+                        } else {
+                            entries = entries.concat(toArray(results));
+                            readEntries();
+                        }
+                    }, errorHandler);
+                };
+                readEntries(); // Start reading dirs.  
+            }
+            window.requestFileSystem(window.TEMPORARY, 1024 * 1024, onInitFs, errorHandler);
+
+        </script>
+    </body>
+</html>

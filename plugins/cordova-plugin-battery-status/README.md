@@ -53,7 +53,7 @@ Fires when the battery charge percentage changes by at least 1 percent, or when 
     window.addEventListener("batterystatus", onBatteryStatus, false);
 
     function onBatteryStatus(status) {
-        console.log("Level: " + status.level + " isPlugged: " + status.isPlugged);
+        mycon.log("Level: " + status.level + " isPlugged: " + status.isPlugged);
     }
 
 ### Supported Platforms

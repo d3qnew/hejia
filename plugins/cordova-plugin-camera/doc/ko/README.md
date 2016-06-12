@@ -27,7 +27,7 @@
 
     document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady() {
-        console.log(navigator.camera);
+        mycon.log(navigator.camera);
     }
     
 
@@ -413,7 +413,7 @@ iOS 전용 매개 변수 iPad의 보관 함 또는 앨범에서 이미지를 선
     navigator.camera.cleanup(onSuccess, onFail);
     
     function onSuccess() {
-        console.log("Camera cleanup success.")
+        mycon.log("Camera cleanup success.")
     }
     
     function onFail(message) {

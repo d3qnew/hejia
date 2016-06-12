@@ -72,7 +72,7 @@ var Battery = {
                 w3cBattery.onchargingchange = null;
             }
         } catch(e) {
-            console.warn('Error occured while trying to stop battery: ' + JSON.stringify(e));
+            mycon.warn('Error occured while trying to stop battery: ' + JSON.stringify(e));
         }
     }
 };

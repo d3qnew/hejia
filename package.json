@@ -11,7 +11,9 @@
   "author": "d3qnew",
   "contributors": [],
   "dependencies": {
-    "cordova-plugin-email-composer": "0.8.3",
-    "ionic": "1.7.15"
+    "console": "0.5.2",
+    "jquery": "3.0.0",
+    "console_log": "1.0.3"
+
   }
 }

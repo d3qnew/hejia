@@ -26,7 +26,7 @@ Ce plugin définit global `navigator.globalization` objet.
 Bien que dans la portée globale, il n'est pas disponible jusqu'après la `deviceready` événement.
 
     document.addEventListener (« deviceready », onDeviceReady, false) ;
-    function onDeviceReady() {console.log(navigator.globalization);}
+    function onDeviceReady() {mycon.log(navigator.globalization);}
     
 
 ## Installation

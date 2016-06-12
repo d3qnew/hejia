@@ -27,7 +27,7 @@
 
     document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady() {
-        console.log(navigator.globalization);
+        mycon.log(navigator.globalization);
     }
     
 

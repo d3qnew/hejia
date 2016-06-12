@@ -29,7 +29,7 @@ Chociaż w globalnym zasięgu, to nie dostępne dopiero po `deviceready` imprezi
 
     document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady() {
-        console.log(navigator.globalization);
+        mycon.log(navigator.globalization);
     }
     
 

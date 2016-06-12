@@ -32,7 +32,7 @@ This plugin defines global `FileTransfer`, `FileUploadOptions` constructors. Alt
 ```js
 document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
-    console.log(FileTransfer);
+    mycon.log(FileTransfer);
 }
 ```
 
@@ -111,15 +111,15 @@ __Parameters__:
 //    for example, cdvfile://localhost/persistent/path/to/file.txt
 
 var win = function (r) {
-    console.log("Code = " + r.responseCode);
-    console.log("Response = " + r.response);
-    console.log("Sent = " + r.bytesSent);
+    mycon.log("Code = " + r.responseCode);
+    mycon.log("Response = " + r.response);
+    mycon.log("Sent = " + r.bytesSent);
 }
 
 var fail = function (error) {
     alert("An error has occurred: Code = " + error.code);
-    console.log("upload error source " + error.source);
-    console.log("upload error target " + error.target);
+    mycon.log("upload error source " + error.source);
+    mycon.log("upload error target " + error.target);
 }
 
 var options = new FileUploadOptions();
@@ -141,15 +141,15 @@ ft.upload(fileURL, encodeURI("http://some.server.com/upload.php"), win, fail, op
 
 ```js
 function win(r) {
-    console.log("Code = " + r.responseCode);
-    console.log("Response = " + r.response);
-    console.log("Sent = " + r.bytesSent);
+    mycon.log("Code = " + r.responseCode);
+    mycon.log("Response = " + r.response);
+    mycon.log("Sent = " + r.bytesSent);
 }
 
 function fail(error) {
     alert("An error has occurred: Code = " + error.code);
-    console.log("upload error source " + error.source);
-    console.log("upload error target " + error.target);
+    mycon.log("upload error source " + error.source);
+    mycon.log("upload error target " + error.target);
 }
 
 var uri = encodeURI("http://some.server.com/upload.php");
@@ -235,12 +235,12 @@ fileTransfer.download(
     uri,
     fileURL,
     function(entry) {
-        console.log("download complete: " + entry.toURL());
+        mycon.log("download complete: " + entry.toURL());
     },
     function(error) {
-        console.log("download error source " + error.source);
-        console.log("download error target " + error.target);
-        console.log("upload error code" + error.code);
+        mycon.log("download error source " + error.source);
+        mycon.log("download error target " + error.target);
+        mycon.log("upload error code" + error.code);
     },
     false,
     {
@@ -270,14 +270,14 @@ Aborts an in-progress transfer. The onerror callback is passed a FileTransferErr
 //    for example, cdvfile://localhost/persistent/path/to/file.txt
 
 var win = function(r) {
-    console.log("Should not be called.");
+    mycon.log("Should not be called.");
 }
 
 var fail = function(error) {
     // error.code == FileTransferError.ABORT_ERR
     alert("An error has occurred: Code = " + error.code);
-    console.log("upload error source " + error.source);
-    console.log("upload error target " + error.target);
+    mycon.log("upload error source " + error.source);
+    mycon.log("upload error target " + error.target);
 }
 
 var options = new FileUploadOptions();
@@ -354,7 +354,7 @@ Use the File plugin with the File-Transfer plugin to provide a target for the fi
 ```js
 window.requestFileSystem(window.TEMPORARY, 5 * 1024 * 1024, function (fs) {
 
-    console.log('file system open: ' + fs.name);
+    mycon.log('file system open: ' + fs.name);
 
     // Make sure you add the domain name to the Content-Security-Policy <meta> element.
     var url = 'http://cordova.apache.org/static/img/cordova_bot.png';
@@ -381,8 +381,8 @@ function download(fileEntry, uri, readBinaryData) {
         uri,
         fileURL,
         function (entry) {
-            console.log("Successful download...");
-            console.log("download complete: " + entry.toURL());
+            mycon.log("Successful download...");
+            mycon.log("download complete: " + entry.toURL());
             if (readBinaryData) {
               // Read the file...
               readBinaryFile(entry);
@@ -393,9 +393,9 @@ function download(fileEntry, uri, readBinaryData) {
             }
         },
         function (error) {
-            console.log("download error source " + error.source);
-            console.log("download error target " + error.target);
-            console.log("upload error code" + error.code);
+            mycon.log("download error source " + error.source);
+            mycon.log("download error target " + error.target);
+            mycon.log("upload error code" + error.code);
         },
         null, // or, pass false
         {
@@ -425,7 +425,7 @@ function readBinaryFile(fileEntry) {
 
         reader.onloadend = function() {
 
-            console.log("Successful file read: " + this.result);
+            mycon.log("Successful file read: " + this.result);
             // displayFileData(fileEntry.fullPath + ": " + this.result);
 
             var blob = new Blob([new Uint8Array(this.result)], { type: "image/png" });
@@ -462,7 +462,7 @@ When you upload a File using the File-Transfer plugin, use the File plugin to pr
 function onUploadFile() {
     window.requestFileSystem(window.TEMPORARY, 5 * 1024 * 1024, function (fs) {
 
-        console.log('file system open: ' + fs.name);
+        mycon.log('file system open: ' + fs.name);
         var fileName = "uploadSource.txt";
         var dirEntry = fs.root;
         dirEntry.getFile(fileName, { create: true, exclusive: false }, function (fileEntry) {
@@ -484,12 +484,12 @@ function writeFile(fileEntry, dataObj) {
     fileEntry.createWriter(function (fileWriter) {
 
         fileWriter.onwriteend = function () {
-            console.log("Successful file write...");
+            mycon.log("Successful file write...");
             upload(fileEntry);
         };
 
         fileWriter.onerror = function (e) {
-            console.log("Failed file write: " + e.toString());
+            mycon.log("Failed file write: " + e.toString());
         };
 
         if (!dataObj) {
@@ -509,8 +509,8 @@ function upload(fileEntry) {
     var fileURL = fileEntry.toURL();
 
     var success = function (r) {
-        console.log("Successful upload...");
-        console.log("Code = " + r.responseCode);
+        mycon.log("Successful upload...");
+        mycon.log("Code = " + r.responseCode);
         // displayFileData(fileEntry.fullPath + " (content uploaded to server)");
     }
 
@@ -550,14 +550,14 @@ function download(fileEntry, uri) {
         uri,
         fileURL,
         function (entry) {
-            console.log("Successful download...");
-            console.log("download complete: " + entry.toURL());
+            mycon.log("Successful download...");
+            mycon.log("download complete: " + entry.toURL());
             readFile(entry);
         },
         function (error) {
-            console.log("download error source " + error.source);
-            console.log("download error target " + error.target);
-            console.log("upload error code" + error.code);
+            mycon.log("download error source " + error.source);
+            mycon.log("download error target " + error.target);
+            mycon.log("upload error code" + error.code);
         },
         null, // or, pass false
         {
@@ -578,7 +578,7 @@ function readFile(fileEntry) {
 
         reader.onloadend = function () {
 
-            console.log("Successful file read: " + this.result);
+            mycon.log("Successful file read: " + this.result);
             // displayFileData(fileEntry.fullPath + ": " + this.result);
 
         };

@@ -1,0 +1,70 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-battery-status": {
+            "PACKAGE_NAME": "hejia"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "hejia"
+        },
+        "cordova-plugin-contacts": {
+            "PACKAGE_NAME": "hejia"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "hejia"
+        },
+        "cordova-plugin-device-motion": {
+            "PACKAGE_NAME": "hejia"
+        },
+        "cordova-plugin-device-orientation": {
+            "PACKAGE_NAME": "hejia"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "hejia"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "hejia"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "hejia"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "hejia"
+        },
+        "cordova-plugin-globalization": {
+            "PACKAGE_NAME": "hejia"
+        },
+        "cordova-plugin-media": {
+            "PACKAGE_NAME": "hejia"
+        },
+        "cordova-plugin-media-capture": {
+            "PACKAGE_NAME": "hejia"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "hejia"
+        },
+        "cordova-plugin-vibration": {
+            "PACKAGE_NAME": "hejia"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "hejia"
+        },
+        "cordova-plugin-email": {
+            "PACKAGE_NAME": "hejia"
+        },
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "hejia"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "hejia"
+        }
+    }
+}

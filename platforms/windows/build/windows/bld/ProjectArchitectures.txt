@@ -1,0 +1,1 @@
+C:\poj\test\hejia\platforms\windows\CordovaApp.Windows.jsproj;x64

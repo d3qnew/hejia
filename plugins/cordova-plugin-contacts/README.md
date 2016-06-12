@@ -31,7 +31,7 @@ Although the object is attached to the global scoped `navigator`, it is not avai
 ```js
 document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
-console.log(navigator.contacts);
+mycon.log(navigator.contacts);
 }
 ```
 
@@ -234,9 +234,9 @@ function specified by the __contactSuccess__ parameter.
 
 ```js
 navigator.contacts.pickContact(function(contact){
-        console.log('The following contact has been selected:' + JSON.stringify(contact));
+        mycon.log('The following contact has been selected:' + JSON.stringify(contact));
     },function(err){
-        console.log('Error: ' + err);
+        mycon.log('Error: ' + err);
     });
 ```
 
@@ -353,8 +353,8 @@ contact.save(onSuccess,onError);
 // clone the contact object
 var clone = contact.clone();
 clone.name.givenName = "John";
-console.log("Original contact name = " + contact.name.givenName);
-console.log("Cloned contact name = " + clone.name.givenName);
+mycon.log("Original contact name = " + contact.name.givenName);
+mycon.log("Cloned contact name = " + clone.name.givenName);
 ```
 
 ### Remove Example
@@ -390,12 +390,12 @@ myContact.save(function (contact_obj) {
         var phoneNumbers = [contactObjToModify.phoneNumbers[0]];
         contactObjToModify.phoneNumbers = phoneNumbers;
         contactObjToModify.save(function(c_obj){
-            console.log("All Done");
+            mycon.log("All Done");
         }, function(error){
-            console.log("Not able to save the cloned object: " + error);
+            mycon.log("Not able to save the cloned object: " + error);
         });
     }, function(contactError) {
-        console.log("Contact Remove Operation failed: " + contactError);
+        mycon.log("Contact Remove Operation failed: " + contactError);
     });
 });
 ```

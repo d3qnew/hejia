@@ -41,8 +41,8 @@ function v_showfile(arr) {
                     break;
 
                 case 3:
-
-                    navigator.notification.alert("查看");
+                    readFile(filename,err);
+//                    navigator.notification.alert("查看");
                     break;
 
             }

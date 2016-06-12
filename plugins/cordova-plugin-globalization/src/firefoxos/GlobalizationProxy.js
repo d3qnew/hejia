@@ -27,9 +27,9 @@ var l10n_ready = new Event('l10n_ready');
 var is_l10n_ready = false;
 
 document.addEventListener('l10n_loaded', function() {
-  console.log('DEBUG: L10n loaded');
+  mycon.log('DEBUG: L10n loaded');
   navigator.mozL10n.ready(function() {
-    console.log('DEBUG: L10n ready');
+    mycon.log('DEBUG: L10n ready');
     is_l10n_ready = true;
     document.dispatchEvent(l10n_ready);
   });
@@ -136,12 +136,12 @@ function stringToDate(successCB, errorCB, params) {
     try {
       date = new Date(dateString);
     } catch(e) {  
-      console.log("Cordova, stringToDate, An error occurred " + e.message);
+      mycon.log("Cordova, stringToDate, An error occurred " + e.message);
       return errorCB(new GlobalizationError(
             GlobalizationError.PARSING_ERROR, e.message));
     } 
     if (!date || date === 'Invalid Date') {
-      console.log("Cordova, stringToDate, Invalid Date: " + dateString);
+      mycon.log("Cordova, stringToDate, Invalid Date: " + dateString);
       return errorCB(new GlobalizationError(
             GlobalizationError.PARSING_ERROR, 'Invalid Date (' + dateString + ')'));
     }

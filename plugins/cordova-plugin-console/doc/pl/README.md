@@ -17,27 +17,27 @@
 #         under the License.
 -->
 
-# cordova-plugin-console
+# cordova-plugin-mycon
 
-[![Build Status](https://travis-ci.org/apache/cordova-plugin-console.svg)](https://travis-ci.org/apache/cordova-plugin-console)
+[![Build Status](https://travis-ci.org/apache/cordova-plugin-mycon.svg)](https://travis-ci.org/apache/cordova-plugin-mycon)
 
-Ten plugin jest przeznaczona do zapewnienia, że console.log() jest tak przydatne, jak to może być. To dodaje dodatkową funkcję dla iOS, Ubuntu, Windows Phone 8 i Windows. Jeśli jesteś zadowolony z jak console.log() pracuje dla Ciebie, wtedy prawdopodobnie nie potrzebują tej wtyczki.
+Ten plugin jest przeznaczona do zapewnienia, że mycon.log() jest tak przydatne, jak to może być. To dodaje dodatkową funkcję dla iOS, Ubuntu, Windows Phone 8 i Windows. Jeśli jesteś zadowolony z jak mycon.log() pracuje dla Ciebie, wtedy prawdopodobnie nie potrzebują tej wtyczki.
 
-Ten plugin definiuje obiekt globalny `console`.
+Ten plugin definiuje obiekt globalny `mycon`.
 
 Mimo, że obiekt jest w globalnym zasięgu, funkcji oferowanych przez ten plugin nie są dostępne dopiero po turnieju `deviceready`.
 
     document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady() {
-        console.log("console.log works well");
+        mycon.log("mycon.log works well");
     }
     
 
 ## Instalacja
 
-    cordova plugin add cordova-plugin-console
+    cordova plugin add cordova-plugin-mycon
     
 
 ### Dziwactwa Androida
 
-Na niektórych platformach innych niż Android console.log() będzie działać na wielu argumentów, takich jak console.log ("1", "2", "3"). Jednak Android będzie działać tylko na pierwszy argument. Kolejne argumenty do console.log() będą ignorowane. Ten plugin nie jest przyczyną, że, jest to ograniczenie Androida, sam.
+Na niektórych platformach innych niż Android mycon.log() będzie działać na wielu argumentów, takich jak mycon.log ("1", "2", "3"). Jednak Android będzie działać tylko na pierwszy argument. Kolejne argumenty do mycon.log() będą ignorowane. Ten plugin nie jest przyczyną, że, jest to ograniczenie Androida, sam.

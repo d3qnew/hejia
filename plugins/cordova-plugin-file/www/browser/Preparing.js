@@ -122,7 +122,7 @@
             };
 
             entryType.toNativeURL = function () {
-                console.warn("DEPRECATED: Update your code to use 'toURL'");
+                mycon.warn("DEPRECATED: Update your code to use 'toURL'");
                 return this.toURL();
             };
 
@@ -171,10 +171,10 @@
     window.isFilePluginReadyRaised = function () { return eventWasThrown; };
 
     window.initPersistentFileSystem(PERSISTENT_FS_QUOTA, function() {
-        console.log('Persistent fs quota granted');
+        mycon.log('Persistent fs quota granted');
         quotaWasRequested = true;
     }, function(e){
-        console.log('Error occured while trying to request Persistent fs quota: ' + JSON.stringify(e));
+        mycon.log('Error occured while trying to request Persistent fs quota: ' + JSON.stringify(e));
     });
 
     channel.onCordovaReady.subscribe(function () {

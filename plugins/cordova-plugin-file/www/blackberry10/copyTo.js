@@ -75,7 +75,7 @@ module.exports = function (success, fail, args, move) {
             fileWriter.onwriteend = function () {
                 if (move) {
                     entry.nativeEntry.remove(onSuccess, function () {
-                        console.error("Move operation failed. Files may exist at both source and destination");
+                        mycon.error("Move operation failed. Files may exist at both source and destination");
                     });
                 } else {
                     onSuccess();
@@ -110,7 +110,7 @@ module.exports = function (success, fail, args, move) {
     function copyDirectory(entry) {
         resolve(function (destEntry) {
             if (entry.filesystemName !== destEntry.filesystemName) {
-                console.error("Copying directories between filesystems is not supported on BB10");
+                mycon.error("Copying directories between filesystems is not supported on BB10");
                 onFail(FileError.INVALID_MODIFICATION_ERR);
             } else {
                 entry.nativeEntry.copyTo(destEntry.nativeEntry, fileName, function () {

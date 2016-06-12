@@ -25,7 +25,7 @@ Mimo, że obiekt jest dołączony do globalnego zakresu `navigator`, to nie dost
 
     document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady() {
-        console.log(navigator.notification);
+        mycon.log(navigator.notification);
     }
     
 

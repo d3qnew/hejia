@@ -26,7 +26,7 @@ Ce plugin définit un global `navigator.camera` objet qui fournit une API pour l
 Bien que l'objet est attaché à la portée globale `navigator` , il n'est pas disponible jusqu'après la `deviceready` événement.
 
     document.addEventListener (« deviceready », onDeviceReady, false) ;
-    function onDeviceReady() {console.log(navigator.camera);}
+    function onDeviceReady() {mycon.log(navigator.camera);}
     
 
 ## Installation
@@ -373,6 +373,6 @@ Supprime les intermédiaires les fichiers image qui sont gardées en dépôt tem
 
     Navigator.Camera.Cleanup (onSuccess, onFail) ;
     
-    fonction onSuccess() {console.log ("succès de caméra nettoyage.")}
+    fonction onSuccess() {mycon.log ("succès de caméra nettoyage.")}
     
     function onFail(message) {alert (' a échoué car: "+ message);}

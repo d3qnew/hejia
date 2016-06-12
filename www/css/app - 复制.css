@@ -1,0 +1,113 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2016-5-30, 15:51:09
+    Author     : d3qnew
+*/
+
+body{
+    
+    height: 100%;
+    overflow:hidden;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    
+}
+
+ul{
+    list-style:none; 
+    padding:0;
+    -webkit-margin-before:0;
+    -webkit-margin-after:0;
+    -webkit-margin-strat:0;
+    -webkit-margin-end:0
+}
+li{padding-left:1ex;}
+
+table{
+    border:0;
+    cellpadding:3; 
+    cellspacing:1; 
+    align:center; 
+    background-color: #333;
+    
+   
+}
+
+tr{
+    text-align: center;
+    color: black;     
+    font-weight: bold;
+}
+
+td{  
+    padding: 0;
+    margin: 0;
+    size: 24px;
+    background-color:#ddd;
+    line-height: 28px;
+}
+
+#deviceready{
+    overflow:hidden;
+    position: relative;
+}
+
+#main{
+    overflow:hidden;
+    position: relative;
+}
+
+.tp{font-size: 14px;width: 100%;}
+
+.menu{text-align: center};
+.menubar{width: 100%}
+.menubt{background-color:black; color:white; display:inline-block;width:50%;float: left;}
+
+.menu_select{position: absolute;left:0px; background-color:black;text-align:left; display:none;}
+
+
+#wimg_display { text-align:left;width:100%;clear:both;}
+
+
+
+.window_table{ margin:0;padding:0;border:none;width:100%;height:100%;}
+.window_table td{display:block; }
+
+.win_td{}
+
+
+
+.child_window_e{width:100%;height:100%;background-color:#808080;margin:0;text-align:center;padding:3em;}
+.child_window_i{background-color:#ddd;width:100%;height:100%;}
+
+
+
+.filels_table{width:100%;}
+.filels_table tr td{text-align:left;}
+#v_filelist{text-align:center;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.testdiv{display:inline-block; border:1px solid #f00; width:600px;height:300px; text-align:left;}
+.testdiv div{display:inline-block;border:1px solid black; background-color:#ccc}

@@ -148,7 +148,7 @@ exports.defineAutoTests = function () {
                     done();
                 }, function(err){
                     if(err.message && err.message.indexOf('kCLErrorDomain') > -1){
-                        console.log("Error: Location not set in simulator, tests will fail.");
+                        mycon.log("Error: Location not set in simulator, tests will fail.");
                         expect(true).toBe(true);
                         isIOSSim = true;
                         done();
@@ -321,7 +321,7 @@ exports.defineManualTests = function (contentEl, createActionButton) {
 
         // Fail callback
         var fail = function (e) {
-            console.log("watchLocation fail callback with error code " + e);
+            mycon.log("watchLocation fail callback with error code " + e);
             stopLocation(geo);
         };
 
@@ -351,7 +351,7 @@ exports.defineManualTests = function (contentEl, createActionButton) {
 
         // Fail callback
         var fail = function (e) {
-            console.log("getLocation fail callback with error code " + e.code);
+            mycon.log("getLocation fail callback with error code " + e.code);
             setLocationStatus("Error: " + e.code);
         };
 

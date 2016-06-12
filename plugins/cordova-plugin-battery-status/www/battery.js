@@ -102,7 +102,7 @@ Battery.prototype._status = function (info) {
  * Error callback for battery start
  */
 Battery.prototype._error = function(e) {
-    console.log("Error initializing Battery: " + e);
+    mycon.log("Error initializing Battery: " + e);
 };
 
 var battery = new Battery(); // jshint ignore:line

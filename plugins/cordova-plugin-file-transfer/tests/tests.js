@@ -111,7 +111,7 @@ exports.defineAutoTests = function () {
 
         var expectedCallbacks = {
             unsupportedOperation: function (response) {
-                console.log("spec called unsupported functionality; response:", response);
+                mycon.log("spec called unsupported functionality; response:", response);
             },
         };
 
@@ -345,7 +345,7 @@ exports.defineAutoTests = function () {
                             var lastProgressEvent = specContext.transfer.onprogress.calls.mostRecent().args[0];
                             expect(lastProgressEvent.loaded).not.toBeGreaterThan(blob.size);
                         } else {
-                            console.log("no progress events were emitted");
+                            mycon.log("no progress events were emitted");
                         }
 
                         done();
@@ -912,7 +912,7 @@ exports.defineAutoTests = function () {
                             var lastProgressEvent = specContext.transfer.onprogress.calls.mostRecent().args[0];
                             expect(lastProgressEvent.loaded).not.toBeGreaterThan(blob.size);
                         } else {
-                            console.log("no progress events were emitted");
+                            mycon.log("no progress events were emitted");
                         }
 
                         expect(blob.size).toBeGreaterThan(0);
@@ -1410,7 +1410,7 @@ exports.defineAutoTests = function () {
                     var dataUri = DATA_URI_PREFIX + DATA_URI_CONTENT;
                     // NOTE: removing uploadOptions cause Android to timeout
                     specContext.transfer.upload(dataUri, fileURL, uploadWin, function (err) {
-                        console.error('err: ' + JSON.stringify(err));
+                        mycon.error('err: ' + JSON.stringify(err));
                         expect(err).not.toBeDefined();
                         done();
                     }, specContext.uploadOptions);
@@ -1596,7 +1596,7 @@ exports.defineManualTests = function (contentEl, createActionButton) {
 
         function download(fileSystem) {
             var ft = new FileTransfer();
-            console.log("Starting download");
+            mycon.log("Starting download");
 
             var progress = document.getElementById("loadingStatus");
             progress.value = 0;
@@ -1613,37 +1613,37 @@ exports.defineManualTests = function (contentEl, createActionButton) {
             };
 
             ft.download(source, fileSystem.root.toURL() + filename, function (entry) {
-                console.log("Download complete");
+                mycon.log("Download complete");
                 element.src = urlFn(entry);
-                console.log("Src URL is " + element.src);
-                console.log("Inserting element");
+                mycon.log("Src URL is " + element.src);
+                mycon.log("Inserting element");
                 document.getElementById("info").appendChild(element);
-            }, function (e) { console.log("ERROR: ft.download " + e.code); });
+            }, function (e) { mycon.log("ERROR: ft.download " + e.code); });
         }
-        console.log("Requesting filesystem");
+        mycon.log("Requesting filesystem");
         clearResults();
         window.requestFileSystem(LocalFileSystem.TEMPORARY, 0, function (fileSystem) {
-            console.log("Checking for existing file");
+            mycon.log("Checking for existing file");
             if (typeof directory !== "undefined") {
-                console.log("Checking for existing directory.");
+                mycon.log("Checking for existing directory.");
                 fileSystem.root.getDirectory(directory, {}, function (dirEntry) {
                     dirEntry.removeRecursively(function () {
                         download(fileSystem);
-                    }, function () { console.log("ERROR: dirEntry.removeRecursively"); });
+                    }, function () { mycon.log("ERROR: dirEntry.removeRecursively"); });
                 }, function () {
                     download(fileSystem);
                 });
             } else {
                 fileSystem.root.getFile(filename, { create: false }, function (entry) {
-                    console.log("Removing existing file");
+                    mycon.log("Removing existing file");
                     entry.remove(function () {
                         download(fileSystem);
-                    }, function () { console.log("ERROR: entry.remove"); });
+                    }, function () { mycon.log("ERROR: entry.remove"); });
                 }, function () {
                     download(fileSystem);
                 });
             }
-        }, function () { console.log("ERROR: requestFileSystem"); });
+        }, function () { mycon.log("ERROR: requestFileSystem"); });
     }
 
     /******************************************************************************/

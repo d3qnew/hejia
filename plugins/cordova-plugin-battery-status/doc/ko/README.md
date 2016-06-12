@@ -75,7 +75,7 @@ Windows Phone 8.1 `isPlugged` 매개 변수를 지원 하지 않습니다. `leve
     
     function onBatteryStatus(info) {
         // Handle the online event
-        console.log("Level: " + info.level + " isPlugged: " + info.isPlugged);
+        mycon.log("Level: " + info.level + " isPlugged: " + info.isPlugged);
     }
     
 

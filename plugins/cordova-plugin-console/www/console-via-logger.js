@@ -26,12 +26,12 @@ var logger = require("./logger");
 //------------------------------------------------------------------------------
 // object that we're exporting
 //------------------------------------------------------------------------------
-var console = module.exports;
+var mycon = module.exports;
 
 //------------------------------------------------------------------------------
-// copy of the original console object
+// copy of the original mycon object
 //------------------------------------------------------------------------------
-var WinConsole = window.console;
+var WinConsole = window.mycon;
 
 //------------------------------------------------------------------------------
 // whether to use the logger
@@ -51,12 +51,12 @@ function noop() {}
 //------------------------------------------------------------------------------
 // used for unimplemented methods
 //------------------------------------------------------------------------------
-console.useLogger = function (value) {
+mycon.useLogger = function (value) {
     if (arguments.length) UseLogger = !!value;
 
     if (UseLogger) {
         if (logger.useConsole()) {
-            throw new Error("console and logger are too intertwingly");
+            throw new Error("mycon and logger are too intertwingly");
         }
     }
 
@@ -64,103 +64,103 @@ console.useLogger = function (value) {
 };
 
 //------------------------------------------------------------------------------
-console.log = function() {
+mycon.log = function() {
     if (logger.useConsole()) return;
     logger.log.apply(logger, [].slice.call(arguments));
 };
 
 //------------------------------------------------------------------------------
-console.error = function() {
+mycon.error = function() {
     if (logger.useConsole()) return;
     logger.error.apply(logger, [].slice.call(arguments));
 };
 
 //------------------------------------------------------------------------------
-console.warn = function() {
+mycon.warn = function() {
     if (logger.useConsole()) return;
     logger.warn.apply(logger, [].slice.call(arguments));
 };
 
 //------------------------------------------------------------------------------
-console.info = function() {
+mycon.info = function() {
     if (logger.useConsole()) return;
     logger.info.apply(logger, [].slice.call(arguments));
 };
 
 //------------------------------------------------------------------------------
-console.debug = function() {
+mycon.debug = function() {
     if (logger.useConsole()) return;
     logger.debug.apply(logger, [].slice.call(arguments));
 };
 
 //------------------------------------------------------------------------------
-console.assert = function(expression) {
+mycon.assert = function(expression) {
     if (expression) return;
 
     var message = logger.format.apply(logger.format, [].slice.call(arguments, 1));
-    console.log("ASSERT: " + message);
+    mycon.log("ASSERT: " + message);
 };
 
 //------------------------------------------------------------------------------
-console.clear = function() {};
+mycon.clear = function() {};
 
 //------------------------------------------------------------------------------
-console.dir = function(object) {
-    console.log("%o", object);
+mycon.dir = function(object) {
+    mycon.log("%o", object);
 };
 
 //------------------------------------------------------------------------------
-console.dirxml = function(node) {
-    console.log(node.innerHTML);
+mycon.dirxml = function(node) {
+    mycon.log(node.innerHTML);
 };
 
 //------------------------------------------------------------------------------
-console.trace = noop;
+mycon.trace = noop;
 
 //------------------------------------------------------------------------------
-console.group = console.log;
+mycon.group = mycon.log;
 
 //------------------------------------------------------------------------------
-console.groupCollapsed = console.log;
+mycon.groupCollapsed = mycon.log;
 
 //------------------------------------------------------------------------------
-console.groupEnd = noop;
+mycon.groupEnd = noop;
 
 //------------------------------------------------------------------------------
-console.time = function(name) {
+mycon.time = function(name) {
     Timers[name] = new Date().valueOf();
 };
 
 //------------------------------------------------------------------------------
-console.timeEnd = function(name) {
+mycon.timeEnd = function(name) {
     var timeStart = Timers[name];
     if (!timeStart) {
-        console.warn("unknown timer: " + name);
+        mycon.warn("unknown timer: " + name);
         return;
     }
 
     var timeElapsed = new Date().valueOf() - timeStart;
-    console.log(name + ": " + timeElapsed + "ms");
+    mycon.log(name + ": " + timeElapsed + "ms");
 };
 
 //------------------------------------------------------------------------------
-console.timeStamp = noop;
+mycon.timeStamp = noop;
 
 //------------------------------------------------------------------------------
-console.profile = noop;
+mycon.profile = noop;
 
 //------------------------------------------------------------------------------
-console.profileEnd = noop;
+mycon.profileEnd = noop;
 
 //------------------------------------------------------------------------------
-console.count = noop;
+mycon.count = noop;
 
 //------------------------------------------------------------------------------
-console.exception = console.log;
+mycon.exception = mycon.log;
 
 //------------------------------------------------------------------------------
-console.table = function(data, columns) {
-    console.log("%o", data);
+mycon.table = function(data, columns) {
+    mycon.log("%o", data);
 };
 
 //------------------------------------------------------------------------------
@@ -170,17 +170,17 @@ function wrappedOrigCall(orgFunc, newFunc) {
     return function() {
         var args = [].slice.call(arguments);
         try { orgFunc.apply(WinConsole, args); } catch (e) {}
-        try { newFunc.apply(console,    args); } catch (e) {}
+        try { newFunc.apply(mycon,    args); } catch (e) {}
     };
 }
 
 //------------------------------------------------------------------------------
-// For every function that exists in the original console object, that
-// also exists in the new console object, wrap the new console method
+// For every function that exists in the original mycon object, that
+// also exists in the new mycon object, wrap the new mycon method
 // with one that calls both
 //------------------------------------------------------------------------------
-for (var key in console) {
+for (var key in mycon) {
     if (typeof WinConsole[key] == "function") {
-        console[key] = wrappedOrigCall(WinConsole[key], console[key]);
+        mycon[key] = wrappedOrigCall(WinConsole[key], mycon[key]);
     }
 }

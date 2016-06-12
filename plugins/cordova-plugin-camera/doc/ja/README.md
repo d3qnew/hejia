@@ -27,7 +27,7 @@
 
     document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady() {
-        console.log(navigator.camera);
+        mycon.log(navigator.camera);
     }
     
 
@@ -413,7 +413,7 @@ iOS だけ指定パラメーターをポップ オーバーのアンカー要素
     navigator.camera.cleanup(onSuccess, onFail);
     
     function onSuccess() {
-        console.log("Camera cleanup success.")
+        mycon.log("Camera cleanup success.")
     }
     
     function onFail(message) {

@@ -105,8 +105,8 @@ module.exports = {
     },
 
     save:function(win,fail,args){
-        if (console && console.error) {
-            console.error("Error : Windows 8 does not support creating/saving contacts");
+        if (mycon && mycon.error) {
+            mycon.error("Error : Windows 8 does not support creating/saving contacts");
         }
         if (fail) {
             setTimeout(function () {
@@ -116,8 +116,8 @@ module.exports = {
     },
 
     search: function(win, fail, args) {
-        if (console && console.error) {
-            console.error("Error : Windows 8 does not support searching contacts");
+        if (mycon && mycon.error) {
+            mycon.error("Error : Windows 8 does not support searching contacts");
         }
         if (fail) {
             setTimeout(function() {

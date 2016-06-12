@@ -25,7 +25,7 @@ Mimo, że obiekt jest dołączony do globalnego zakresu `navigator`, to nie dost
 
     document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady() {
-        console.log(navigator.camera);
+        mycon.log(navigator.camera);
     }
     
 
@@ -426,7 +426,7 @@ Usuwa pliki obrazów pośrednich, które są przechowywane w pamięci tymczasowe
     navigator.camera.cleanup(onSuccess, onFail);
     
     function onSuccess() {
-        console.log("Camera cleanup success.")
+        mycon.log("Camera cleanup success.")
     }
     
     function onFail(message) {

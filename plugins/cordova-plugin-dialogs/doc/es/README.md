@@ -27,7 +27,7 @@ Aunque el objeto está unido al ámbito global `navigator` , no estará disponib
 
     document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady() {
-        console.log(navigator.notification);
+        mycon.log(navigator.notification);
     }
     
 

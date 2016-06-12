@@ -26,7 +26,7 @@ Ce plugin permet d'accéder à certains éléments d'interface utilisateur nativ
 Bien que l'objet est attaché à la portée globale `navigator` , il n'est pas disponible jusqu'après la `deviceready` événement.
 
     document.addEventListener (« deviceready », onDeviceReady, false) ;
-    function onDeviceReady() {console.log(navigator.notification);}
+    function onDeviceReady() {mycon.log(navigator.notification);}
     
 
 ## Installation

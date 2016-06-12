@@ -66,7 +66,7 @@ Windows Phone 7 배터리 수준을 확인 하려면 네이티브 Api를 제공 
     
     function onBatteryStatus(info) {
         // Handle the online event
-        console.log("Level: " + info.level + " isPlugged: " + info.isPlugged);
+        mycon.log("Level: " + info.level + " isPlugged: " + info.isPlugged);
     }
     
 

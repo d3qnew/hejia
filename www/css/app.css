@@ -17,7 +17,10 @@ body{
     margin: 0;
     
 }
-
+button{height:2em}
+input{height:20px}
+select {height:2em}
+span {line-height:2em}
 ul{
     list-style:none; 
     padding:0;
@@ -46,10 +49,10 @@ tr{
 }
 
 td{  
-    padding: 0 1em 0 1em;
+    padding: 0;
     margin: 0;
     size: 24px;
-    line-height: 32px;
+    line-height: 28px;
 }
 
 #deviceready{
@@ -69,3 +72,4 @@ td{
 .menubt{background-color:black; color:white; display:inline-block;width:50%;float: left;}
 
 .menu_select{position: absolute;left:0px; background-color:black;text-align:left; display:none;}
+.menu_select li{border-bottom:1px solid #666;}

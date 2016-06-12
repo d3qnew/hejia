@@ -105,10 +105,10 @@ module.exports.beep = window.navigator.notification.beep = function(times) {
 
             }, BEEP_DURATION);
         }
-        else if (typeof(console) !== 'undefined' && typeof(console.log) === 'function') {
-            // Audio API isn't supported, so just write `beep` to the console
+        else if (typeof(mycon) !== 'undefined' && typeof(mycon.log) === 'function') {
+            // Audio API isn't supported, so just write `beep` to the mycon
             for (var i = 0; i < times; i++) {
-                console.log('Beep!');
+                mycon.log('Beep!');
             }
         }
     }

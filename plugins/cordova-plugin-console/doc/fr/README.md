@@ -17,25 +17,25 @@
 #         under the License.
 -->
 
-# cordova-plugin-console
+# cordova-plugin-mycon
 
-[![Build Status](https://travis-ci.org/apache/cordova-plugin-console.svg)](https://travis-ci.org/apache/cordova-plugin-console)
+[![Build Status](https://travis-ci.org/apache/cordova-plugin-mycon.svg)](https://travis-ci.org/apache/cordova-plugin-mycon)
 
-Ce plugin est destiné à faire en sorte que console.log() est aussi utile que possible. Il ajoute une fonction supplémentaire pour iOS, Ubuntu, Windows Phone 8 et Windows. Si vous êtes satisfait du fonctionnement de console.log() pour vous, alors vous avez probablement pas besoin ce plugin.
+Ce plugin est destiné à faire en sorte que mycon.log() est aussi utile que possible. Il ajoute une fonction supplémentaire pour iOS, Ubuntu, Windows Phone 8 et Windows. Si vous êtes satisfait du fonctionnement de mycon.log() pour vous, alors vous avez probablement pas besoin ce plugin.
 
-Ce plugin définit un global `console` objet.
+Ce plugin définit un global `mycon` objet.
 
 Bien que l'objet est dans la portée globale, les fonctions offertes par ce plugin ne sont pas disponibles jusqu'après la `deviceready` événement.
 
     document.addEventListener (« deviceready », onDeviceReady, false) ;
-    function onDeviceReady() {console.log ("console.log fonctionne bien");}
+    function onDeviceReady() {mycon.log ("mycon.log fonctionne bien");}
     
 
 ## Installation
 
-    cordova plugin add cordova-plugin-console
+    cordova plugin add cordova-plugin-mycon
     
 
 ### Quirks Android
 
-Sur certaines plateformes autres que Android, console.log() va agir sur plusieurs arguments, tels que console.log ("1", "2", "3"). Toutefois, Android doit agir uniquement sur le premier argument. Les arguments suivants à console.log() seront ignorées. Ce plugin n'est pas la cause de cela, il s'agit d'une limitation d'Android lui-même.
+Sur certaines plateformes autres que Android, mycon.log() va agir sur plusieurs arguments, tels que mycon.log ("1", "2", "3"). Toutefois, Android doit agir uniquement sur le premier argument. Les arguments suivants à mycon.log() seront ignorées. Ce plugin n'est pas la cause de cela, il s'agit d'une limitation d'Android lui-même.
