@@ -1,493 +1,493 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>LTB</Machine>
-    <WindowsUser>d3qnew</WindowsUser>
+    <Machine>ABYSS</Machine>
+    <WindowsUser>dark</WindowsUser>
     <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
     <TargetOsVersion>6.3</TargetOsVersion>
     <TargetOsDescription>Windows 8.1</TargetOsDescription>
     <SolutionConfiguration>debug|x64</SolutionConfiguration>
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>com.coolappz.hejia</PackageIdentityName>
-    <IntermediateOutputPath>C:\poj\test\hejia\platforms\windows\build\windows\bld\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\dev\hejia\hejia\platforms\windows\build\windows\bld\</IntermediateOutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\poj\test\hejia\platforms\windows\build\windows\debug\x64\win8.1\AppxManifest.xml">
+    <AppXManifest Include="C:\dev\hejia\hejia\platforms\windows\build\windows\debug\x64\win8.1\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\plugins\cordova-plugin-globalization\GlobalizationProxy.winmd">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\plugins\cordova-plugin-globalization\GlobalizationProxy.winmd">
       <PackagePath>GlobalizationProxy.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\images\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\images\SplashScreen.scale-100.png">
       <PackagePath>images\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\images\Square150x150Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\images\Square150x150Logo.scale-100.png">
       <PackagePath>images\Square150x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\images\Square30x30Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\images\Square30x30Logo.scale-100.png">
       <PackagePath>images\Square30x30Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\images\Square310x310Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\images\Square310x310Logo.scale-100.png">
       <PackagePath>images\Square310x310Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\images\Square44x44Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\images\Square44x44Logo.scale-100.png">
       <PackagePath>images\Square44x44Logo.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\images\Square70x70Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\images\Square70x70Logo.scale-100.png">
       <PackagePath>images\Square70x70Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\images\Square71x71Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\images\Square71x71Logo.scale-100.png">
       <PackagePath>images\Square71x71Logo.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\images\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\images\StoreLogo.scale-100.png">
       <PackagePath>images\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\images\Wide310x150Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\images\Wide310x150Logo.scale-100.png">
       <PackagePath>images\Wide310x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\css\images\tmbg.png">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\css\images\tmbg.png">
       <PackagePath>www\css\images\tmbg.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\img\logo.png">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\img\logo.png">
       <PackagePath>www\img\logo.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\img\tmbg.png">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\img\tmbg.png">
       <PackagePath>www\img\tmbg.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\cordova-js-src\exec.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\cordova-js-src\exec.js">
       <PackagePath>www\cordova-js-src\exec.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\cordova-js-src\platform.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\cordova-js-src\platform.js">
       <PackagePath>www\cordova-js-src\platform.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\cordova.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\cordova.js">
       <PackagePath>www\cordova.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\cordova_plugins.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\cordova_plugins.js">
       <PackagePath>www\cordova_plugins.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\js\c\filelist.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\js\c\filelist.js">
       <PackagePath>www\js\c\filelist.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\js\c\main.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\js\c\main.js">
       <PackagePath>www\js\c\main.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\js\c\price.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\js\c\price.js">
       <PackagePath>www\js\c\price.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\js\c\showhejiadan.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\js\c\showhejiadan.js">
       <PackagePath>www\js\c\showhejiadan.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\js\c\window_img - 复制.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\js\c\window_img - 复制.js">
       <PackagePath>www\js\c\window_img - 复制.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\js\c\window_img.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\js\c\window_img.js">
       <PackagePath>www\js\c\window_img.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\js\index.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\js\index.js">
       <PackagePath>www\js\index.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\js\lib\alertObj.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\js\lib\alertObj.js">
       <PackagePath>www\js\lib\alertObj.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\js\lib\email.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\js\lib\email.js">
       <PackagePath>www\js\lib\email.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\js\lib\jquery-2.2.3.min.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\js\lib\jquery-2.2.3.min.js">
       <PackagePath>www\js\lib\jquery-2.2.3.min.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\js\lib\jquery-3.0.0.min.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\js\lib\jquery-3.0.0.min.js">
       <PackagePath>www\js\lib\jquery-3.0.0.min.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\js\lib\jquery.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\js\lib\jquery.js">
       <PackagePath>www\js\lib\jquery.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\js\lib\xmlcurd.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\js\lib\xmlcurd.js">
       <PackagePath>www\js\lib\xmlcurd.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\js\lib\z7z8.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\js\lib\z7z8.js">
       <PackagePath>www\js\lib\z7z8.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\js\pricing\price.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\js\pricing\price.js">
       <PackagePath>www\js\pricing\price.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\js\pricing\test.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\js\pricing\test.js">
       <PackagePath>www\js\pricing\test.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\js\test\createfile.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\js\test\createfile.js">
       <PackagePath>www\js\test\createfile.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\js\test\getdir.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\js\test\getdir.js">
       <PackagePath>www\js\test\getdir.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\js\test\test1.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\js\test\test1.js">
       <PackagePath>www\js\test\test1.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-battery-status\src\windows\BatteryProxy.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-battery-status\src\windows\BatteryProxy.js">
       <PackagePath>www\plugins\cordova-plugin-battery-status\src\windows\BatteryProxy.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-battery-status\www\battery.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-battery-status\www\battery.js">
       <PackagePath>www\plugins\cordova-plugin-battery-status\www\battery.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-camera\src\windows\CameraProxy.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-camera\src\windows\CameraProxy.js">
       <PackagePath>www\plugins\cordova-plugin-camera\src\windows\CameraProxy.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-camera\www\Camera.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-camera\www\Camera.js">
       <PackagePath>www\plugins\cordova-plugin-camera\www\Camera.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-camera\www\CameraConstants.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-camera\www\CameraConstants.js">
       <PackagePath>www\plugins\cordova-plugin-camera\www\CameraConstants.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-camera\www\CameraPopoverHandle.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-camera\www\CameraPopoverHandle.js">
       <PackagePath>www\plugins\cordova-plugin-camera\www\CameraPopoverHandle.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-camera\www\CameraPopoverOptions.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-camera\www\CameraPopoverOptions.js">
       <PackagePath>www\plugins\cordova-plugin-camera\www\CameraPopoverOptions.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-console\www\console-via-logger.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-console\www\console-via-logger.js">
       <PackagePath>www\plugins\cordova-plugin-console\www\console-via-logger.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-console\www\logger.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-console\www\logger.js">
       <PackagePath>www\plugins\cordova-plugin-console\www\logger.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-contacts\src\windows\ContactProxy.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-contacts\src\windows\ContactProxy.js">
       <PackagePath>www\plugins\cordova-plugin-contacts\src\windows\ContactProxy.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-contacts\www\Contact.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-contacts\www\Contact.js">
       <PackagePath>www\plugins\cordova-plugin-contacts\www\Contact.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-contacts\www\ContactAddress.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-contacts\www\ContactAddress.js">
       <PackagePath>www\plugins\cordova-plugin-contacts\www\ContactAddress.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-contacts\www\ContactError.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-contacts\www\ContactError.js">
       <PackagePath>www\plugins\cordova-plugin-contacts\www\ContactError.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-contacts\www\ContactField.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-contacts\www\ContactField.js">
       <PackagePath>www\plugins\cordova-plugin-contacts\www\ContactField.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-contacts\www\ContactFieldType.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-contacts\www\ContactFieldType.js">
       <PackagePath>www\plugins\cordova-plugin-contacts\www\ContactFieldType.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-contacts\www\ContactFindOptions.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-contacts\www\ContactFindOptions.js">
       <PackagePath>www\plugins\cordova-plugin-contacts\www\ContactFindOptions.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-contacts\www\ContactName.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-contacts\www\ContactName.js">
       <PackagePath>www\plugins\cordova-plugin-contacts\www\ContactName.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-contacts\www\ContactOrganization.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-contacts\www\ContactOrganization.js">
       <PackagePath>www\plugins\cordova-plugin-contacts\www\ContactOrganization.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-contacts\www\contacts.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-contacts\www\contacts.js">
       <PackagePath>www\plugins\cordova-plugin-contacts\www\contacts.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-contacts\www\convertUtils.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-contacts\www\convertUtils.js">
       <PackagePath>www\plugins\cordova-plugin-contacts\www\convertUtils.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-device-motion\src\windows\AccelerometerProxy.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-device-motion\src\windows\AccelerometerProxy.js">
       <PackagePath>www\plugins\cordova-plugin-device-motion\src\windows\AccelerometerProxy.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-device-motion\www\Acceleration.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-device-motion\www\Acceleration.js">
       <PackagePath>www\plugins\cordova-plugin-device-motion\www\Acceleration.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-device-motion\www\accelerometer.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-device-motion\www\accelerometer.js">
       <PackagePath>www\plugins\cordova-plugin-device-motion\www\accelerometer.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-device-orientation\src\windows\CompassProxy.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-device-orientation\src\windows\CompassProxy.js">
       <PackagePath>www\plugins\cordova-plugin-device-orientation\src\windows\CompassProxy.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-device-orientation\www\compass.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-device-orientation\www\compass.js">
       <PackagePath>www\plugins\cordova-plugin-device-orientation\www\compass.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-device-orientation\www\CompassError.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-device-orientation\www\CompassError.js">
       <PackagePath>www\plugins\cordova-plugin-device-orientation\www\CompassError.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-device-orientation\www\CompassHeading.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-device-orientation\www\CompassHeading.js">
       <PackagePath>www\plugins\cordova-plugin-device-orientation\www\CompassHeading.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-device\src\windows\DeviceProxy.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-device\src\windows\DeviceProxy.js">
       <PackagePath>www\plugins\cordova-plugin-device\src\windows\DeviceProxy.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-device\www\device.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-device\www\device.js">
       <PackagePath>www\plugins\cordova-plugin-device\www\device.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-dialogs\src\windows\NotificationProxy.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-dialogs\src\windows\NotificationProxy.js">
       <PackagePath>www\plugins\cordova-plugin-dialogs\src\windows\NotificationProxy.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-dialogs\www\notification.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-dialogs\www\notification.js">
       <PackagePath>www\plugins\cordova-plugin-dialogs\www\notification.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-email\src\windows\EmailComposerProxy.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-email\src\windows\EmailComposerProxy.js">
       <PackagePath>www\plugins\cordova-plugin-email\src\windows\EmailComposerProxy.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-email\www\email_composer.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-email\www\email_composer.js">
       <PackagePath>www\plugins\cordova-plugin-email\www\email_composer.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-file-transfer\src\windows\FileTransferProxy.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-file-transfer\src\windows\FileTransferProxy.js">
       <PackagePath>www\plugins\cordova-plugin-file-transfer\src\windows\FileTransferProxy.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-file-transfer\www\FileTransfer.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-file-transfer\www\FileTransfer.js">
       <PackagePath>www\plugins\cordova-plugin-file-transfer\www\FileTransfer.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-file-transfer\www\FileTransferError.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-file-transfer\www\FileTransferError.js">
       <PackagePath>www\plugins\cordova-plugin-file-transfer\www\FileTransferError.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-file\src\windows\FileProxy.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-file\src\windows\FileProxy.js">
       <PackagePath>www\plugins\cordova-plugin-file\src\windows\FileProxy.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\browser\isChrome.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\browser\isChrome.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\browser\isChrome.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\DirectoryEntry.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\DirectoryEntry.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\DirectoryEntry.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\DirectoryReader.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\DirectoryReader.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\DirectoryReader.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\Entry.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\Entry.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\Entry.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\File.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\File.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\File.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\FileEntry.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\FileEntry.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\FileEntry.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\FileError.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\FileError.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\FileError.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\FileReader.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\FileReader.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\FileReader.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\FileSystem.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\FileSystem.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\FileSystem.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\fileSystemPaths.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\fileSystemPaths.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\fileSystemPaths.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\fileSystems.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\fileSystems.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\fileSystems.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\FileUploadOptions.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\FileUploadOptions.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\FileUploadOptions.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\FileUploadResult.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\FileUploadResult.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\FileUploadResult.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\FileWriter.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\FileWriter.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\FileWriter.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\Flags.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\Flags.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\Flags.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\LocalFileSystem.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\LocalFileSystem.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\LocalFileSystem.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\Metadata.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\Metadata.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\Metadata.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\ProgressEvent.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\ProgressEvent.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\ProgressEvent.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\requestFileSystem.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\requestFileSystem.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\requestFileSystem.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\resolveLocalFileSystemURI.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\resolveLocalFileSystemURI.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\resolveLocalFileSystemURI.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-geolocation\src\windows\GeolocationProxy.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-geolocation\src\windows\GeolocationProxy.js">
       <PackagePath>www\plugins\cordova-plugin-geolocation\src\windows\GeolocationProxy.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-geolocation\www\Coordinates.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-geolocation\www\Coordinates.js">
       <PackagePath>www\plugins\cordova-plugin-geolocation\www\Coordinates.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-geolocation\www\geolocation.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-geolocation\www\geolocation.js">
       <PackagePath>www\plugins\cordova-plugin-geolocation\www\geolocation.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-geolocation\www\Position.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-geolocation\www\Position.js">
       <PackagePath>www\plugins\cordova-plugin-geolocation\www\Position.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-geolocation\www\PositionError.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-geolocation\www\PositionError.js">
       <PackagePath>www\plugins\cordova-plugin-geolocation\www\PositionError.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-globalization\src\windows\GlobalizationProxy.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-globalization\src\windows\GlobalizationProxy.js">
       <PackagePath>www\plugins\cordova-plugin-globalization\src\windows\GlobalizationProxy.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-globalization\www\globalization.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-globalization\www\globalization.js">
       <PackagePath>www\plugins\cordova-plugin-globalization\www\globalization.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-globalization\www\GlobalizationError.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-globalization\www\GlobalizationError.js">
       <PackagePath>www\plugins\cordova-plugin-globalization\www\GlobalizationError.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-media-capture\src\windows\CaptureProxy.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-media-capture\src\windows\CaptureProxy.js">
       <PackagePath>www\plugins\cordova-plugin-media-capture\src\windows\CaptureProxy.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-media-capture\src\windows\MediaFile.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-media-capture\src\windows\MediaFile.js">
       <PackagePath>www\plugins\cordova-plugin-media-capture\src\windows\MediaFile.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-media-capture\www\capture.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-media-capture\www\capture.js">
       <PackagePath>www\plugins\cordova-plugin-media-capture\www\capture.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-media-capture\www\CaptureAudioOptions.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-media-capture\www\CaptureAudioOptions.js">
       <PackagePath>www\plugins\cordova-plugin-media-capture\www\CaptureAudioOptions.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-media-capture\www\CaptureError.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-media-capture\www\CaptureError.js">
       <PackagePath>www\plugins\cordova-plugin-media-capture\www\CaptureError.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-media-capture\www\CaptureImageOptions.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-media-capture\www\CaptureImageOptions.js">
       <PackagePath>www\plugins\cordova-plugin-media-capture\www\CaptureImageOptions.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-media-capture\www\CaptureVideoOptions.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-media-capture\www\CaptureVideoOptions.js">
       <PackagePath>www\plugins\cordova-plugin-media-capture\www\CaptureVideoOptions.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-media-capture\www\helpers.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-media-capture\www\helpers.js">
       <PackagePath>www\plugins\cordova-plugin-media-capture\www\helpers.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-media-capture\www\MediaFile.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-media-capture\www\MediaFile.js">
       <PackagePath>www\plugins\cordova-plugin-media-capture\www\MediaFile.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-media-capture\www\MediaFileData.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-media-capture\www\MediaFileData.js">
       <PackagePath>www\plugins\cordova-plugin-media-capture\www\MediaFileData.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-media\src\windows\MediaProxy.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-media\src\windows\MediaProxy.js">
       <PackagePath>www\plugins\cordova-plugin-media\src\windows\MediaProxy.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-media\www\Media.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-media\www\Media.js">
       <PackagePath>www\plugins\cordova-plugin-media\www\Media.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-media\www\MediaError.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-media\www\MediaError.js">
       <PackagePath>www\plugins\cordova-plugin-media\www\MediaError.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-network-information\src\windows\NetworkInfoProxy.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-network-information\src\windows\NetworkInfoProxy.js">
       <PackagePath>www\plugins\cordova-plugin-network-information\src\windows\NetworkInfoProxy.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-network-information\www\Connection.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-network-information\www\Connection.js">
       <PackagePath>www\plugins\cordova-plugin-network-information\www\Connection.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-network-information\www\network.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-network-information\www\network.js">
       <PackagePath>www\plugins\cordova-plugin-network-information\www\network.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-vibration\src\windows\VibrationProxy.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-vibration\src\windows\VibrationProxy.js">
       <PackagePath>www\plugins\cordova-plugin-vibration\src\windows\VibrationProxy.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\plugins\cordova-plugin-vibration\www\vibration.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-vibration\www\vibration.js">
       <PackagePath>www\plugins\cordova-plugin-vibration\www\vibration.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\temp\CURDxml.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\temp\CURDxml.js">
       <PackagePath>www\temp\CURDxml.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\WinJS\js\base.js">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\WinJS\js\base.js">
       <PackagePath>www\WinJS\js\base.js</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\css\app - 复制.css">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\css\app - 复制.css">
       <PackagePath>www\css\app - 复制.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\css\app.css">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\css\app.css">
       <PackagePath>www\css\app.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\css\index.css">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\css\index.css">
       <PackagePath>www\css\index.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\css\jquery.mobile-1.4.5.css">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\css\jquery.mobile-1.4.5.css">
       <PackagePath>www\css\jquery.mobile-1.4.5.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\css\price.css">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\css\price.css">
       <PackagePath>www\css\price.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\css\window_img.css">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\css\window_img.css">
       <PackagePath>www\css\window_img.css</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\css\images\ajax-loader.gif">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\css\images\ajax-loader.gif">
       <PackagePath>www\css\images\ajax-loader.gif</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\data\menchuang\m76.xml">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\data\menchuang\m76.xml">
       <PackagePath>www\data\menchuang\m76.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\data\menchuang\peijian.xml">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\data\menchuang\peijian.xml">
       <PackagePath>www\data\menchuang\peijian.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\config.xml">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\config.xml">
       <PackagePath>config.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\data\peijian.json">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\data\peijian.json">
       <PackagePath>www\data\peijian.json</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\data\windows.json">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\data\windows.json">
       <PackagePath>www\data\windows.json</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\index.html">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\index.html">
       <PackagePath>www\index.html</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\js\test\readdir.html">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\js\test\readdir.html">
       <PackagePath>www\js\test\readdir.html</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\template\window_img.html">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\template\window_img.html">
       <PackagePath>www\template\window_img.html</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\temp\test_jj.html">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\temp\test_jj.html">
       <PackagePath>www\temp\test_jj.html</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\v\cf.html">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\v\cf.html">
       <PackagePath>www\v\cf.html</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\v\cf2.html">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\v\cf2.html">
       <PackagePath>www\v\cf2.html</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\v\filelist.html">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\v\filelist.html">
       <PackagePath>www\v\filelist.html</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\v\first.html">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\v\first.html">
       <PackagePath>www\v\first.html</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\v\level.html">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\v\level.html">
       <PackagePath>www\v\level.html</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\v\lx.html">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\v\lx.html">
       <PackagePath>www\v\lx.html</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\v\menu.html">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\v\menu.html">
       <PackagePath>www\v\menu.html</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\v\new-.html">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\v\new-.html">
       <PackagePath>www\v\new-.html</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\v\new.html">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\v\new.html">
       <PackagePath>www\v\new.html</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\v\options.html">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\v\options.html">
       <PackagePath>www\v\options.html</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\v\order.html">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\v\order.html">
       <PackagePath>www\v\order.html</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\v\pj.html">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\v\pj.html">
       <PackagePath>www\v\pj.html</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\v\pj1.html">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\v\pj1.html">
       <PackagePath>www\v\pj1.html</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\v\showhejiadan.html">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\v\showhejiadan.html">
       <PackagePath>www\v\showhejiadan.html</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\v\viewhejiadan.html">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\v\viewhejiadan.html">
       <PackagePath>www\v\viewhejiadan.html</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\v\xl.html">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\v\xl.html">
       <PackagePath>www\v\xl.html</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\www\v\xl2.html">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\v\xl2.html">
       <PackagePath>www\v\xl2.html</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\poj\test\hejia\platforms\windows\build\windows\debug\x64\win8.1\resources.pri">
+    <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\build\windows\debug\x64\win8.1\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
