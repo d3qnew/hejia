@@ -4,7 +4,7 @@
 .pb{
     display: inline-block;
     background-color:  aliceblue;
-    width: 60px;
+    width: 80px;
     height: 20px;
     text-align:center;
     border: 1px solid activecaption;
@@ -22,8 +22,21 @@
 .nli{
     list-style-type: circle;
 }
-.oul{
-    
+.orders{
+    border: 1px solid activecaption;
+    margin:-1px;
+}
+.orders th{
+    width:16.3%;
+}
+.td_in {
+    margin:0px;
+    width:98%;
+    border:none;
+    text-align:center;
+}
+.del {
+    color:red;
 }
 .map {
     background-color: beige;
@@ -66,4 +79,12 @@
     background-color:  aliceblue;
     border:1px solid activecaption;
     margin:-1px;
+}
+
+/* 兼容WebKit核心和IE核心的浏览器 */
+.small_input {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    height: 14px;
+    width:2em;
 }

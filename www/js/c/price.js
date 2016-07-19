@@ -10,7 +10,7 @@ pdat = {
     fg2:'<div class="cn"></div><div class="level" style="padding:5px;margin:5px"></div>',
     lx: "",
     fx:"",
-    save: '{ "chuanghao": "", "xilie": "", "fangxiang": "", "zwidth": "", "zheight": "", "chicun": {},"peijian":{}}'
+    save: '{ "chuanghao": "", "xilie": "", "fangxiang": "", "zwidth": "", "zheight": "","tangshu": "1", "chicun": {},"peijian":{}}'
 };
 $.ajax({ url: "data/windows.json", dataType: "json", async: false }).success(function (data) { pdat.mw = data; });
 $.ajax({ url: "data/peijian.json", dataType: "json", async: false }).success(function (data) { pdat.mpj = data; });
@@ -203,14 +203,16 @@ var dialogs = {
 };
 
 var orders = {
-    li:'<li class="order"></li>',
-    div:'<div class="pb"></div>',
+    th: "<thead><tr><th>窗号</th><th>窗号</th><th>窗号</th><th>窗号</th></tr></thead>",
+    tr: '<tr class="order"><td></td><td></td><td></td><td><input type="text" class="td_in"></td><td></td><td></td></tr>"',
+    div: '<div class="pb"></div>',
     n: function () {
         orders.a = $(".order_a");
         orders.b = $(".order_b");
-        orders.o = $(".orders");
+        orders.os = $(".orders");
+        orders.o = $(".orders").children("tbody");
         orders.a.on("click", function () {
-            orders.o.toggle();
+            orders.os.toggle();
         });
         orders.b.on("click", function () {
             dialogs.g("order");
@@ -229,12 +231,39 @@ var orders = {
         orders.add("新增");
     },
     add: function (name) {
-        orders.o.append(orders.li);
+        orders.o.append(orders.tr);
         var obj = orders.o.children(".order:last");
-        obj.append(orders.div);
-        obj.children(".pb:last").html(name);
-        obj.on("click", function () {
-            orders.click($(this).text());
+        obj.attr("ch", name);
+        if (name == "新增") {
+            obj.html("<td colspan='6'>新增</td>");
+        } else {
+            obj.children("td:eq(0)").html(name);
+            obj.children("td:eq(1)").html(cjson[name].xilie);
+            obj.children("td:eq(2)").html(cjson[name].zheight*cjson[name].zwidth/1000000);
+            obj.children("td:eq(3)").children("input").val(cjson[name].tangshu);
+            obj.children("td:eq(4)").html(0);
+            obj.children("td:eq(5)").html("<label class='del'>删除</label>");
+        }
+        obj.children("td:eq(0)").on("click", function () {
+            orders.click($(this).parent().attr("ch"));
+        });
+        obj.children("td:eq(3)").children("input").on("change", function () {
+            var temp = $(this).val();
+            if (temp < 1) {
+                temp = 1;
+                $(this).val(temp);
+            }
+            $(cjson[$(this).parent().parent().attr("ch")]).attr("tangshu", temp);
+        })
+        obj.children("td:eq(5)").on("click", function () {
+            var temp = $(this).parent().attr("ch");
+            //$(cjson).removeAttr(temp);
+            delete cjson[temp];
+            if (orders.b.html() == temp) {
+                orders.b.hide();
+                $("#show").html("");
+            }
+            orders.g(cjson);
         });
     },
     click: function (x) {
@@ -252,7 +281,7 @@ var orders = {
         }
     },
     hide:function(){
-        orders.o.hide();    
+        orders.os.hide();
     }
 };
 
