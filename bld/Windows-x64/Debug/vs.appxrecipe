@@ -22,7 +22,7 @@
     <AppXManifest Include="C:\dev\hejia\hejia\platforms\windows\build\windows\debug\x64\win8.1\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-07-19T08:39:22.223</Modified>
+      <Modified>2016-07-20T00:44:06.556</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -75,583 +75,583 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\css\images\tmbg.png">
       <PackagePath>www\css\images\tmbg.png</PackagePath>
-      <Modified>2016-07-19T08:39:18.859</Modified>
+      <Modified>2016-07-20T00:44:01.955</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\img\logo.png">
       <PackagePath>www\img\logo.png</PackagePath>
-      <Modified>2016-07-19T08:39:18.882</Modified>
+      <Modified>2016-07-20T00:44:01.974</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\img\tmbg.png">
       <PackagePath>www\img\tmbg.png</PackagePath>
-      <Modified>2016-07-19T08:39:18.883</Modified>
+      <Modified>2016-07-20T00:44:01.976</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\cordova-js-src\exec.js">
       <PackagePath>www\cordova-js-src\exec.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.739</Modified>
+      <Modified>2016-07-20T00:44:03.642</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\cordova-js-src\platform.js">
       <PackagePath>www\cordova-js-src\platform.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.740</Modified>
+      <Modified>2016-07-20T00:44:03.643</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\cordova.js">
       <PackagePath>www\cordova.js</PackagePath>
-      <Modified>2016-07-19T08:39:18.958</Modified>
+      <Modified>2016-07-20T00:44:02.063</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\cordova_plugins.js">
       <PackagePath>www\cordova_plugins.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.741</Modified>
+      <Modified>2016-07-20T00:44:03.644</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\js\c\filelist.js">
       <PackagePath>www\js\c\filelist.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.749</Modified>
+      <Modified>2016-07-20T00:44:03.654</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\js\c\main.js">
       <PackagePath>www\js\c\main.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.750</Modified>
+      <Modified>2016-07-20T00:44:03.655</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\js\c\price.js">
       <PackagePath>www\js\c\price.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.751</Modified>
+      <Modified>2016-07-20T00:44:03.656</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\js\c\showhejiadan.js">
       <PackagePath>www\js\c\showhejiadan.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.752</Modified>
+      <Modified>2016-07-20T00:44:03.658</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\js\c\window_img - 复制.js">
       <PackagePath>www\js\c\window_img - 复制.js</PackagePath>
-      <Modified>2016-07-19T08:39:18.895</Modified>
+      <Modified>2016-07-20T00:44:01.988</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\js\c\window_img.js">
       <PackagePath>www\js\c\window_img.js</PackagePath>
-      <Modified>2016-07-19T08:39:18.895</Modified>
+      <Modified>2016-07-20T00:44:01.990</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\js\index.js">
       <PackagePath>www\js\index.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.753</Modified>
+      <Modified>2016-07-20T00:44:03.659</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\js\lib\alertObj.js">
       <PackagePath>www\js\lib\alertObj.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.754</Modified>
+      <Modified>2016-07-20T00:44:03.660</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\js\lib\email.js">
       <PackagePath>www\js\lib\email.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.755</Modified>
+      <Modified>2016-07-20T00:44:03.661</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\js\lib\jquery-2.2.3.min.js">
       <PackagePath>www\js\lib\jquery-2.2.3.min.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.757</Modified>
+      <Modified>2016-07-20T00:44:03.664</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\js\lib\jquery-3.0.0.min.js">
       <PackagePath>www\js\lib\jquery-3.0.0.min.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.758</Modified>
+      <Modified>2016-07-20T00:44:03.666</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\js\lib\jquery.js">
       <PackagePath>www\js\lib\jquery.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.761</Modified>
+      <Modified>2016-07-20T00:44:03.670</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\js\lib\xmlcurd.js">
       <PackagePath>www\js\lib\xmlcurd.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.762</Modified>
+      <Modified>2016-07-20T00:44:03.671</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\js\lib\z7z8.js">
       <PackagePath>www\js\lib\z7z8.js</PackagePath>
-      <Modified>2016-07-19T08:39:18.909</Modified>
+      <Modified>2016-07-20T00:44:02.006</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\js\pricing\price.js">
       <PackagePath>www\js\pricing\price.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.763</Modified>
+      <Modified>2016-07-20T00:44:03.672</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\js\pricing\test.js">
       <PackagePath>www\js\pricing\test.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.764</Modified>
+      <Modified>2016-07-20T00:44:03.673</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\js\test\createfile.js">
       <PackagePath>www\js\test\createfile.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.765</Modified>
+      <Modified>2016-07-20T00:44:03.674</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\js\test\getdir.js">
       <PackagePath>www\js\test\getdir.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.766</Modified>
+      <Modified>2016-07-20T00:44:03.674</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\js\test\test1.js">
       <PackagePath>www\js\test\test1.js</PackagePath>
-      <Modified>2016-07-19T08:39:18.920</Modified>
+      <Modified>2016-07-20T00:44:02.018</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-battery-status\src\windows\BatteryProxy.js">
       <PackagePath>www\plugins\cordova-plugin-battery-status\src\windows\BatteryProxy.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.768</Modified>
+      <Modified>2016-07-20T00:44:03.676</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-battery-status\www\battery.js">
       <PackagePath>www\plugins\cordova-plugin-battery-status\www\battery.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.769</Modified>
+      <Modified>2016-07-20T00:44:03.677</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-camera\src\windows\CameraProxy.js">
       <PackagePath>www\plugins\cordova-plugin-camera\src\windows\CameraProxy.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.770</Modified>
+      <Modified>2016-07-20T00:44:03.678</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-camera\www\Camera.js">
       <PackagePath>www\plugins\cordova-plugin-camera\www\Camera.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.771</Modified>
+      <Modified>2016-07-20T00:44:03.679</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-camera\www\CameraConstants.js">
       <PackagePath>www\plugins\cordova-plugin-camera\www\CameraConstants.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.771</Modified>
+      <Modified>2016-07-20T00:44:03.680</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-camera\www\CameraPopoverHandle.js">
       <PackagePath>www\plugins\cordova-plugin-camera\www\CameraPopoverHandle.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.772</Modified>
+      <Modified>2016-07-20T00:44:03.680</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-camera\www\CameraPopoverOptions.js">
       <PackagePath>www\plugins\cordova-plugin-camera\www\CameraPopoverOptions.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.772</Modified>
+      <Modified>2016-07-20T00:44:03.682</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-console\www\console-via-logger.js">
       <PackagePath>www\plugins\cordova-plugin-console\www\console-via-logger.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.773</Modified>
+      <Modified>2016-07-20T00:44:03.683</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-console\www\logger.js">
       <PackagePath>www\plugins\cordova-plugin-console\www\logger.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.774</Modified>
+      <Modified>2016-07-20T00:44:03.684</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-contacts\src\windows\ContactProxy.js">
       <PackagePath>www\plugins\cordova-plugin-contacts\src\windows\ContactProxy.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.775</Modified>
+      <Modified>2016-07-20T00:44:03.685</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-contacts\www\Contact.js">
       <PackagePath>www\plugins\cordova-plugin-contacts\www\Contact.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.776</Modified>
+      <Modified>2016-07-20T00:44:03.686</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-contacts\www\ContactAddress.js">
       <PackagePath>www\plugins\cordova-plugin-contacts\www\ContactAddress.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.777</Modified>
+      <Modified>2016-07-20T00:44:03.687</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-contacts\www\ContactError.js">
       <PackagePath>www\plugins\cordova-plugin-contacts\www\ContactError.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.777</Modified>
+      <Modified>2016-07-20T00:44:03.688</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-contacts\www\ContactField.js">
       <PackagePath>www\plugins\cordova-plugin-contacts\www\ContactField.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.778</Modified>
+      <Modified>2016-07-20T00:44:03.689</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-contacts\www\ContactFieldType.js">
       <PackagePath>www\plugins\cordova-plugin-contacts\www\ContactFieldType.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.779</Modified>
+      <Modified>2016-07-20T00:44:03.689</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-contacts\www\ContactFindOptions.js">
       <PackagePath>www\plugins\cordova-plugin-contacts\www\ContactFindOptions.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.780</Modified>
+      <Modified>2016-07-20T00:44:03.690</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-contacts\www\ContactName.js">
       <PackagePath>www\plugins\cordova-plugin-contacts\www\ContactName.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.781</Modified>
+      <Modified>2016-07-20T00:44:03.691</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-contacts\www\ContactOrganization.js">
       <PackagePath>www\plugins\cordova-plugin-contacts\www\ContactOrganization.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.782</Modified>
+      <Modified>2016-07-20T00:44:03.692</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-contacts\www\contacts.js">
       <PackagePath>www\plugins\cordova-plugin-contacts\www\contacts.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.782</Modified>
+      <Modified>2016-07-20T00:44:03.693</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-contacts\www\convertUtils.js">
       <PackagePath>www\plugins\cordova-plugin-contacts\www\convertUtils.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.783</Modified>
+      <Modified>2016-07-20T00:44:03.694</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-device-motion\src\windows\AccelerometerProxy.js">
       <PackagePath>www\plugins\cordova-plugin-device-motion\src\windows\AccelerometerProxy.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.786</Modified>
+      <Modified>2016-07-20T00:44:03.697</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-device-motion\www\Acceleration.js">
       <PackagePath>www\plugins\cordova-plugin-device-motion\www\Acceleration.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.787</Modified>
+      <Modified>2016-07-20T00:44:03.698</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-device-motion\www\accelerometer.js">
       <PackagePath>www\plugins\cordova-plugin-device-motion\www\accelerometer.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.787</Modified>
+      <Modified>2016-07-20T00:44:03.699</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-device-orientation\src\windows\CompassProxy.js">
       <PackagePath>www\plugins\cordova-plugin-device-orientation\src\windows\CompassProxy.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.788</Modified>
+      <Modified>2016-07-20T00:44:03.701</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-device-orientation\www\compass.js">
       <PackagePath>www\plugins\cordova-plugin-device-orientation\www\compass.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.789</Modified>
+      <Modified>2016-07-20T00:44:03.702</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-device-orientation\www\CompassError.js">
       <PackagePath>www\plugins\cordova-plugin-device-orientation\www\CompassError.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.791</Modified>
+      <Modified>2016-07-20T00:44:03.703</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-device-orientation\www\CompassHeading.js">
       <PackagePath>www\plugins\cordova-plugin-device-orientation\www\CompassHeading.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.792</Modified>
+      <Modified>2016-07-20T00:44:03.704</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-device\src\windows\DeviceProxy.js">
       <PackagePath>www\plugins\cordova-plugin-device\src\windows\DeviceProxy.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.784</Modified>
+      <Modified>2016-07-20T00:44:03.695</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-device\www\device.js">
       <PackagePath>www\plugins\cordova-plugin-device\www\device.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.785</Modified>
+      <Modified>2016-07-20T00:44:03.696</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-dialogs\src\windows\NotificationProxy.js">
       <PackagePath>www\plugins\cordova-plugin-dialogs\src\windows\NotificationProxy.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.793</Modified>
+      <Modified>2016-07-20T00:44:03.704</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-dialogs\www\notification.js">
       <PackagePath>www\plugins\cordova-plugin-dialogs\www\notification.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.794</Modified>
+      <Modified>2016-07-20T00:44:03.705</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-email\src\windows\EmailComposerProxy.js">
       <PackagePath>www\plugins\cordova-plugin-email\src\windows\EmailComposerProxy.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.795</Modified>
+      <Modified>2016-07-20T00:44:03.706</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-email\www\email_composer.js">
       <PackagePath>www\plugins\cordova-plugin-email\www\email_composer.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.796</Modified>
+      <Modified>2016-07-20T00:44:03.707</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-file-transfer\src\windows\FileTransferProxy.js">
       <PackagePath>www\plugins\cordova-plugin-file-transfer\src\windows\FileTransferProxy.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.814</Modified>
+      <Modified>2016-07-20T00:44:03.725</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-file-transfer\www\FileTransfer.js">
       <PackagePath>www\plugins\cordova-plugin-file-transfer\www\FileTransfer.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.815</Modified>
+      <Modified>2016-07-20T00:44:03.726</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-file-transfer\www\FileTransferError.js">
       <PackagePath>www\plugins\cordova-plugin-file-transfer\www\FileTransferError.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.816</Modified>
+      <Modified>2016-07-20T00:44:03.727</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-file\src\windows\FileProxy.js">
       <PackagePath>www\plugins\cordova-plugin-file\src\windows\FileProxy.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.797</Modified>
+      <Modified>2016-07-20T00:44:03.708</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\browser\isChrome.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\browser\isChrome.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.798</Modified>
+      <Modified>2016-07-20T00:44:03.709</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\DirectoryEntry.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\DirectoryEntry.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.799</Modified>
+      <Modified>2016-07-20T00:44:03.710</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\DirectoryReader.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\DirectoryReader.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.800</Modified>
+      <Modified>2016-07-20T00:44:03.711</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\Entry.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\Entry.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.800</Modified>
+      <Modified>2016-07-20T00:44:03.712</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\File.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\File.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.801</Modified>
+      <Modified>2016-07-20T00:44:03.713</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\FileEntry.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\FileEntry.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.802</Modified>
+      <Modified>2016-07-20T00:44:03.714</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\FileError.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\FileError.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.803</Modified>
+      <Modified>2016-07-20T00:44:03.714</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\FileReader.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\FileReader.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.804</Modified>
+      <Modified>2016-07-20T00:44:03.715</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\FileSystem.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\FileSystem.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.805</Modified>
+      <Modified>2016-07-20T00:44:03.715</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\fileSystemPaths.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\fileSystemPaths.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.806</Modified>
+      <Modified>2016-07-20T00:44:03.716</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\fileSystems.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\fileSystems.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.806</Modified>
+      <Modified>2016-07-20T00:44:03.717</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\FileUploadOptions.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\FileUploadOptions.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.807</Modified>
+      <Modified>2016-07-20T00:44:03.718</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\FileUploadResult.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\FileUploadResult.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.808</Modified>
+      <Modified>2016-07-20T00:44:03.718</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\FileWriter.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\FileWriter.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.809</Modified>
+      <Modified>2016-07-20T00:44:03.719</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\Flags.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\Flags.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.810</Modified>
+      <Modified>2016-07-20T00:44:03.720</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\LocalFileSystem.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\LocalFileSystem.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.811</Modified>
+      <Modified>2016-07-20T00:44:03.721</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\Metadata.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\Metadata.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.811</Modified>
+      <Modified>2016-07-20T00:44:03.722</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\ProgressEvent.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\ProgressEvent.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.812</Modified>
+      <Modified>2016-07-20T00:44:03.723</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\requestFileSystem.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\requestFileSystem.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.813</Modified>
+      <Modified>2016-07-20T00:44:03.724</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-file\www\resolveLocalFileSystemURI.js">
       <PackagePath>www\plugins\cordova-plugin-file\www\resolveLocalFileSystemURI.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.813</Modified>
+      <Modified>2016-07-20T00:44:03.724</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-geolocation\src\windows\GeolocationProxy.js">
       <PackagePath>www\plugins\cordova-plugin-geolocation\src\windows\GeolocationProxy.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.817</Modified>
+      <Modified>2016-07-20T00:44:03.728</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-geolocation\www\Coordinates.js">
       <PackagePath>www\plugins\cordova-plugin-geolocation\www\Coordinates.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.817</Modified>
+      <Modified>2016-07-20T00:44:03.729</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-geolocation\www\geolocation.js">
       <PackagePath>www\plugins\cordova-plugin-geolocation\www\geolocation.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.818</Modified>
+      <Modified>2016-07-20T00:44:03.730</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-geolocation\www\Position.js">
       <PackagePath>www\plugins\cordova-plugin-geolocation\www\Position.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.819</Modified>
+      <Modified>2016-07-20T00:44:03.731</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-geolocation\www\PositionError.js">
       <PackagePath>www\plugins\cordova-plugin-geolocation\www\PositionError.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.820</Modified>
+      <Modified>2016-07-20T00:44:03.732</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-globalization\src\windows\GlobalizationProxy.js">
       <PackagePath>www\plugins\cordova-plugin-globalization\src\windows\GlobalizationProxy.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.821</Modified>
+      <Modified>2016-07-20T00:44:03.732</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-globalization\www\globalization.js">
       <PackagePath>www\plugins\cordova-plugin-globalization\www\globalization.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.822</Modified>
+      <Modified>2016-07-20T00:44:03.733</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-globalization\www\GlobalizationError.js">
       <PackagePath>www\plugins\cordova-plugin-globalization\www\GlobalizationError.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.823</Modified>
+      <Modified>2016-07-20T00:44:03.734</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-media-capture\src\windows\CaptureProxy.js">
       <PackagePath>www\plugins\cordova-plugin-media-capture\src\windows\CaptureProxy.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.826</Modified>
+      <Modified>2016-07-20T00:44:03.738</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-media-capture\src\windows\MediaFile.js">
       <PackagePath>www\plugins\cordova-plugin-media-capture\src\windows\MediaFile.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.827</Modified>
+      <Modified>2016-07-20T00:44:03.739</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-media-capture\www\capture.js">
       <PackagePath>www\plugins\cordova-plugin-media-capture\www\capture.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.828</Modified>
+      <Modified>2016-07-20T00:44:03.740</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-media-capture\www\CaptureAudioOptions.js">
       <PackagePath>www\plugins\cordova-plugin-media-capture\www\CaptureAudioOptions.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.829</Modified>
+      <Modified>2016-07-20T00:44:03.741</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-media-capture\www\CaptureError.js">
       <PackagePath>www\plugins\cordova-plugin-media-capture\www\CaptureError.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.830</Modified>
+      <Modified>2016-07-20T00:44:03.741</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-media-capture\www\CaptureImageOptions.js">
       <PackagePath>www\plugins\cordova-plugin-media-capture\www\CaptureImageOptions.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.830</Modified>
+      <Modified>2016-07-20T00:44:03.742</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-media-capture\www\CaptureVideoOptions.js">
       <PackagePath>www\plugins\cordova-plugin-media-capture\www\CaptureVideoOptions.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.831</Modified>
+      <Modified>2016-07-20T00:44:03.743</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-media-capture\www\helpers.js">
       <PackagePath>www\plugins\cordova-plugin-media-capture\www\helpers.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.832</Modified>
+      <Modified>2016-07-20T00:44:03.744</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-media-capture\www\MediaFile.js">
       <PackagePath>www\plugins\cordova-plugin-media-capture\www\MediaFile.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.833</Modified>
+      <Modified>2016-07-20T00:44:03.745</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-media-capture\www\MediaFileData.js">
       <PackagePath>www\plugins\cordova-plugin-media-capture\www\MediaFileData.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.834</Modified>
+      <Modified>2016-07-20T00:44:03.746</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-media\src\windows\MediaProxy.js">
       <PackagePath>www\plugins\cordova-plugin-media\src\windows\MediaProxy.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.824</Modified>
+      <Modified>2016-07-20T00:44:03.735</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-media\www\Media.js">
       <PackagePath>www\plugins\cordova-plugin-media\www\Media.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.824</Modified>
+      <Modified>2016-07-20T00:44:03.736</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-media\www\MediaError.js">
       <PackagePath>www\plugins\cordova-plugin-media\www\MediaError.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.825</Modified>
+      <Modified>2016-07-20T00:44:03.737</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-network-information\src\windows\NetworkInfoProxy.js">
       <PackagePath>www\plugins\cordova-plugin-network-information\src\windows\NetworkInfoProxy.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.835</Modified>
+      <Modified>2016-07-20T00:44:03.746</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-network-information\www\Connection.js">
       <PackagePath>www\plugins\cordova-plugin-network-information\www\Connection.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.835</Modified>
+      <Modified>2016-07-20T00:44:03.747</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-network-information\www\network.js">
       <PackagePath>www\plugins\cordova-plugin-network-information\www\network.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.836</Modified>
+      <Modified>2016-07-20T00:44:03.748</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-vibration\src\windows\VibrationProxy.js">
       <PackagePath>www\plugins\cordova-plugin-vibration\src\windows\VibrationProxy.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.837</Modified>
+      <Modified>2016-07-20T00:44:03.749</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\plugins\cordova-plugin-vibration\www\vibration.js">
       <PackagePath>www\plugins\cordova-plugin-vibration\www\vibration.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.838</Modified>
+      <Modified>2016-07-20T00:44:03.750</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\temp\CURDxml.js">
       <PackagePath>www\temp\CURDxml.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.839</Modified>
+      <Modified>2016-07-20T00:44:03.751</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\WinJS\js\base.js">
       <PackagePath>www\WinJS\js\base.js</PackagePath>
-      <Modified>2016-07-19T08:39:19.145</Modified>
+      <Modified>2016-07-20T00:44:02.296</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\css\app - 复制.css">
       <PackagePath>www\css\app - 复制.css</PackagePath>
-      <Modified>2016-07-19T08:39:19.742</Modified>
+      <Modified>2016-07-20T00:44:03.646</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\css\app.css">
       <PackagePath>www\css\app.css</PackagePath>
-      <Modified>2016-07-19T08:39:19.743</Modified>
+      <Modified>2016-07-20T00:44:03.647</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\css\index.css">
       <PackagePath>www\css\index.css</PackagePath>
-      <Modified>2016-07-19T08:39:19.743</Modified>
+      <Modified>2016-07-20T00:44:03.648</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\css\jquery.mobile-1.4.5.css">
       <PackagePath>www\css\jquery.mobile-1.4.5.css</PackagePath>
-      <Modified>2016-07-19T08:39:19.746</Modified>
+      <Modified>2016-07-20T00:44:03.651</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\css\price.css">
       <PackagePath>www\css\price.css</PackagePath>
-      <Modified>2016-07-19T08:39:18.867</Modified>
+      <Modified>2016-07-20T00:44:01.962</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\css\window_img.css">
       <PackagePath>www\css\window_img.css</PackagePath>
-      <Modified>2016-07-19T08:39:18.868</Modified>
+      <Modified>2016-07-20T00:44:01.963</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\css\images\ajax-loader.gif">
       <PackagePath>www\css\images\ajax-loader.gif</PackagePath>
-      <Modified>2016-07-19T08:39:18.857</Modified>
+      <Modified>2016-07-20T00:44:01.952</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\data\menchuang\m76.xml">
       <PackagePath>www\data\menchuang\m76.xml</PackagePath>
-      <Modified>2016-07-19T08:39:18.873</Modified>
+      <Modified>2016-07-20T00:44:01.966</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\data\menchuang\peijian.xml">
       <PackagePath>www\data\menchuang\peijian.xml</PackagePath>
-      <Modified>2016-07-19T08:39:18.875</Modified>
+      <Modified>2016-07-20T00:44:01.968</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\config.xml">
       <PackagePath>config.xml</PackagePath>
-      <Modified>2016-07-19T08:39:18.689</Modified>
+      <Modified>2016-07-20T00:44:01.766</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\data\peijian.json">
       <PackagePath>www\data\peijian.json</PackagePath>
-      <Modified>2016-07-19T08:39:19.748</Modified>
+      <Modified>2016-07-20T00:44:03.652</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\data\windows.json">
       <PackagePath>www\data\windows.json</PackagePath>
-      <Modified>2016-07-19T08:39:19.748</Modified>
+      <Modified>2016-07-20T00:44:03.653</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\index.html">
       <PackagePath>www\index.html</PackagePath>
-      <Modified>2016-07-19T08:39:18.885</Modified>
+      <Modified>2016-07-20T00:44:01.978</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\js\test\readdir.html">
       <PackagePath>www\js\test\readdir.html</PackagePath>
-      <Modified>2016-07-19T08:39:19.767</Modified>
+      <Modified>2016-07-20T00:44:03.675</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\template\window_img.html">
       <PackagePath>www\template\window_img.html</PackagePath>
-      <Modified>2016-07-19T08:39:18.927</Modified>
+      <Modified>2016-07-20T00:44:02.026</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\temp\test_jj.html">
       <PackagePath>www\temp\test_jj.html</PackagePath>
-      <Modified>2016-07-19T08:39:19.839</Modified>
+      <Modified>2016-07-20T00:44:03.752</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\v\cf.html">
       <PackagePath>www\v\cf.html</PackagePath>
-      <Modified>2016-07-19T08:39:18.929</Modified>
+      <Modified>2016-07-20T00:44:02.030</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\v\cf2.html">
       <PackagePath>www\v\cf2.html</PackagePath>
-      <Modified>2016-07-19T08:39:18.931</Modified>
+      <Modified>2016-07-20T00:44:02.032</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\v\filelist.html">
       <PackagePath>www\v\filelist.html</PackagePath>
-      <Modified>2016-07-19T08:39:19.841</Modified>
+      <Modified>2016-07-20T00:44:03.754</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\v\first.html">
       <PackagePath>www\v\first.html</PackagePath>
-      <Modified>2016-07-19T08:39:18.933</Modified>
+      <Modified>2016-07-20T00:44:02.036</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\v\level.html">
       <PackagePath>www\v\level.html</PackagePath>
-      <Modified>2016-07-19T08:39:19.842</Modified>
+      <Modified>2016-07-20T00:44:03.756</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\v\lx.html">
       <PackagePath>www\v\lx.html</PackagePath>
-      <Modified>2016-07-19T08:39:18.936</Modified>
+      <Modified>2016-07-20T00:44:02.039</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\v\menu.html">
       <PackagePath>www\v\menu.html</PackagePath>
-      <Modified>2016-07-19T08:39:19.843</Modified>
+      <Modified>2016-07-20T00:44:03.756</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\v\new-.html">
       <PackagePath>www\v\new-.html</PackagePath>
-      <Modified>2016-07-19T08:39:19.844</Modified>
+      <Modified>2016-07-20T00:44:03.757</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\v\new.html">
       <PackagePath>www\v\new.html</PackagePath>
-      <Modified>2016-07-19T08:39:19.845</Modified>
+      <Modified>2016-07-20T00:44:03.757</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\v\options.html">
       <PackagePath>www\v\options.html</PackagePath>
-      <Modified>2016-07-19T08:39:19.845</Modified>
+      <Modified>2016-07-20T00:44:03.758</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\v\order.html">
       <PackagePath>www\v\order.html</PackagePath>
-      <Modified>2016-07-19T08:39:18.942</Modified>
+      <Modified>2016-07-20T00:44:02.046</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\v\pj.html">
       <PackagePath>www\v\pj.html</PackagePath>
-      <Modified>2016-07-19T08:39:19.846</Modified>
+      <Modified>2016-07-20T00:44:03.759</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\v\pj1.html">
       <PackagePath>www\v\pj1.html</PackagePath>
-      <Modified>2016-07-19T08:39:19.847</Modified>
+      <Modified>2016-07-20T00:44:03.759</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\v\showhejiadan.html">
       <PackagePath>www\v\showhejiadan.html</PackagePath>
-      <Modified>2016-07-19T08:39:19.848</Modified>
+      <Modified>2016-07-20T00:44:03.760</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\v\viewhejiadan.html">
       <PackagePath>www\v\viewhejiadan.html</PackagePath>
-      <Modified>2016-07-19T08:39:19.849</Modified>
+      <Modified>2016-07-20T00:44:03.761</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\v\xl.html">
       <PackagePath>www\v\xl.html</PackagePath>
-      <Modified>2016-07-19T08:39:19.849</Modified>
+      <Modified>2016-07-20T00:44:03.762</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\www\v\xl2.html">
       <PackagePath>www\v\xl2.html</PackagePath>
-      <Modified>2016-07-19T08:39:18.951</Modified>
+      <Modified>2016-07-20T00:44:02.055</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\dev\hejia\hejia\platforms\windows\build\windows\debug\x64\win8.1\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-07-19T08:39:20.738</Modified>
+      <Modified>2016-07-20T00:44:04.929</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

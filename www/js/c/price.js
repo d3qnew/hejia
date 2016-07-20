@@ -102,10 +102,8 @@ var dialogs = {
                 addSelectOption.add2($(".t_xilie"), pdat.mw);
                 if (x) {
                     dialogs.sub="order";
-                    //dialogs.c.children("#dialog_submit").attr("d_s", "order");
                 } else {
                     dialogs.sub="new_order";
-                    //dialogs.c.children("#dialog_submit").attr("d_s", "new_order");
                 }
                 break;
             case node=="split":
@@ -119,10 +117,8 @@ var dialogs = {
                 });
                 if (x==0) {
                     dialogs.sub="first";
-                    //dialogs.c.children("#dialog_submit").attr("d_s", "first");
                 } else {
                     dialogs.sub="split";
-                    //dialogs.c.children("#dialog_submit").attr("d_s", "split");
                 }
                 break;
         }
@@ -242,6 +238,7 @@ var orders = {
             obj.children("td:eq(2)").html(cjson[name].zheight*cjson[name].zwidth/1000000);
             obj.children("td:eq(3)").children("input").val(cjson[name].tangshu);
             obj.children("td:eq(4)").html(0);
+            ZongJia.g(name);
             obj.children("td:eq(5)").html("<label class='del'>删除</label>");
         }
         obj.children("td:eq(0)").on("click", function () {
@@ -249,11 +246,17 @@ var orders = {
         });
         obj.children("td:eq(3)").children("input").on("change", function () {
             var temp = $(this).val();
+            var t1 = $(this).parent().parent().attr("ch");
+            if (temp != parseInt(temp)) {
+                temp = parseInt(temp);
+                $(this).val(temp);
+            }
             if (temp < 1) {
                 temp = 1;
                 $(this).val(temp);
             }
-            $(cjson[$(this).parent().parent().attr("ch")]).attr("tangshu", temp);
+            $(cjson[t1]).attr("tangshu", temp);
+            ZongJia.g(t1);
         })
         obj.children("td:eq(5)").on("click", function () {
             var temp = $(this).parent().attr("ch");
@@ -276,6 +279,7 @@ var orders = {
             orders.b.show();
             //dialogs.g("order",1,"normal");
             wimg_display($("#show"), cjson[x]);
+            ZongJia.g(x);
             $("#show").attr("j",x);
             show_split.n();
         }
@@ -333,6 +337,7 @@ var show_split = {//拆分
             eval(t1);
         }
         wimg_display($("#show"), cjson[x]);
+        ZongJia.g(x);
         new_pj.n($("#pj"), pdat.mpj);
         show_split.n();
         dialogs.hide();
@@ -363,7 +368,8 @@ var show_split = {//拆分
         }else{
             eval(t1 + '={w:"' + tw + '",h:"' + th + '",c:"固定",p:"2380"}');
         }
-        wimg_display($("#show"),cjson[show_split.x]);
+        wimg_display($("#show"), cjson[show_split.x]);
+        ZongJia.g(show_split.x);
         show_split.n();
         dialogs.hide();
     },
@@ -548,20 +554,21 @@ var addSelectOption = {
 };
 
 var ZongJia = {
-    g: function () {
-        pdat.tp1 = 0;
-        pdat.tp2 = 0;
-        ZongJia.w(pdat.save.chicun);
-        ZongJia.p();
-        $(".t_w_h").text(pdat.tp1);
-        $(".t_p_h").text(pdat.tp2);
-        $(".t_h").text(pdat.tp1+pdat.tp2);
+    tp1: 0,
+    tp2: 0,
+    g: function (x) {
+        ZongJia.tp1 = 0;
+        ZongJia.tp2 = 0;
+        ZongJia.w(cjson[x].chicun);
+        ZongJia.p(cjson[x]);
+        var temp = (ZongJia.tp1 + ZongJia.tp2) * cjson[x].tangshu;
+        orders.o.children("[ch=" + x + "]").children("td:eq(4)").html(temp);
     },
     w: function (dat) {
         $.each(dat, function (key,val) {
             if (val.p) {
                 var temp = val.p * val.w * val.h / 1000000;
-                pdat.tp1 += temp;
+                ZongJia.tp1 += temp;
             } else {
                 ZongJia.w(val);
             }
@@ -570,10 +577,10 @@ var ZongJia = {
     p: function () {
         $.each(pdat.save.peijian, function (key, val) {
             var temp=val.shuliang*val.JiaGe
-            pdat.tp2 += temp;
+            ZongJia.tp2 += temp;
         });
     },
-    q:function() {
+    s: function () {
 
     }
 };
